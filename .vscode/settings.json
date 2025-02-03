@@ -1,0 +1,14 @@
+{
+    "liveServer.settings.port": 5501,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.svelte-kit": true,
+        "**/.yarn": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true
+    }
+}
