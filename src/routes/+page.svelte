@@ -21,7 +21,7 @@
   
             <div class="col-md-6">
               <div class="position-relative">
-                <img class="img-fluid rounded-2" src="assets/svg/components/card-10.svg" alt="Image Description">
+                <img class="img-fluid rounded-2" src="/assets/svg/logos/image (5).jpg" alt="Image Description">
                 <div class="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"></div>
               </div>
             </div>
@@ -66,12 +66,12 @@
               <div class="card bg-soft-primary text-center">
                 <div class="card-body">
                   <div class="w-75 mx-auto">
-                    <h3>Choose a workflow, or make your own with Front Software</h3>
+                    <h3>Sometimes the strength of motherhood is greater than natural laws</h3>
                   </div>
                 </div>
   
                 <div class="w-75 mx-auto">
-                  <img class="img-fluid rounded-top-2" src="/assets/img/407x472/img7.jpg" alt="Image Description">
+                  <img class="img-fluid rounded-top-2" src="/assets/svg/logos/image (6).png" alt="Image Description">
                 </div>
               </div>
               <!-- End Card -->
@@ -116,12 +116,12 @@
                   <div class="card bg-soft-success text-center">
                     <div class="card-body">
                       <div class="w-75 mx-auto">
-                        <h3>Integrate with the tools and workflow you already use</h3>
+                        <h3>There is no influence so powerful as that of a mother</h3>
                       </div>
                     </div>
       
                     <div class="w-75 mx-auto">
-                      <img class="img-fluid rounded-top-2" src="assets/img/407x472/img8.jpg" alt="Image Description">
+                      <img class="img-fluid rounded-top-2" src="/assets/svg/logos/image (4).png" alt="Image Description">
                     </div>
                   </div>
                   <!-- End Card -->
@@ -176,12 +176,12 @@
               <div class="card bg-soft-primary text-center">
                 <div class="card-body">
                   <div class="w-75 mx-auto">
-                    <h3>Choose a workflow, or make your own with Front Software</h3>
+                    <h3>Motherhood is the greatest thing and the hardest thing</h3>
                   </div>
                 </div>
   
                 <div class="w-75 mx-auto">
-                  <img class="img-fluid rounded-top-2" src="assets/img/407x472/img7.jpg" alt="Image Description">
+                  <img class="img-fluid rounded-top-2" src="/assets/svg/logos/image (7).png" alt="Image Description">
                 </div>
               </div>
               <!-- End Card -->
