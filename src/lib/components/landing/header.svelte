@@ -10,7 +10,7 @@
         <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
             <!-- Default Logo -->
             <a class="navbar-brand" href="/" aria-label="Front">
-                <img class="navbar-brand-logo" src="/assets/svg/logos/logo.svg" alt="Logo">
+                <img class="navbar-brand-logo" src="/assets/svg/logos/logo1.png" alt="Logo">
             </a>
             <!-- End Default Logo -->
 
