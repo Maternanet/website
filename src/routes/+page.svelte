@@ -134,7 +134,7 @@
             <div class="col-lg-5">
                 <!-- Heading -->
                 <div class="mb-5">
-                  <h2>Advanced analytics easy to understand</h2>
+                  <h2>How it works</h2>
                 </div>
                 <!-- End Heading -->
     
@@ -144,8 +144,8 @@
                     <div class="step-content-wrapper">
                       <span class="step-icon step-icon-xs step-icon-soft-primary">1</span>
                       <div class="step-content">
-                        <h4 class="step-title">Industry-leading documentation</h4>
-                        <p><a class="link" href="documentation/index.html">Our documentation</a> and extensive Client libraries contain everything a business needs to build a custom integration in a fraction of the time.</p>
+                        <h4 class="step-title">Register for free</h4>
+                        <p>Simply create an account with us and become a part of our growing community. Your Maternal journey starts here.</p>
                       </div>
                     </div>
                   </li>
@@ -154,15 +154,15 @@
                     <div class="step-content-wrapper">
                       <span class="step-icon step-icon-xs step-icon-soft-primary">2</span>
                       <div class="step-content">
-                        <h4 class="step-title">Support for the developer community</h4>
-                        <p class="mb-0">We actively contribute to open-source projects—giving back to the community through development, patches, and sponsorships.</p>
+                        <h4 class="step-title">Connect to a Healthcare Provider</h4>
+                        <p class="mb-0">Looking for the best maternal care and healthcare providers near your location? We got you covered! With our reliable and efficient services, you can rest assured that relief is never far away.</p>
                       </div>
                     </div>
                   </li>
                 </ul>
                 <!-- End Step -->
     
-                <a class="btn btn-primary btn-transition" href="#">Request demo</a>
+                <a class="btn btn-primary btn-transition" href="#">BECOME A MEMBER</a>
               </div>
             
             <!-- End Col -->
@@ -196,16 +196,19 @@
           <div class="col-md-5 order-md-2">
             <!-- Heading -->
             <div class="mb-5">
-              <h2 class="mb-3">Lightning-fast development with pre-built solutions</h2>
-              <p>Every team has a unique process for shipping software. Use an out-of-the-box workflow, or create one to match the way your team works.</p>
+              <h2 class="mb-3">Quality Maternal Care for Every Woman</h2>
+              <p>Maternanet is designed with your unique needs in mind, from healthcare access to our AI-personalized recommendations and insights.</p>
             </div>
             <!-- End Heading -->
   
             <!-- List Checked -->
             <ul class="list-checked list-checked-soft-bg-primary list-checked-lg">
-              <li class="list-checked-item">Extensive API documentation</li>
-              <li class="list-checked-item">Customizable &amp; open source</li>
-              <li class="list-checked-item">Continiously improved</li>
+              <li class="list-checked-item">Faster and more efficient healthcare access.</li>
+              <li class="list-checked-item">Location-based hospital connections.</li>
+              <li class="list-checked-item">AI-powered Personalized recommendations, Analytics and Insights.</li>
+              <li class="list-checked-item">Secure Patient Data Management.</li>
+              <li class="list-checked-item">Active community of supportive peers.</li>
+              <li class="list-checked-item">Round-the-clock support and emergency services.</li>
             </ul>
             <!-- End List Checked -->
           </div>
@@ -218,8 +221,8 @@
         <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-1 content-space-b-lg-3">
           <!-- Heading -->
           <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <h2>How it works</h2>
-            <p>Quick and easy steps to improve your maternal care journey</p>
+            <h2>Features</h2>
+            <p>Maternanet comes loaded with features essential for your pregnancy journey.</p>
           </div>
           <!-- End Heading -->
   
@@ -239,8 +242,8 @@
   
                     </span>
   
-                    <h3 class="h4">Smart Dashboards</h3>
-                    <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                    <h3 class="h4">Emergency Service Connection</h3>
+                    <p>Get immediate access to emergency services closest to you. Swift and efficient healthcare access, a click away.</p>
                   </div>
                   <!-- End Icon Blocks -->
                 </div>
@@ -256,8 +259,8 @@
   
                     </span>
   
-                    <h4>Control Center</h4>
-                    <p>Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+                    <h4>Personalized Healthcare Recommendations and Insights</h4>
+                    <p>Our AI-based algorithms provide personalized healthcare recommendations and insights to suit your unique needs. Stay informed and make better health decisions.</p>
                   </div>
                   <!-- End Icon Blocks -->
                 </div>
@@ -273,8 +276,8 @@
   
                     </span>
   
-                    <h4>Email Reports</h4>
-                    <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+                    <h4>Appointment Booking & Consultation</h4>
+                    <p>Say goodbye to long queues and stretched waiting periods. With our platform, book appointments and receive consultations from seasoned professionals without stepping out of your home.</p>
                   </div>
                   <!-- End Icon Blocks -->
                 </div>
@@ -290,8 +293,8 @@
   
                     </span>
   
-                    <h4>Forecasting</h4>
-                    <p>Staying focused allows us to turn every project we complete into something we love.</p>
+                    <h4>Safe sharing</h4>
+                    <p>Share your records with people you choose, whether it’s your doctor or your beloved ones</p>
                   </div>
                   <!-- End Icon Blocks -->
                 </div>
