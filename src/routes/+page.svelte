@@ -35,28 +35,24 @@
         <div class="js-swiper-hero-clients swiper text-center swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
           <div class="swiper-wrapper" id="swiper-wrapper-c519a7495dc7807f" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
             <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" style="width: 211.2px; margin-right: 15px;">
-              <img class="avatar avatar-lg avatar-4x3" src="assets/svg/brands/fitbit-dark.svg" alt="Logo">
+              <img class="avatar avatar-lg avatar-4x3" src="/assets/svg/logos/images.jpg" alt="Logo">
             </div>
             <!-- End Slide -->
   
             <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 211.2px; margin-right: 15px;">
-              <img class="avatar avatar-lg avatar-4x3" src="assets/svg/brands/forbes-dark.svg" alt="Logo">
+              <img class="avatar avatar-lg avatar-4x3" src="/assets/svg/logos/image (1).png" alt="Logo">
             </div>
             <!-- End Slide -->
   
             <div class="swiper-slide" role="group" aria-label="3 / 5" style="width: 211.2px; margin-right: 15px;">
-              <img class="avatar avatar-lg avatar-4x3" src="assets/svg/brands/mailchimp-dark.svg" alt="Logo">
+              <img class="avatar avatar-lg avatar-4x3" src="/assets/svg/logos/image (2).png" alt="Logo">
             </div>
             <!-- End Slide -->
   
             <div class="swiper-slide" role="group" aria-label="4 / 5" style="width: 211.2px; margin-right: 15px;">
-              <img class="avatar avatar-lg avatar-4x3" src="assets/svg/brands/layar-dark.svg" alt="Logo">
+              <img class="avatar avatar-lg avatar-4x3" src="/assets/svg/logos/image (3).png" alt="Logo">
             </div>
-            <!-- End Slide -->
-  
-            <div class="swiper-slide" role="group" aria-label="5 / 5" style="width: 211.2px; margin-right: 15px;">
-              <img class="avatar avatar-lg avatar-4x3" src="assets/svg/brands/hubspot-dark.svg" alt="Logo">
-            </div>
+            
             <!-- End Slide -->
           </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
