@@ -16,9 +16,9 @@
           <li><a class="link-sm link-secondary" href="#"> 
             <i class="bx bx-location-plus me-1"/> Chaka Place, Argwings Kodhek Rd, </a>
           </li>
-          <li><a class="link-sm link-secondary" href="tel:1-062-109-9222">
+          <li><a class="link-sm link-secondary" href="tel:254741354060">
             <i class="bx bx-phone me-1">
-            </i> +254 (074) 062-3000</a> 
+            </i> +254 (0) 741 354 060</a> 
           </li>
         </ul>
         <!-- End List -->
