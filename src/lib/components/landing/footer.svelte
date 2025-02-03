@@ -6,7 +6,7 @@
         <div class="mb-5">
           <a class="navbar-brand" href="/" aria-label="Space">
             <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img class="navbar-brand-logo" src="/image/logo.png" alt="Image Description" height="40">
+            <img class="navbar-brand-logo" src="/assets/svg/logos/logo1.png" alt="Image Description" >
           </a>
         </div>
         <!-- End Logo -->
@@ -93,11 +93,11 @@
     <div class="row">
       <div class="col-12 col-sm-9 col-md-8">
         <p class=" mb-0 text-center text-sm-start text-white fs-6">
-          Copyright © 2022 <a
-            href="https://medilyne.com/"
+          Copyright © {new Date().getFullYear()} <a
+            href="/"
             class="copyright-links fw-bold text-white ms-1 text-hover-primary"
           >
-            Medilyne<span class="text-danger">.</span></a
+            Maternanet .</a
           > All Rights Reserved.
         </p>
       </div>

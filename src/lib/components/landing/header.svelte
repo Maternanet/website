@@ -63,7 +63,7 @@
 
                 <!-- Button -->
                 <li class="nav-item">
-                    <a class="btn btn-primary btn-transition" href="#/" target="_blank">Buy now</a>
+                    <a class="btn btn-primary btn-transition" href="/contat" target="_blank">Contact Us</a>
                 </li>
                 <!-- End Button -->
                 </ul>
