@@ -1,11 +1,18 @@
+//define contact details
+interface ContactDetails {
+  name: string
+  email: string
+  message: string
+}
+
 import axios from "axios";
-export default class {
-  public static async sendContact(data: any, cb: Function) {
+export default class ContactService {
+  public static async sendContact(data: ContactDetails): Promise<any> {
     try {
-      var res = await axios.post("/support/contact", data);
-      cb(res.data);
+      const res = await axios.post("/support/contact", data);
+      return res.data;
     } catch (error) {
-      cb({ error: true, msg: "Unable to send form. Please try again later." });
+      return { error: true, msg: "Unable to send form. Please try again later." };
     }
   }
 }
