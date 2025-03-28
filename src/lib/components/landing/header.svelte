@@ -33,21 +33,21 @@
 
                 <!-- Company -->
                 <li class="hs-has-sub-menu nav-item">
-                    <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link  " href="#" >
+                    <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link  " href="/about" >
                         About
                     </a>
                 </li>
                 <!-- End Company -->
 
                 <li class="hs-has-sub-menu nav-item">
-                    <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link  " href="#" >
+                    <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link  " href="/services" >
                         Our Services
                     </a>
                 </li>
                 <!-- End Account -->
 
                 <li class="hs-has-sub-menu nav-item">
-                    <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link  " href="#" >
+                    <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link  " href="/blog" >
                         Blog
                     </a>
                 </li>
