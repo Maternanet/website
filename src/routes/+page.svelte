@@ -8,13 +8,16 @@
                 <span class="text-cap">What we do?</span>
                 <h1 class="display-4 mb-3">Revolutionizing Maternal Healthcare</h1>
                 
-                <p class="lead">Empowering maternal care through cutting-edge technology.</p>
+                <p class="lead">At Maternanet, we are committed to transforming maternal healthcare across Africa 
+                by leveraging cutting-edge AI technology, digital tools and community collaborations. Our platform offers personalized care plans, real-time connections to healthcare providers,
+                 and a supportive community for mothers. 
+                </p>
               </div>
               <!-- End Heading -->
   
               <div class="d-grid d-sm-flex gap-3">
-                <a class="btn btn-primary btn-transition" href="#caseStudies">Request Demo </a>
-                <a class="btn btn-link" href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+                <a class="btn btn-primary btn-transition" href="#caseStudies">Join Our Community </a>
+                <a class="btn btn-link" href="#">Schedule a Free Consultation<i class="bi-chevron-right small ms-1"></i></a>
               </div>
             </div>
             <!-- End Col -->

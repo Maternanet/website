@@ -1,282 +1,162 @@
-<main id="content" role="main">
-    <!-- Gallery -->
-    <div class="container content-space-t-3 content-space-t-lg-5">
-      <div class="w-lg-75 text-center mx-lg-auto">
-        <!-- Heading -->
-        <div class="mb-5 mb-md-10">
-          <h1 class="display-4">About Us</h1>
-          <p class="lead">Front is a web company that builds websites. Businesses of every size—from new startups to public companies—use our theme to build and manage their businesses online.</p>
-        </div>
-        <!-- End Heading -->
+<!-- /home/aketch/Desktop/website/website/src/routes/about/+page.svelte -->
+<script>
+  // No specific JavaScript logic needed for this static content page yet.
+</script>
+
+<section class="section-padding">
+  <div class="container">
+
+    <!-- Page Title -->
+    <div class="row mt-5 mb-5">
+      <div class="col-md-12 text-center">
+        <h1 class="heading-title">About Us</h1>
       </div>
+    </div> 
 
-      <div class="row gx-3">
-        <div class="col mb-3">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img17.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-3 d-none d-md-block mb-3">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img6.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col mb-3">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img14.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="w-100"></div>
-
-        <div class="col mb-3 mb-md-0">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img25.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-4 d-none d-md-block mb-3 mb-md-0">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img16.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img12.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
+    <!-- Vision Section -->
+    <div class="row content-section mb-5"> 
+      <div class="col-md-10 offset-md-1"> 
+        <h2 class="mb-3">Our Vision</h2> 
+        <p>
+          We envision a world where every mother can access timely, personalized, and quality
+          maternal care, regardless of geography or resources. We aim to harness AI, digital tools, and
+          community collaborations to reduce maternal mortality from 533 to 100 per 100,000 live births,
+          transforming maternal health outcomes across Africa and beyond.
+        </p>
       </div>
-      <!-- End Row -->
     </div>
-    <!-- End Gallery -->
 
-    <!-- Feature Stats -->
-    <div class="container content-space-2 content-space-lg-3">
-      <div class="row justify-content-lg-center">
-        <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-          <div class="text-center">
-            <h2 class="display-4">7</h2>
-            <p class="small">years in business</p>
+    <!-- Approach Section -->
+    <div class="row content-section mb-5"> 
+      <div class="col-md-10 offset-md-1">
+        <h2 class="mb-4">Our Approach</h2> 
+        <div class="row">
+          <!-- Item 1: Community-Powered Design -->
+          <div class="col-md-4 mb-3"> <!-- Use columns for layout -->
+            <h3 class="h5">Community-Powered Design</h3> 
+            <p>
+              We co-create solutions with mothers, healthcare providers, and community leaders,
+              ensuring our interventions address real-world needs and are context-specific.
+            </p>
+          </div>
+          <!-- Item 2: AI-First Innovation -->
+          <div class="col-md-4 mb-3">
+            <h3 class="h5">AI-First Innovation</h3>
+            <p>
+              By embedding predictive analytics and data-driven insights into every touchpoint, we
+              deliver proactive care recommendations, unique in maternal health.
+            </p>
+          </div>
+          <!-- Item 3: Multi-channel Accessibility -->
+          <div class="col-md-4 mb-3">
+            <h3 class="h5">Multi-channel Accessibility</h3>
+            <p>
+              Our mobile, web, and SMS-based services bridge connectivity gaps, providing
+              uninterrupted support even in low-bandwidth areas.
+            </p>
           </div>
         </div>
-        <!-- End Col -->
-
-        <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-          <div class="text-center">
-            <h2 class="display-4">3,5k+</h2>
-            <p class="small">copies sold</p>
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-4 col-lg-3">
-          <div class="text-center">
-            <h2 class="display-4">85%</h2>
-            <p class="small">happy customers</p>
-          </div>
-        </div>
-        <!-- End Col -->
       </div>
-      <!-- End Row -->
     </div>
-    <!-- End Feature Stats -->
 
-    <div class="border-top mx-auto" style="max-width: 25rem;"></div>
-
-    <!-- Info -->
-    <div class="container content-space-2 content-space-lg-3">
-      <div class="row justify-content-lg-between">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h2>Tools should adapt to the user, not the other way around.</h2>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-lg-6">
-          <p>Since 2007, we have helped 25 companies launch over 1k incredible products. We believe the best digital solutions are built at the intersection of business strategy, available technology, and real user's needs.</p>
-          <p>Things can get really complex, really quickly, and a pragmatic, synthetic and clear vision is essential to be able to create something that, after all, is meant to be used. Emotions also have a big role to play and developing clear and beautiful aesthetics is of the utmost importance to create a pleasant environment in which the user actually enjoys the time spent in it. In the end, we're all suckers for beautiful things that just work</p>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
+    <!-- Why Maternanet? Section -->
+    <!-- Corrected: Changed comment syntax -->
+    <div class="row content-section mb-5"> <!-- Added margin-bottom -->
+       <div class="col-md-10 offset-md-1">
+        <h2 class="mb-4">Why Maternanet?</h2> <!-- Added margin-bottom -->
+         <div class="row">
+           <!-- Item 1: Scalable Architecture -->
+           <div class="col-md-4 mb-3">
+             <h3 class="h5">Scalable Architecture</h3>
+             <p>
+               Built on a secure, distributed system with CI/CD pipelines for rapid iteration and robust
+               performance under load.
+             </p>
+           </div>
+           <!-- Item 2: Proven Impact -->
+           <div class="col-md-4 mb-3">
+             <h3 class="h5">Proven Impact</h3>
+             <p>
+               Pilot programs have achieved a 21% increase in antenatal attendance and a 15% drop
+               in missed appointments.
+             </p>
+           </div>
+           <!-- Item 3: Holistic Care Model -->
+           <div class="col-md-4 mb-3">
+             <h3 class="h5">Holistic Care Model</h3>
+             <p>
+               From enrollment to postpartum support, our integrated care pathways ensure continuity
+               and quality at every stage.
+             </p>
+           </div>
+         </div>
+       </div>
     </div>
-    <!-- End Info -->
 
-    <div class="border-top mx-auto" style="max-width: 25rem;"></div>
-
-    <!-- Team -->
-    <div class="container content-space-2 content-space-lg-3">
-      <!-- Heading -->
-      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-        <span class="text-cap">Our team</span>
-        <h2>Creative minds</h2>
+    <!-- Values Section -->
+    <div class="row content-section mb-5"> 
+      <div class="col-md-10 offset-md-1">
+        <h2 class="mb-4">Our Values</h2> 
+        <p class="text-center lead mb-4"> 
+          <strong>Bold. Creative. Kind.</strong>
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-3"> 
+            <strong>Trust & Transparency:</strong> We operate with openness, ensuring clarity in our processes and communications with users and partners. 
+          </li>
+          <li class="mb-3">
+            <strong>Empathy and Respect:</strong> Every feature is carefully designed with deep respect for cultural contexts and individual user needs.
+          </li>
+          <li class="mb-3">
+            <strong>Collaboration and Inclusion:</strong> We partner across sectors—governments, NGOs, tech firms—to drive collective impact and ensure diverse voices shape our solutions.
+          </li>
+        </ul>
       </div>
-      <!-- End Heading -->
-
-      <div class="row gx-3 mb-5">
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img7.jpg" alt="Image Description">
-              </div>
-
-              <span class="card-subtitle">Founder / CEO</span>
-              <h4 class="card-title">Christina Kray</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
-          </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
-              </div>
-
-              <span class="card-subtitle">Project Manager</span>
-              <h4 class="card-title">Jeff Fisher</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
-          </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img10.jpg" alt="Image Description">
-              </div>
-
-              <span class="card-subtitle">Product Designer</span>
-              <h4 class="card-title">Amy Forren</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
-          </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img5.jpg" alt="Image Description">
-              </div>
-
-              <span class="card-subtitle">Support Consultant</span>
-              <h4 class="card-title">Philip Williams</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
-          </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-
-      <!-- Card Info -->
-      <div class="text-center">
-        <div class="card card-info-link card-sm">
-          <div class="card-body">
-            Want to work with us? <a class="card-link ms-2" href="./page-hire-us.html">We are hiring <span class="bi-chevron-right small ms-1"></span></a>
-          </div>
-        </div>
-      </div>
-      <!-- End Card Info -->
     </div>
-    <!-- End Team -->
-</main>
+
+    <!-- Call to Action Section -->
+    <!-- Corrected: Changed comment syntax -->
+    <div class="row cta-section text-center py-5 bg-light rounded"> 
+      <div class="col-md-8 offset-md-2">
+        <h2 class="mb-3">Join Us</h2>
+        <p class="lead mb-4">
+          Be part of the movement redefining maternal healthcare for a brighter future.
+        </p>
+         <a href="/learn-more" class="btn btn-primary btn-lg mx-2">Learn More</a>
+         <a href="/partner" class="btn btn-secondary btn-lg mx-2">Partner with Us</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Add component-specific styles here if needed, */
+  /* but prefer global styles for consistency. */
+
+  section.section-padding {
+    padding-top: 6rem;
+
+  }
+ 
+  h1, h2, h3 {
+    font-weight: 600; 
+  }
+
+
+  .content-section {
+     /* margin-bottom: 4rem; 
+  }
+
+ 
+  .cta-section {
+    /* background-color: #f8f9fa; 
+    /* border-radius: 8px; 
+  }
+
+
+  ul li strong {
+      display: block; /* Makes the bold text appear on its own line or easier to style */
+      margin-bottom: 0.25rem;
+  }
+</style>
