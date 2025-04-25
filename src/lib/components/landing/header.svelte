@@ -37,7 +37,8 @@
                         <!-- End Company -->
 
                         <li class="hs-has-sub-menu nav-item">
-                            <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link" href="../facility/services.svelte">
+                            <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link" href="/services.svelte">
+                            
                                 Our Services
                             </a>
                         </li>
