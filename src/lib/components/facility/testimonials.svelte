@@ -3,7 +3,7 @@
     import { onMount, onDestroy } from "svelte";
 
     let current = 0;
-    const intervalTime = 5000;
+    const intervalTime = 3000;
     let interval: number;
 
     const testimonials = [
@@ -57,19 +57,19 @@
 </script>
 
 <svelte:head>
-    <title>Testimonials | Maternanet</title>
+    <title>Testimonials</title>
 </svelte:head>
 
 <section class="carousel-section">
     <h1>What People Are Saying</h1>
     <p class="intro">
-        Real stories from moms and professionals who use Maternanet every day.
+        Stories from moms and professionals who use Maternanet every day.
     </p>
 
-    <div 
-    class="carousel"
-    on:mouseenter={() => clearInterval(interval)}
-  on:mouseleave={resetInterval}
+    <div
+        class="carousel"
+        on:mouseenter={() => clearInterval(interval)}
+        on:mouseleave={resetInterval}
     >
         <button on:click={prev} class="nav left">&larr;</button>
 
