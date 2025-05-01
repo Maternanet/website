@@ -1,133 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="" />
-      <!-- Required Meta Tags Always Come First -->
+    	<!-- Meta -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Title -->
-  <title>Corporate | Front - Multipurpose Responsive Template</title>
-
-  <!-- Favicon -->
-
-  <link rel="shortcut icon" href="/static/maternanetLogo">
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
-
-  <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="/assets/css/vendor.min.css">
-  <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/assets/vendor/aos/dist/aos.css">
-
-  <!-- CSS Front Template -->
-  <link rel="stylesheet" href="/assets/css/theme.minc619.css?v=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <meta name="keywords" >
+    <meta name="author" >
+    <!-- Page Title -->
+      <title> Maternanet </title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&amp;display=swap" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="/css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="/css/all.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="/css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="/css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="/css/custom.css" rel="stylesheet" media="screen">
 
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">%sveltekit.body%</div>
 
-      <!-- JS Implementing Plugins -->
-    <script src="/assets/js/vendor.min.js"></script>
-
-    <!-- JS Front -->
-    <script src="/assets/js/theme.min.js"></script>
-
-    <!-- JS Plugins Init. -->
-    <script>
-      (function() {
-        // INITIALIZATION OF HEADER
-        // =======================================================
-        new HSHeader('#header').init()
-
-
-        // INITIALIZATION OF MEGA MENU
-        // =======================================================
-        new HSMegaMenu('.js-mega-menu', {
-            desktop: {
-              position: 'left'
-            }
-          })
-
-
-        // INITIALIZATION OF SHOW ANIMATIONS
-        // =======================================================
-        new HSShowAnimation('.js-animation-link')
-
-
-        // INITIALIZATION OF BOOTSTRAP VALIDATION
-        // =======================================================
-        HSBsValidation.init('.js-validate', {
-          onSubmit: data => {
-            data.event.preventDefault()
-            alert('Submited')
-          }
-        })
-
-
-        // INITIALIZATION OF BOOTSTRAP DROPDOWN
-        // =======================================================
-        HSBsDropdown.init()
-
-
-        // INITIALIZATION OF GO TO
-        // =======================================================
-        new HSGoTo('.js-go-to')
-
-
-        // INITIALIZATION OF AOS
-        // =======================================================
-        AOS.init({
-          duration: 650,
-          once: true
-        });
-
-
-        // INITIALIZATION OF TEXT ANIMATION (TYPING)
-        // =======================================================
-        HSCore.components.HSTyped.init('.js-typedjs')
-
-
-        // INITIALIZATION OF SWIPER
-        // =======================================================
-        var sliderThumbs = new Swiper('.js-swiper-thumbs', {
-          watchSlidesVisibility: true,
-          watchSlidesProgress: true,
-          history: false,
-          breakpoints: {
-            480: {
-              slidesPerView: 2,
-              spaceBetween: 15,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
-          },
-          on: {
-            'afterInit': function (swiper) {
-              swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
-              .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
-            }
-          }
-        });
-
-        var sliderMain = new Swiper('.js-swiper-main', {
-          effect: 'fade',
-          autoplay: true,
-          loop: true,
-          thumbs: {
-            swiper: sliderThumbs
-          }
-        })
-      })()
-    </script>
+    
+    <!-- Jquery Library File -->
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="/js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="/js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="/js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="/js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="/js/gsap.min.js"></script>
+    <script src="/js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="/js/SplitText.js"></script>
+    <script src="/js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="/js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="/js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="/js/function.js"></script>
   </body>
 
 </html>

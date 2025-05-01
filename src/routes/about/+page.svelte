@@ -1,282 +1,200 @@
-<main id="content" role="main">
-    <!-- Gallery -->
-    <div class="container content-space-t-3 content-space-t-lg-5">
-      <div class="w-lg-75 text-center mx-lg-auto">
-        <!-- Heading -->
-        <div class="mb-5 mb-md-10">
-          <h1 class="display-4">About Us</h1>
-          <p class="lead">Front is a web company that builds websites. Businesses of every size—from new startups to public companies—use our theme to build and manage their businesses online.</p>
+<!-- Page Header Start -->
+<div class="page-header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <!-- Page Header Box Start -->
+        <div class="page-header-box">
+          <h1 class="text-anime-style-3" data-cursor="-opaque">About Us</h1>
         </div>
-        <!-- End Heading -->
+        <!-- Page Header Box End -->
       </div>
-
-      <div class="row gx-3">
-        <div class="col mb-3">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img17.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-3 d-none d-md-block mb-3">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img6.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col mb-3">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img14.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="w-100"></div>
-
-        <div class="col mb-3 mb-md-0">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img25.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-4 d-none d-md-block mb-3 mb-md-0">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img16.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col">
-          <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img12.jpg); height: 15rem;"></div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
     </div>
-    <!-- End Gallery -->
+  </div>
+</div>
+<!-- Page Header End -->
 
-    <!-- Feature Stats -->
-    <div class="container content-space-2 content-space-lg-3">
-      <div class="row justify-content-lg-center">
-        <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-          <div class="text-center">
-            <h2 class="display-4">7</h2>
-            <p class="small">years in business</p>
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-          <div class="text-center">
-            <h2 class="display-4">3,5k+</h2>
-            <p class="small">copies sold</p>
-          </div>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-4 col-lg-3">
-          <div class="text-center">
-            <h2 class="display-4">85%</h2>
-            <p class="small">happy customers</p>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-    </div>
-    <!-- End Feature Stats -->
-
-    <div class="border-top mx-auto" style="max-width: 25rem;"></div>
-
-    <!-- Info -->
-    <div class="container content-space-2 content-space-lg-3">
-      <div class="row justify-content-lg-between">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <h2>Tools should adapt to the user, not the other way around.</h2>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-lg-6">
-          <p>Since 2007, we have helped 25 companies launch over 1k incredible products. We believe the best digital solutions are built at the intersection of business strategy, available technology, and real user's needs.</p>
-          <p>Things can get really complex, really quickly, and a pragmatic, synthetic and clear vision is essential to be able to create something that, after all, is meant to be used. Emotions also have a big role to play and developing clear and beautiful aesthetics is of the utmost importance to create a pleasant environment in which the user actually enjoys the time spent in it. In the end, we're all suckers for beautiful things that just work</p>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-    </div>
-    <!-- End Info -->
-
-    <div class="border-top mx-auto" style="max-width: 25rem;"></div>
-
-    <!-- Team -->
-    <div class="container content-space-2 content-space-lg-3">
-      <!-- Heading -->
-      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-        <span class="text-cap">Our team</span>
-        <h2>Creative minds</h2>
-      </div>
-      <!-- End Heading -->
-
-      <div class="row gx-3 mb-5">
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img7.jpg" alt="Image Description">
+<!-- About Us Section Start -->
+<div class="about-us page-about-us">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <!-- About Image Start -->
+              <div class="about-image">
+                  <div class="about-img">
+                      <figure class="image-anime">
+                          <img src="images/age (7).jpeg" alt="">
+                      </figure>
+                  </div>
               </div>
-
-              <span class="card-subtitle">Founder / CEO</span>
-              <h4 class="card-title">Christina Kray</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
+              <!-- About Image End -->
           </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
-              </div>
-
-              <span class="card-subtitle">Project Manager</span>
-              <h4 class="card-title">Jeff Fisher</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
+          <div class="col-lg-6">
+              <!-- About Us Content Start -->
+               <div class="about-us-content">
+                  <!-- Section Title Start -->
+                  <div class="section-title">
+                      <h3 class="wow fadeInUp">about us</h3>
+                      <h2 class="text-anime-style-3" data-cursor="-opaque">Who We Are</h2>
+                      <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet is a pioneering health-tech startup based in Nairobi, Kenya, dedicated to transforming maternal healthcare through innovation, accessibility, and community-driven solutions. Founded by Owino Aketch, a visionary with deep experience in healthcare systems, Maternanet was born out of a personal mission to reduce maternal mortality and improve healthcare access for expectant mothers across Africa.</p>
+                  </div>
+                  <!-- Section Title End -->
+               </div>
+              <!-- About Us Content End -->
           </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img10.jpg" alt="Image Description">
-              </div>
-
-              <span class="card-subtitle">Product Designer</span>
-              <h4 class="card-title">Amy Forren</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
-          </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <!-- Card -->
-          <div class="card card-transition h-100">
-            <div class="card-body">
-              <div class="avatar avatar-lg avatar-circle mb-4">
-                <img class="avatar-img" src="./assets/img/160x160/img5.jpg" alt="Image Description">
-              </div>
-
-              <span class="card-subtitle">Support Consultant</span>
-              <h4 class="card-title">Philip Williams</h4>
-              <p class="card-text">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-            </div>
-
-            <div class="card-footer pt-0">
-              <!-- Socials -->
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-google"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn btn-outline-primary btn-xs btn-icon rounded" href="#">
-                    <i class="bi-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Socials -->
-            </div>
-          </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
       </div>
-      <!-- End Row -->
+  </div>
+</div>
+<!-- About Us Section End -->
 
-      <!-- Card Info -->
-      <div class="text-center">
-        <div class="card card-info-link card-sm">
-          <div class="card-body">
-            Want to work with us? <a class="card-link ms-2" href="./page-hire-us.html">We are hiring <span class="bi-chevron-right small ms-1"></span></a>
+<!-- About Us Section Start -->
+<div class="about-us page-about-us">
+  <div class="container">
+      <div class="row align-items-center">
+          
+          <div class="col-lg-6">
+              <!-- About Us Content Start -->
+               <div class="about-us-content">
+                  <!-- Section Title Start -->
+                  <div class="section-title">
+                      <h3 class="wow fadeInUp">Our Story</h3>
+                      <h2 class="text-anime-style-3" data-cursor="-opaque">From Personal Struggle to Digital Solution</h2>
+                      <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet’s journey began when Owino witnessed the challenges his sister faced during pregnancy in Kayole, Nairobi—long clinic queues, limited access to specialists, and a lack of reliable information. Determined to change this, he leveraged his expertise in healthcare technology to build a solution that empowers mothers with:</p>
+                  </div>
+                  <!-- Section Title End -->
+                   <!-- About Content Body Start -->
+                   <div class="about-content-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <!-- About Content List Start -->
+                            <div class="about-content-list wow fadeInUp" data-wow-delay="0.5s">
+                                <ul>
+                                    <li>Instant access to doctors</li>
+                                    <li>Remote consultations </li>
+                                    <li>AI-powered personalized care</li>
+                                    <li>A trusted community </li>
+                                </ul>
+                            </div>
+                            <!-- About Content List End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- About Content Body End -->
+               </div>
+              <!-- About Us Content End -->
           </div>
+          <div class="col-lg-6">
+            <!-- About Image Start -->
+            <div class="about-image">
+                <div class="about-img">
+                    <figure class="image-anime">
+                        <img src="images/age (8).jpeg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <!-- About Image End -->
         </div>
       </div>
-      <!-- End Card Info -->
-    </div>
-    <!-- End Team -->
-</main>
+  </div>
+</div>
+<!-- About Us Section End -->
+
+<!-- Vision Mission Section Start -->
+<div class="vision-mission">
+  <div class="container">
+      <div class="row section-row">
+          <div class="col-lg-12">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                  <h3 class="wow fadeInUp">vision mission</h3>
+                  <h2 class="text-anime-style-3" data-cursor="-opaque">Building a Healthier Future for African Mothers</h2>
+              </div>
+              <!-- Section Title End -->
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-12">
+              <!-- Sidebar Our Vision Mission Nav start -->
+              <div class="our-projects-nav wow fadeInUp" data-wow-delay="0.25s">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-selected="true">our vision</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-selected="false">our mission</button>
+                    </li>
+                </ul>
+              </div>
+              <!-- Sidebar Our Vision Mission Nav End -->
+
+              <!-- Vision Mission Box Start -->
+              <div class="vision-mission-box tab-content" id="myTabContent">
+                  <!-- Our Vision Item Start -->
+                  <div class="our-vision-item tab-pane fade show active" id="vision" role="tabpanel">
+                      <div class="row align-items-center">
+                          <div class="col-lg-6">
+                              <!-- Vision Mission Content Start -->
+                              <div class="vision-mission-content">
+                                  <!-- Section Title Start -->
+                                  <div class="section-title">
+                                      <h3 class="wow fadeInUp">our vision</h3>
+                                      <h2 class="text-anime-style-3" data-cursor="-opaque">Highlights tech and community as drivers of change</h2>
+                                      <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet envisions an Africa where every pregnancy is safe, empowered, and supported—where no mother dies from preventable complications simply because she couldn’t reach a doctor in time.</p>
+                                      <p class="wow fadeInUp" data-wow-delay="0.25s">We see a future where technology bridges healthcare gaps, connecting rural mothers to urban specialists, AI predicts risks before emergencies strike, and communities unite to uplift mothers at every step of their journey. Our goal is to transform maternal healthcare from a crisis-driven system to a proactive, equitable, and compassionate ecosystem that saves lives and nurtures generations.</p>
+                                  </div>
+                                  <!-- Section Title End -->
+                              </div>
+                              <!-- Vision Mission Content End -->
+                          </div>
+
+                          <div class="col-lg-6">
+                              <!-- Vision Image Start -->
+                              <div class="vision-image">
+                                  <figure class="image-anime">
+                                      <img src="images/age (3).jpg" alt="">
+                                  </figure>
+                              </div>
+                              <!-- Vision Image End -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Our Vision Item End -->
+
+                  <!-- Our Vision Item Start -->
+                  <div class="our-vision-item tab-pane fade" id="mission" role="tabpanel">
+                      <div class="row align-items-center">
+                          <div class="col-lg-6">
+                              <!-- Vision Mission Content Start -->
+                              <div class="vision-mission-content">
+                                  <!-- Section Title Start -->
+                                  <div class="section-title">
+                                      <h3>our mission</h3>
+                                      <h2 data-cursor="-opaque">Emphasizes accessibility for all mothers</h2>
+                                      <p>Maternanet is on a mission to revolutionize maternal healthcare in Africa by providing innovative, accessible, and compassionate solutions. Through our mobile platform, we empower mothers with same-day doctor appointments, AI-powered health guidance, emergency telemedicine, and a supportive community network.</p>
+                                      <p>We partner with clinics, train community health workers, and leverage data-driven insights to ensure every woman—regardless of location or income—receives the care she deserves. By merging cutting-edge technology with human-centered design, we’re making safe motherhood a reality, one mother at a time.</p>
+                                  </div>
+                                  <!-- Section Title End -->
+                              </div>
+                              <!-- Vision Mission Content End -->
+                          </div>
+
+                          <div class="col-lg-6">
+                              <!-- Vision Image Start -->
+                              <div class="vision-image">
+                                  <figure class="image-anime">
+                                      <img src="images/age (9).jpeg" alt="">
+                                  </figure>
+                              </div>
+                              <!-- Vision Image End -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Our Vision Item End -->
+              </div>
+              <!-- Vision Mission Box End -->                
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Vision Mission Section End -->

@@ -1,125 +1,160 @@
-<main id="content" role="main">
-    <!-- Contact Form -->
-    <div class="container content-space-t-3 content-space-t-lg-5 content-space-b-2">
-      <div class="row">
-        <div class="col-lg-6 mb-9 mb-lg-0">
-          <!-- Heading -->
-          <div class="mb-5">
-            <h1>Get in touch</h1>
-            <p>We'd love to talk about how we can help you.</p>
-          </div>
-          <!-- End Heading -->
+<!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12">
+					<!-- Page Header Box Start -->
+					<div class="page-header-box">
+						<h1 class="text-anime-style-3" data-cursor="-opaque">Contact Us</h1>
+					</div>
+					<!-- Page Header Box End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
 
-          <!-- Leaflet -->
-          <div class="overflow-hidden">
-            <div id="map" class="leaflet mb-5 leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/13/1319/3176?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(231px, -24px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/13/1319/3177?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(231px, 232px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/13/1318/3176?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-25px, -24px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/13/1320/3176?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(487px, -24px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/13/1318/3177?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-25px, 232px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/13/1320/3177?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(487px, 232px, 0px); opacity: 1;"></div></div><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/13/1319/3176?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(231px, -24px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/13/1319/3177?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(231px, 232px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/13/1318/3176?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-25px, -24px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/13/1320/3176?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(487px, -24px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/13/1318/3177?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(-25px, 232px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/13/1320/3177?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile" style="width: 256px; height: 256px; transform: translate3d(487px, 232px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="./assets/svg/components/map-pin.svg" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker" tabindex="0" role="button" style="margin-left: -25px; margin-top: -22.5px; width: 50px; height: 45px; transform: translate3d(273px, 240px, 0px); z-index: 240;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(337706px, 813320px, 0px) scale(4096);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a></div></div></div></div>
-          </div>
-          <!-- End Leaflet -->
+    <!-- Page Contact Us Start -->
+    <div class="page-contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <!-- Contact Info Box Start -->
+                    <div class="contact-info-box page-contact-info-box">
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.25s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="images/icon-phone.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
 
-          <div class="row">
-            <div class="col-sm-6">
-              <h5 class="mb-1">Call us:</h5>
-              <p>+254 (0) 741 354 060</p>
+                            <!-- Contact Info Content Start -->
+                            <div class="contact-info-content">
+                                <h3>contact details</h3>
+                                <p>+254 741 354 060</p>
+                            </div>
+                            <!-- Contact Info Content End -->
+                        </div>
+                        <!-- Contact Info Item End -->
+
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.5s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="images/icon-location.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Contact Info Content Start -->
+                            <div class="contact-info-content">
+                                <h3>address</h3>
+                                <p>00100 - 30197, University Way, Nairobi, Kenya</p>
+                            </div>
+                            <!-- Contact Info Content End -->
+                        </div>
+                        <!-- Contact Info Item End -->
+
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.75s">
+                            <!-- Icon Box Start -->
+                            <div class="icon-box">
+                                <img src="images/icon-mail.svg" alt="">
+                            </div>
+                            <!-- Icon Box End -->
+
+                            <!-- Contact Info Content Start -->
+                            <div class="contact-info-content">
+                                <h3>email us</h3>
+                                <p>info@maternanet.com</p>
+                            </div>
+                            <!-- Contact Info Content End -->
+                        </div>
+                        <!-- Contact Info Item End -->
+
+                        <!-- Contact Info Social List Start -->
+                        <div class="contact-info-social-list">
+                            <span>follow us: </span>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>                                   
+                            </ul>
+                        </div>
+                        <!-- Contact Info Social List End -->
+                    </div>
+                    <!-- Contact Info Box End -->
+                </div>
+
+                <div class="col-lg-7">
+                    <!-- Contact Form Start -->
+                    <div class="contact-us-form">
+
+                        <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="row">
+                                <div class="form-group col-md-12 mb-4">
+                                    <label>full name</label>
+                                    <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter Your Name" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>your email</label>
+                                    <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-6 mb-4">
+                                    <label>phone number</label>
+                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Your Number" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-12 mb-4">
+                                    <label>message</label>
+                                    <textarea name="message" class="form-control" id="message" rows="7" placeholder="write Message..." required></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="contact-form-btn">
+                                        <button type="submit" class="btn-default">Send</button>
+                                        <div id="msgSubmit" class="h3 hidden"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contact Form End -->
+                </div>
             </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6">
-              <h5 class="mb-1">Email us:</h5>
-              <p>info@maternanet.com</p>
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6">
-              <h5 class="mb-1">Address:</h5>
-              <p>153 Williamson Plaza, Maggieberg</p>
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
         </div>
-        <!-- End Col -->
-
-        <div class="col-lg-6">
-          <div class="ps-lg-5">
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header border-bottom text-center">
-                <h3 class="card-header-title">General inquiries</h3>
-              </div>
-
-              <div class="card-body">
-                <!-- Form -->
-                <form>
-                  <div class="row gx-3">
-                    <div class="col-sm-6">
-                      <!-- Form -->
-                      <div class="mb-3">
-                        <label class="form-label" for="hireUsFormFirstName">First name</label>
-                        <input type="text" class="form-control form-control-lg" name="hireUsFormNameFirstName" id="hireUsFormFirstName" placeholder="First name" aria-label="First name">
-                      </div>
-                      <!-- End Form -->
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col-sm-6">
-                      <!-- Form -->
-                      <div class="mb-3">
-                        <label class="form-label" for="hireUsFormLasttName">Last name</label>
-                        <input type="text" class="form-control form-control-lg" name="hireUsFormNameLastName" id="hireUsFormLasttName" placeholder="Last name" aria-label="Last name">
-                      </div>
-                      <!-- End Form -->
-                    </div>
-                    <!-- End Col -->
-                  </div>
-                  <!-- End Row -->
-
-                  <div class="row gx-3">
-                    <div class="col-sm-6">
-                      <!-- Form -->
-                      <div class="mb-3">
-                        <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
-                        <input type="email" class="form-control form-control-lg" name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail" placeholder="email@site.com" aria-label="email@site.com">
-                      </div>
-                      <!-- End Form -->
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col-sm-6">
-                      <!-- Form -->
-                      <div class="mb-3">
-                        <label class="form-label" for="hireUsFormPhone">Phone <span class="form-label-secondary">(Optional)</span></label>
-                        <input type="text" class="form-control form-control-lg" name="hireUsFormNamePhone" id="hireUsFormPhone" placeholder="+x(xxx)xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx">
-                      </div>
-                      <!-- End Form -->
-                    </div>
-                    <!-- End Col -->
-                  </div>
-                  <!-- End Row -->
-
-                  <!-- Form -->
-                  <div class="mb-3">
-                    <label class="form-label" for="hireUsFormDetails">Details</label>
-                    <textarea class="form-control form-control-lg" name="hireUsFormNameDetails" id="hireUsFormDetails" placeholder="Tell us about your ..." aria-label="Tell us about your ..." rows="4"></textarea>
-                  </div>
-                  <!-- End Form -->
-
-                  <div class="d-grid">
-                    <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
-                  </div>
-
-                  <div class="text-center">
-                    <p class="form-text">We'll get back to you in 1-2 business days.</p>
-                  </div>
-                </form>
-                <!-- End Form -->
-              </div>
-            </div>
-            <!-- End Card -->
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
     </div>
-    <!-- End Contact Form -->
-  </main>
+    <!-- Page Contact Us End -->
+
+    <!-- Google Map starts -->
+    <div class="google-map">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Location</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Google Map Iframe Start -->
+                    <div class="google-map-iframe">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.820919689199!2d36.813849273647136!3d-1.2811646356177835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d2e51e23e1%3A0x3540e8c20460e444!2s100%20University%20Wy%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1746031348525!5m2!1sen!2ske" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- Google Map Iframe End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Map Ends -->
