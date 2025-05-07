@@ -376,7 +376,7 @@
               <div class="section-title">
                   <h3 class="wow fadeInUp">testimonials</h3>
                   <h2 class="text-anime-style-3" data-cursor="-opaque">Listen from our happy patients</h2>
-                  <p class="wow fadeInUp" data-wow-delay="0.25s">The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments. With dental practices throughout the world.</p>
+                  <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet works hand-in-hand with community health workers, clinics, and mothers themselves to redesign maternal care from the ground up across Africa's hardest-hit regions.</p>
               </div>
               <!-- Section Title End -->
           </div>
@@ -396,7 +396,7 @@
                             <img src="images/icon-quote1.svg" alt="">
                         </div>
                         <div class="testimonial-content">
-                            <p>I find it hard to afford all the prenatal appointments and tests, especially without insurance. It’s stressful not knowing if that could affect my well-being and that of my baby</p>
+                            <p>When I found out I was pregnant, I didn’t know where to turn. Maternanet gave me access to advice and check-up reminders without judgment. It helped me understand what was happening to my body and what to expect.</p>
                         </div>
                     </div>
                     <div class="testimonial-body">           

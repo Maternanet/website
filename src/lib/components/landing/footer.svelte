@@ -35,7 +35,7 @@
 
                   <!-- About Footer Content Start -->
                   <div class="about-footer-content">
-                      <p>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments.</p>
+                      <p>Maternanet Ltd, a Nairobi-based health-tech social enterprise, uses AI, digital tools, and community partnerships to reduce maternal mortality—from 533 to 100 per 100,000 live births—transforming maternal health across Africa and beyond.</p>
                   </div>
                   <!-- Footer Social Links Start -->
                   <div class="footer-social-links">
