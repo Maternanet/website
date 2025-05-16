@@ -1,3 +1,7 @@
+<script>
+    import Testimonial from '$lib/components/facility/testimonials.svelte'
+</script>
+
 <!-- Hero Section Start -->
 <div class="hero">
   <div class="container">
@@ -368,104 +372,5 @@
 <!-- Our Process Section End -->
 
 <!-- Our Testimonial Section Start -->
-<div class="our-testimonials">
-  <div class="container">
-      <div class="row section-row">
-          <div class="col-lg-12">
-              <!-- Section Title Start -->
-              <div class="section-title">
-                  <h3 class="wow fadeInUp">testimonials</h3>
-                  <h2 class="text-anime-style-3" data-cursor="-opaque">Listen from our happy patients</h2>
-                  <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet works hand-in-hand with community health workers, clinics, and mothers themselves to redesign maternal care from the ground up across Africa's hardest-hit regions.</p>
-              </div>
-              <!-- Section Title End -->
-          </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- Testimonial Slider Start -->
-          <div class="testimonial-slider">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <!-- Testimonial Slide Start -->
-                <div class="swiper-slide">
-                  <div class="testimonial-item">	
-                    <div class="testimonial-header">
-                        <div class="testimonial-quote">
-                            <img src="images/icon-quote1.svg" alt="">
-                        </div>
-                        <div class="testimonial-content">
-                            <p>When I found out I was pregnant, I didn’t know where to turn. Maternanet gave me access to advice and check-up reminders without judgment. It helped me understand what was happening to my body and what to expect.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-body">           
-                        <div class="author-content">
-                            <h3>Lucy Mwangi</h3>
-                            <p>Subsistence Farmer, Ngomongo</p>
-                        </div>
-                    </div>													
-                  </div>
-                </div>
-                <!-- Testimonial Slide End -->
-
-                <!-- Testimonial Slide Start -->
-                <div class="swiper-slide">
-                  <div class="testimonial-item">	
-                    <div class="testimonial-header">
-                        <div class="testimonial-quote">
-                            <img src="images/icon-quote1.svg" alt="">
-                        </div>
-                        <div class="testimonial-content">
-                            <p>As a new mom in Mathare, I was nervous about clinic queues. Maternanet saved me! I booked my first scan in minutes and even did follow-ups by video. The AI tips taught me so much about my baby's growth.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-body">           
-                        <div class="author-content">
-                            <h3>Mwanaidi Hassan</h3>
-                            <p>Shop Attendant, Nairobi</p>
-                        </div>
-                    </div>													
-                  </div>
-                </div>
-                <!-- Testimonial Slide End -->
-
-                <!-- Testimonial Slide Start -->
-                <div class="swiper-slide">
-                  <div class="testimonial-item">	
-                    <div class="testimonial-header">
-                        <div class="testimonial-quote">
-                            <img src="images/icon-quote1.svg" alt="">
-                        </div>
-                        <div class="testimonial-content">
-                            <p>Between my office job and pregnancy, I needed flexible care. The app lets me schedule appointments during lunch breaks, and the nutrition alerts keep me healthy. Worth every shilling for the premium plan</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-body">          
-                        <div class="author-content">
-                            <h3>janet wilson</h3>
-                            <p>Accountant, Kitengela</p>
-                        </div>
-                    </div>													
-                  </div>
-                </div>
-                <!-- Testimonial Slide End -->
-
-                <!-- Testimonial Slide Start -->
-                
-                <!-- Testimonial Slide End -->
-              </div>
-              <!-- Testimonial Btn Start -->
-              <div class="testimonial-btn">
-              <div class="testimonial-button-prev"></div>
-              <div class="testimonial-button-next"></div>
-              </div>
-              <!-- Testimonial Btn End -->
-            </div>
-          </div>
-        <!-- Testimonial Slider End -->
-        </div>
-      </div>
-  </div>
-</div>
+<Testimonial></Testimonial>
 <!-- Our Testimonial Section End -->
