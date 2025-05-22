@@ -36,7 +36,11 @@
                   <div class="section-title">
                       <h3 class="wow fadeInUp">about us</h3>
                       <h2 class="text-anime-style-3" data-cursor="-opaque">Who We Are</h2>
-                      <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet is a pioneering health-tech startup based in Nairobi, Kenya, dedicated to transforming maternal healthcare through innovation, accessibility, and community-driven solutions. Founded by Owino Aketch, a visionary with deep experience in healthcare systems, Maternanet was born out of a personal mission to reduce maternal mortality and improve healthcare access for expectant mothers across Africa.</p>
+                      <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet is a pioneering health-tech startup based in Nairobi,
+                       Kenya, dedicated to transforming maternal healthcare through innovation, accessibility, and community-driven solutions.
+                       Founded by Owino Aketch, a visionary with deep experience in healthcare systems, Maternanet was born out of a personal mission to reduce maternal mortality and improve healthcare access for expectant mothers across Africa.
+                    <br/>Our goal is to reduce maternal mortality from the current rate of <strong>533</strong> per 100,000 live births to at least <strong>100</strong> per 100,000 live births.</p>
+
                   </div>
                   <!-- Section Title End -->
                </div>
@@ -59,7 +63,7 @@
                   <div class="section-title">
                       <h3 class="wow fadeInUp">Our Story</h3>
                       <h2 class="text-anime-style-3" data-cursor="-opaque">From Personal Struggle to Digital Solution</h2>
-                      <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet’s journey began when Owino witnessed the challenges his sister faced during pregnancy in Kayole, Nairobi—long clinic queues, limited access to specialists, and a lack of reliable information. Determined to change this, he leveraged his expertise in healthcare technology to build a solution that empowers mothers with:</p>
+                      <p class="wow fadeInUp" data-wow-delay="0.25s">Maternanet’s journey began when Owino witnessed the challenges his sister faced during pregnancy, in accessing care —long clinic queues and wait-times, limited access to healthcare providers, and a lack of reliable source of information and social support. Determined to change this, he leveraged his expertise in healthcare technology to build a solution that empowers mothers with:</p>
                   </div>
                   <!-- Section Title End -->
                    <!-- About Content Body Start -->

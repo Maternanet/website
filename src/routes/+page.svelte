@@ -18,7 +18,8 @@
 
                       <!-- Hero Content Body Start -->
                       <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
-                          <a href="/services" class="btn-default btn-highlighted">Our Service</a>
+                          <a href="/services" class="btn-default btn-highlighted">Our Services</a>
+
                       </div>
                       <!-- Hero Content Body End --> 
                        
@@ -30,7 +31,7 @@
                                   <img src="images/icon-hero-footer-1.svg" alt="">
                               </div>
                               <div class="hero-footer-box-content">
-                                  <p>experience doctor</p>
+                                  <p>Expert doctors</p>
                               </div>
                           </div>
                           <!-- Hero Footer Box End -->
@@ -145,7 +146,7 @@
                           </div>
 
                           <div class="happy-patients-counter-content">
-                              <h3><span class="counter">875</span>+</h3>
+                              <h3><span class="counter">8675</span>+</h3>
                               <p>happy patients</p>
                           </div>
                       </div>
@@ -173,7 +174,7 @@
                               <div class="about-content-list wow fadeInUp" data-wow-delay="0.5s">
                                   <ul>
                                       <li>Telemedicine consultations</li>
-                                      <li>AI-powered personalized guidance</li>
+                                      <li>Real-time AI-powered personalized guidance and care plans</li>
                                       <li>Trusted community partnerships</li>
                                   </ul>
                               </div>
@@ -218,7 +219,8 @@
               <!-- Section Title Start -->
               <div class="section-title">
                   <h3 class="wow fadeInUp">our services</h3>
-                  <h2 class="text-anime-style-3" data-cursor="-opaque">Explore the services we provide</h2>
+                  <h2 class="text-anime-style-3" data-cursor="-opaque">We co-design our services with communities to ensure accessibility, 
+                  even in the most remote areas and where internet access is limited.</h2>
               </div>
               <!-- Section Title End -->
           </div>

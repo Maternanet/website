@@ -19,7 +19,8 @@
                 <span class="badge rounded-pill badge-soft-primary px-2 py-1"> Meet Medilyne </span>
                 <h1 class=" font-weight-900"> Good medical care starts with good data </h1>
                 <h5 class="fw-normal mx-auto mt-0 pb-2">
-                    Medilyne is the only app available in Africa that enables you to access, <br> 
+                    Maternanet is the only app available in Africa that enables you to access, <br> 
+
                     aggregate and share your healthcare data with the people and organizations you trust
 
 

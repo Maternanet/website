@@ -40,7 +40,8 @@
                   </div>
                   <div class="service-content">
                       <h3>AI-Powered Pregnancy Companion</h3>
-                      <p>This intelligent assistant delivers personalized, stage-specific guidance to expectant mothers. By analyzing user-inputted symptoms, medical history, and local health data.</p>
+                      <p>This intelligent assistant delivers personalized, stage-specific guidance to expectant mothers. By analyzing user-inputted data, medical history, and local health logs.</p>
+
                   </div>
               </div>
               <!-- Services Item End -->
@@ -142,7 +143,7 @@
                       <!-- Why Choose Item Start -->
                       <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
                           <div class="icon-box">
-                              <img src="images/[icon-why-choose-3.svg" alt="">
+                              <img src="images/icon-why-choose-3.svg" alt="">
                           </div>
                           <div class="why-choose-item-content">
                               <h3>Mother-to-Mother Support Circles</h3>
@@ -163,7 +164,7 @@
                   <div class="section-title">
                       <h3 class="wow fadeInUp">why Choose Us</h3>
                       <h2 class="text-anime-style-3" data-cursor="-opaque">Transforming Maternal Care Across Africa</h2>
-                      <p class="wow fadeInUp" data-wow-delay="0.25s">We blend smart technology with human care to make maternal health simple, safe, and supportive. Our platform cuts through delays with instant doctor access, AI-powered insights tailored to your pregnancy, and a trusted community—all designed for African mothers, by Africans. No more guesswork, long waits, or feeling alone. Just faster, smarter, kinder care—because you and your baby deserve the best.</p>
+                      <p class="wow fadeInUp" data-wow-delay="0.25s">We blend intelligent technologies with solid community collaborations to make maternal health simple, safe, and supportive. Our platform cuts through delays with instant doctor access, AI-powered insights tailored to your pregnancy, and a trusted community —all designed for African mothers, by Africans. No more guesswork, long wait times, or feeling alone. Just faster, intuitive, reliable care —because you and your baby deserve the best.</p>
                   </div>
                   <!-- Section Title End -->
 
@@ -182,7 +183,7 @@
                                   <!-- Why Choose Counter Content Start -->
                                   <div class="why-choose-counter-content">
                                       <h2><span class="counter">78</span>%</h2>
-                                      <h3>user satisfaction rate </h3>
+                                      <h3>user Engagement & satisfaction rate </h3>
                                   </div>
                                   <!-- Why Choose Counter Content End -->
                               </div>
@@ -201,7 +202,7 @@
                                   <!-- Why Choose Counter Content Start -->
                                   <div class="why-choose-counter-content">
                                       <h2><span class="counter">20</span>k+</h2>
-                                      <h3>patients</h3>
+                                      <h3>Women and CHPs Engaged</h3>
                                   </div>
                                   <!-- Why Choose Counter Content End -->
                               </div>
@@ -218,8 +219,8 @@
                                   <!-- Why Choose Counter No End -->
                                   <!-- Why Choose Counter Content Start -->
                                   <div class="why-choose-counter-content">
-                                      <h2><span class="counter">1000</span>+</h2>
-                                      <h3>treatment completed</h3>
+                                      <h2><span class="counter">11,000</span>+</h2>
+                                      <h3>Virtual Consultations Completed</h3>
                                   </div>
                                   <!-- Why Choose Counter Content End -->
                               </div>
