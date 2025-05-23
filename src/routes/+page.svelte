@@ -286,7 +286,8 @@
                   </div>
                   <div class="service-content">
                       <h3>Local Trusted Providers</h3>
-                      <p>Quality care from clinics and midwives in your community across 7 counties.</p>
+                      <p>Quality care from clinics and Community Healthcare Providers in your community across 7 counties.</p>
+
                   </div>
                   <div class="service-btn">
                       <a href="/services" class="redmore-btn">learn more</a>

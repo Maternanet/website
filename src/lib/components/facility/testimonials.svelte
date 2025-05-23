@@ -1,30 +1,35 @@
 <script>
+	import { onMount, onDestroy } from 'svelte';
 	let current = 0;
 
 	const testimonials = [
 		{
 			text: `When I found out I was pregnant, I didn’t know where to turn. Maternanet gave me access to advice and check-up reminders without judgment. It helped me understand what was happening to my body and what to expect.`,
 			name: 'Lucy Mwangi',
-			role: 'Subsistence Farmer,',
-			location: 'Ngomongo'
+			role: 'Market Trader,',
+			location: 'Nairobi',
+			image: '/images/testimonial1.jpg'
 		},
 		{
 			text: `Thanks to Maternanet, I felt less alone throughout my pregnancy. The platform connected me to resources I never knew existed.`,
-			name: 'Amina Yusuf',
-			role: 'Market Trader,',
-			location: 'Kibera'
+			name: 'Janet Wahu',
+			role: 'Subsistence Farmer,',
+			location: 'Kiambu',
+			image: '/images/testimonial2.jpg'
 		},
 		{
 			text: `I appreciated how easy it was to get accurate information and reminders through my phone. It made a huge difference in my journey.`,
 			name: 'Beatrice Otieno',
-			role: 'Stay-at-home Mom,',
-			location: 'Mathare'
+			role: 'Student,',
+			location: 'Kajiado',
+			image: '/images/testimonial3.jpg'
 		},
 		{
 			text: `The emotional support and weekly advice kept me strong, especially as a first-time mother. I'm truly grateful.`,
-			name: 'Mary Njoki',
-			role: 'Student,',
-			location: 'Kayole'
+			name: 'Mary Soipan',
+			role: 'Stay-at-home-mom,',
+			location: 'Narok',
+			image: '/images/testimonial4.jpg'
 		}
 	];
 
@@ -35,6 +40,20 @@
 	function prev() {
 		current = (current - 1 + testimonials.length) % testimonials.length;
 	}
+
+	let intervalId;
+
+	onMount(() => {
+		intervalId = setInterval(() => {
+			next();
+		}, 3000); // Change testimonial every 3 seconds (3000 milliseconds)
+
+		return () => {
+			clearInterval(intervalId); // Clear interval when component is destroyed
+		};
+	});
+
+	// Optional: If you want to pause the slideshow on hover, you'd add more logic here.
 </script>
 
 <style>
@@ -77,6 +96,14 @@
 		max-width: 1000px;
 		margin: 2rem auto;
 		min-height: 300px;
+	}
+
+	.testimonial-image {
+		width: 100px; /* Adjust as needed */
+		height: 100px; /* Adjust as needed */
+		border-radius: 50%;
+		object-fit: cover;
+		margin-bottom: 1rem;
 	}
 
 	.quote-icon {
@@ -142,6 +169,7 @@
 
 	<div class="card">
 		<div class="quote-icon">❝</div>
+		<img src={testimonials[current].image} alt={testimonials[current].name} class="testimonial-image" />
 		<div class="text">{testimonials[current].text}</div>
 		<div class="name">{testimonials[current].name}</div>
 		<div class="meta">
