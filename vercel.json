@@ -1,4 +1,3 @@
 {
-	"outputDirectory": ".vercel/output",
-	"buildCommand": "npm run build"
+	"outputDirectory": ".svelte-kit/output"
 }
