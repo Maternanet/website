@@ -5,7 +5,8 @@
 				<div class="col-lg-12">
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="text-anime-style-3" data-cursor="-opaque">Contact Us</h1>
+						<h1 class="text-anime-style-3" data-cursor="-opaque">Let's Reimagine Maternal Care Together</h1>
+						<p style="font-size: 1.2rem; color: #666; margin-top: 1rem;">Whether you're an expecting mother, healthcare provider, government agency, or partner organization—there's a role for you in ending preventable maternal deaths.</p>
 					</div>
 					<!-- Page Header Box End -->
 				</div>
@@ -90,6 +91,11 @@
                 <div class="col-lg-7">
                     <!-- Contact Form Start -->
                     <div class="contact-us-form">
+                        <!-- Form Intro -->
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="font-size: 1.5rem; color: #333; margin-bottom: 0.5rem;">Your Next Step</h3>
+                            <p style="color: #666; font-size: 1rem;">Tell us about you and your role. We'll connect you with the right team member who can discuss how Maternanet can support your journey or partnership goals.</p>
+                        </div>
 
                         <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.5s">
                             <div class="row">

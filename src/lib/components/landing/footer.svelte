@@ -40,10 +40,10 @@
                   <!-- Footer Social Links Start -->
                   <div class="footer-social-links">
                       <ul>
-                          <li><a href="#" aria-label="Facebook" on:click={e => e.preventDefault()}><i class="fa-brands fa-facebook-f"></i></a></li>
-                          <li><a href="#" aria-label="Twitter" on:click={e => e.preventDefault()}><i class="fa-brands fa-x-twitter"></i></a></li>
-                          <li><a href="#" aria-label="LinkedIn" on:click={e => e.preventDefault()}><i class="fa-brands fa-linkedin-in"></i></a></li>
-                          <li><a href="#" aria-label="Instagram" on:click={e => e.preventDefault()}><i class="fa-brands fa-instagram"></i></a></li>                                   
+                          <li><button type="button" aria-label="Facebook" on:click={() => {}}><i class="fa-brands fa-facebook-f"></i></button></li>
+                          <li><button type="button" aria-label="Twitter" on:click={() => {}}><i class="fa-brands fa-x-twitter"></i></button></li>
+                          <li><button type="button" aria-label="LinkedIn" on:click={() => {}}><i class="fa-brands fa-linkedin-in"></i></button></li>
+                          <li><button type="button" aria-label="Instagram" on:click={() => {}}><i class="fa-brands fa-instagram"></i></button></li>                                   
                       </ul>
                   </div>
                   <!-- Footer Social Links End -->

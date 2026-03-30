@@ -34,7 +34,10 @@
                 </div>
                 <!-- Main Menu End -->
                 <div class="navbar-toggle">
-                    <a href="#" on:click|preventDefault={()=>menu= !menu} aria-haspopup="true" aria-label="Toggle navigation menu" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+                    <button type="button" on:click={() => menu = !menu} aria-haspopup="true" aria-label="Toggle navigation menu" class="slicknav_btn slicknav_collapsed" style="outline: none; background: transparent; border: 0; padding: 0;">
+                        <span class="slicknav_menutxt"></span>
+                        <span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span>
+                    </button>
                 </div>
             </div>
         </nav>

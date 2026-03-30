@@ -4,31 +4,35 @@
 
 	const testimonials = [
 		{
-			text: `When I found out I was pregnant, I didn’t know where to turn. Maternanet gave me access to advice and check-up reminders without judgment. It helped me understand what was happening to my body and what to expect.`,
+			text: `I was 28km from the nearest clinic with no transport. I worried constantly about my baby. Maternanet's AI monitoring flagged a high-risk sign at 6 months — something I would have missed until it was too late. I got care immediately, and my baby is healthy.`,
 			name: 'Lucy Mwangi',
-			role: 'Market Trader,',
+			role: 'Market Trader',
 			location: 'Nairobi',
+			outcome: '✓ Detected complications early',
 			image: '/images/testimonial1.jpg'
 		},
 		{
-			text: `Thanks to Maternanet, I felt less alone throughout my pregnancy. The platform connected me to resources I never knew existed.`,
+			text: `As a subsistence farmer, I couldn't afford the clinic visits. Maternanet's micro-savings wallet let me save $0.30/week without stress. When I went into pre-eclampsia, I had money saved and didn't have to choose between care and feeding my family.`,
 			name: 'Janet Wahu',
-			role: 'Subsistence Farmer,',
+			role: 'Subsistence Farmer',
 			location: 'Kiambu',
+			outcome: '✓ Eliminated financial barriers',
 			image: '/images/testimonial2.jpg'
 		},
 		{
-			text: `I appreciated how easy it was to get accurate information and reminders through my phone. It made a huge difference in my journey.`,
+			text: `I didn't know if what I was experiencing was normal. My mother gave me different advice than my neighbor. Maternanet's personalized AI guidance on 2G network gave me medically accurate information I could trust. I finally understood my pregnancy.`,
 			name: 'Beatrice Otieno',
-			role: 'Student,',
+			role: 'Student',
 			location: 'Kajiado',
+			outcome: '✓ Replaced confusion with confidence',
 			image: '/images/testimonial3.jpg'
 		},
 		{
-			text: `The emotional support and weekly advice kept me strong, especially as a first-time mother. I'm truly grateful.`,
+			text: `I'm a first-time mother in a remote area with no nearby clinics. A Digital Doula visited me at home every month, checked my vitals with AI guidance, and answered my questions. My baby is 2 months old now, healthy, and I avoided an unnecessary clinic trip that would have cost me weeks of income.`,
 			name: 'Mary Soipan',
-			role: 'Stay-at-home-mom,',
+			role: 'Stay-at-home-mom',
 			location: 'Narok',
+			outcome: '✓ Care came to my doorstep',
 			image: '/images/testimonial4.jpg'
 		}
 	];
@@ -153,24 +157,31 @@
 		transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 	}
 
-	button:hover {
-		background-color: #f76c6c;
+	.outcome-badge {
+		display: inline-block;
+		background-color: #53C4AB;
 		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-weight: 600;
+		font-size: 0.9rem;
+		margin: 1rem 0;
 	}
+
 </style>
 
 <section class="section">
-	<h3>Testimonials</h3>
-	<h2>Listen from our happy patients</h2>
+	<h3>Real Impact, Real Lives</h3>
+	<h2>Mothers like you transformed their pregnancies</h2>
 	<p>
-		Maternanet works hand-in-hand with community health workers, clinics, and mothers themselves
-		to redesign maternal care from the ground up across Africa's hardest-hit regions.
+		Each story shows how Maternanet's solutions directly address the pain points mothers face — from distance and cost to fear and misinformation. See how mothers solved their biggest challenges.
 	</p>
 
 	<div class="card">
 		<div class="quote-icon">❝</div>
 		<img src={testimonials[current].image} alt={testimonials[current].name} class="testimonial-image" />
 		<div class="text">{testimonials[current].text}</div>
+		<div class="outcome-badge">{testimonials[current].outcome}</div>
 		<div class="name">{testimonials[current].name}</div>
 		<div class="meta">
 			{testimonials[current].role}<br />
