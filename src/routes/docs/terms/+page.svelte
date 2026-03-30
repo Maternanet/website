@@ -1,4 +1,4 @@
-<main id="content" role="main">
+<main id="content">
     <!-- Hero -->
     <div class="bg-img-start" style="background-image: url(./assets/svg/components/card-11.svg);">
       <div class="container content-space-t-3 content-space-t-lg-5 content-space-b-2">

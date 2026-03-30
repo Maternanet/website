@@ -11,8 +11,9 @@
                   <div class="hero-content">
                       <!-- Section Title Start -->
                       <div class="section-title">
-                          <h1 class="text-anime-style-3" data-cursor="-opaque">Revolutionizing Maternal Healthcare</h1>
-                          <p class="wow fadeInUp" data-wow-delay="0.25s">Empowering maternal care through cutting-edge technology.</p>
+                          <h1 class="text-anime-style-3" data-cursor="-opaque">Every mother deserves timely access to quality maternal care</h1>
+                          <p class="wow fadeInUp" data-wow-delay="0.25s">We intervene before the 25-30 kilometer journey to the nearest healthcare facility,
+                             before the emergency strikes and before its too late.</p>
                       </div>
                       <!-- Section Title End -->
 
@@ -316,7 +317,7 @@
 
                   <!-- Section Button Start -->
                   <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
-                      <a href="#" class="btn-default">Become a member</a>
+                      <a href="/contacts" class="btn-default">Become a member</a>
                   </div>
                   <!-- Section Button End -->
               </div>

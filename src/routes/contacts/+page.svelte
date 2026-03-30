@@ -76,10 +76,10 @@
                         <div class="contact-info-social-list">
                             <span>follow us: </span>
                             <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>                                   
+                                <li><a href="#" aria-label="Facebook" on:click={e => e.preventDefault()}><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#" aria-label="Twitter" on:click={e => e.preventDefault()}><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#" aria-label="LinkedIn" on:click={e => e.preventDefault()}><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#" aria-label="Instagram" on:click={e => e.preventDefault()}><i class="fa-brands fa-instagram"></i></a></li>                                   
                             </ul>
                         </div>
                         <!-- Contact Info Social List End -->
@@ -94,25 +94,25 @@
                         <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.5s">
                             <div class="row">
                                 <div class="form-group col-md-12 mb-4">
-                                    <label>full name</label>
+                                    <label for="fullname">full name</label>
                                     <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter Your Name" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <label>your email</label>
+                                    <label for="email">your email</label>
                                     <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Your Email" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <label>phone number</label>
+                                    <label for="phone">phone number</label>
                                     <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Your Number" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-12 mb-4">
-                                    <label>message</label>
+                                    <label for="message">message</label>
                                     <textarea name="message" class="form-control" id="message" rows="7" placeholder="write Message..." required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -150,7 +150,7 @@
                 <div class="col-lg-12">
                     <!-- Google Map Iframe Start -->
                     <div class="google-map-iframe">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.820919689199!2d36.813849273647136!3d-1.2811646356177835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d2e51e23e1%3A0x3540e8c20460e444!2s100%20University%20Wy%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1746031348525!5m2!1sen!2ske" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe title="Maternanet location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.820919689199!2d36.813849273647136!3d-1.2811646356177835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d2e51e23e1%3A0x3540e8c20460e444!2s100%20University%20Wy%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1746031348525!5m2!1sen!2ske" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map Iframe End -->
                 </div>

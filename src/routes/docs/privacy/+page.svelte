@@ -1,4 +1,4 @@
-<main id="content" role="main">
+<main id="content">
     <!-- Content -->
     <div class="container content-space-3 content-space-lg-4">
       <!-- Card -->
