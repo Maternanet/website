@@ -75,7 +75,7 @@
                                 <ul>
                                     <li>Instant access to doctors</li>
                                     <li>Remote consultations </li>
-                                    <li>AI-powered personalized care</li>
+                                    <li>Data-backed personalized care</li>
                                     <li>A trusted community </li>
                                 </ul>
                             </div>
@@ -175,7 +175,7 @@
                                   <div class="section-title">
                                       <h3>our mission</h3>
                                       <h2 data-cursor="-opaque">Emphasizes accessibility for all mothers</h2>
-                                      <p>Maternanet is on a mission to revolutionize maternal healthcare in Africa by providing innovative, accessible, and compassionate solutions. Through our mobile platform, we empower mothers with same-day doctor appointments, AI-powered health guidance, emergency telemedicine, and a supportive community network.</p>
+                                      <p>Maternanet is on a mission to revolutionize maternal healthcare in Africa by providing innovative, accessible, and compassionate solutions. Through our mobile platform, we empower mothers with same-day doctor appointments, data-informed health guidance, emergency telemedicine, and a supportive community network.</p>
                                       <p>We partner with clinics, train community health workers, and leverage data-driven insights to ensure every woman—regardless of location or income—receives the care she deserves. By merging cutting-edge technology with human-centered design, we’re making safe motherhood a reality, one mother at a time.</p>
                                   </div>
                                   <!-- Section Title End -->

@@ -39,7 +39,7 @@
                       <img src="images/icon-experience-year1.svg" alt="">
                   </div>
                   <div class="service-content">
-                      <h3>AI-Powered Pregnancy Companion</h3>
+                      <h3>Data-backed Pregnancy Companion</h3>
                       <p>This intelligent assistant delivers personalized, stage-specific guidance to expectant mothers. By analyzing user-inputted data, medical history, and local health logs.</p>
 
                   </div>
@@ -164,7 +164,7 @@
                   <div class="section-title">
                       <h3 class="wow fadeInUp">why Choose Us</h3>
                       <h2 class="text-anime-style-3" data-cursor="-opaque">Transforming Maternal Care Across Africa</h2>
-                      <p class="wow fadeInUp" data-wow-delay="0.25s">We blend intelligent technologies with solid community collaborations to make maternal health simple, safe, and supportive. Our platform cuts through delays with instant doctor access, AI-powered insights tailored to your pregnancy, and a trusted community —all designed for African mothers, by Africans. No more guesswork, long wait times, or feeling alone. Just faster, intuitive, reliable care —because you and your baby deserve the best.</p>
+                      <p class="wow fadeInUp" data-wow-delay="0.25s">We blend intelligent technologies with solid community collaborations to make maternal health simple, safe, and supportive. Our platform cuts through delays with instant doctor access, data-driven insights tailored to your pregnancy, and a trusted community —all designed for African mothers, by Africans. No more guesswork, long wait times, or feeling alone. Just faster, intuitive, reliable care —because you and your baby deserve the best.</p>
                   </div>
                   <!-- Section Title End -->
 

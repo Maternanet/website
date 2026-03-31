@@ -45,7 +45,7 @@
             <button aria-label="Book a Plan">Book a Plan</button>
         </div>
         <div class="service">
-            <h3>AI-Powered Analytics & Risk Detection</h3>
+            <h3>Data-backed Analytics & Risk Detection</h3>
             <p>
                 Our intelligent algorithms analyze health data to detect early
                 risks of maternal complications like preeclampsia, gestational

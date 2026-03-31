@@ -207,7 +207,7 @@
             <ul class="list-checked list-checked-soft-bg-primary list-checked-lg">
               <li class="list-checked-item">Faster and more efficient healthcare access.</li>
               <li class="list-checked-item">Location-based hospital connections.</li>
-              <li class="list-checked-item">AI-powered Personalized recommendations, Analytics and Insights.</li>
+              <li class="list-checked-item">Data-backed personalized recommendations, analytics and insights.</li>
               <li class="list-checked-item">Secure Patient Data Management.</li>
               <li class="list-checked-item">Active community of supportive peers.</li>
               <li class="list-checked-item">Round-the-clock support and emergency services.</li>

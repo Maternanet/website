@@ -20,8 +20,8 @@
                 'High out-of-pocket costs for emergency care'
             ],
             solutions: [
-                'AI-backed remote monitoring and risk alerts via SMS/USSD',
-                'Digital Doula home visits and local care coordination',
+                'Data-informed remote monitoring and risk alerts via SMS/USSD',
+                'Digital Doula home visits and community-to-clinic coordination',
                 'Micro-savings wallet + payment flexibility for safe delivery'
             ]
         },
@@ -35,7 +35,7 @@
                 'Limited visibility into community-level risk trends'
             ],
             solutions: [
-                'Predictive dashboard for patient volume and risk',
+                'Predictive dashboard for patient volume and risk stratification',
                 'Early triage to reduce unnecessary referrals',
                 'Seamless EMR/DHIS2 integration for data-driven planning'
             ]
@@ -43,16 +43,16 @@
         {
             id: 'policy',
             title: 'Government & Insurers',
-            image: '/images/policy (2).jpg',
+            image: '/images/policy.jpg',
             painPoints: [
                 'Inadequate data for budgeting and policy decisions',
                 'Expensive emergency obstetric care for public systems',
                 'Lack of measurable outcomes for maternal health programs'
             ],
             solutions: [
-                'Real-time population health analytics for counties',
-                'Cost-effectiveness evidence to justify investments',
-                'Outcome tracking to validate impact in lives saved'
+                'Real-time population health analytics for counties and maternal health programs',
+                'Cost-effectiveness evidence to justify investments and insights into maternal health population-level trends',
+                'Outcome tracking to validate impact in lives saved at scale'
             ]
         }
     ];
@@ -67,7 +67,7 @@
                   <div class="hero-content">
                       <!-- Section Title Start -->
                       <div class="section-title">
-                          <h1 class="text-anime-style-3" data-cursor="-opaque">No mother should <span style="color: #F67C4E;">die</span> giving <span style="color: #53C4AB;">life</span>.</h1>
+                          <h1 class="text-anime-style-3" data-cursor="-opaque">No mother should <span style="color: #F67C4E;">die</span> while giving <span style="color: #53C4AB;">life</span>.</h1>
                           <p class="wow fadeInUp" data-wow-delay="0.25s">You're carrying new life, but you're worried. Worried about whether your baby is healthy. Worried about affording care. Worried about the 25km journey to the nearest clinic. You shouldn't have to face this alone.</p>
                       </div>
                       <!-- Section Title End -->
@@ -87,7 +87,7 @@
                                   <img src="images/icon-hero-footer-1.svg" alt="">
                               </div>
                               <div class="hero-footer-box-content">
-                                  <p>Personalized guidance</p>
+                                  <p>Personalized community-based guidance</p>
                               </div>
                           </div>
                           <!-- Hero Footer Box End -->
@@ -224,32 +224,40 @@
 
                   <!-- About Content Body Start -->
                   <div class="about-content-body">
-                      <div class="row align-items-center">
-                          <div class="col-md-7">
-                              <!-- About Content List Start -->
-                              <div class="about-content-list wow fadeInUp" data-wow-delay="0.5s">
-                                  <ul>
-                                      <li><strong>60% of high-risk pregnancies go undetected</strong> — including yours, without proper monitoring</li>
-                                      <li><strong>You're 25-30km away</strong> from the nearest clinic, with no transport and unpredictable roads</li>
-                                      <li><strong>85% of care costs are out-of-pocket</strong> — forcing families to choose between care and survival</li>
-                                      <li><strong>You don't know what's normal</strong> — conflicting advice from neighbors, family, and limited access to expert guidance</li>
-                                  </ul>
+                      <div class="row g-4">
+                          <div class="col-12">
+                              <div class="row g-3">
+                                  <div class="col-md-4">
+                                      <div class="problem-card" style="padding:20px; border:1px solid #e5e7eb; border-radius:16px; background:#ffffff;">
+                                          <h4>Delay in Seeking Care</h4>
+                                          <p style="font-size:14px; color:#4b5563;">60% of high-risk pregnancies remain undetected.</p>
+                                          <p style="font-weight:700; color:#f67c4e;">"I realised only after 7 months that something was wrong."</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="problem-card" style="padding:20px; border:1px solid #e5e7eb; border-radius:16px; background:#ffffff;">
+                                          <h4>Delay in Reaching Care</h4>
+                                          <p style="font-size:14px; color:#4b5563;">65% of mothers travel 25-30 km without reliable transport.</p>
+                                          <p style="font-weight:700; color:#10b981;">"We had to wait 2 hours for a boda-boda to come."</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="problem-card" style="padding:20px; border:1px solid #e5e7eb; border-radius:16px; background:#ffffff;">
+                                          <h4>Delay in Receiving Care</h4>
+                                          <p style="font-size:14px; color:#4b5563;">85% out-of-pocket cost barrier adds critical wait time.</p>
+                                          <p style="font-weight:700; color:#1f5e8e;">"We arrived, but there was no doctor available for hours."</p>
+                                      </div>
+                                  </div>
                               </div>
-                              <!-- About Content List End -->
                           </div>
+                      </div>
 
-                          <div class="col-md-5">
-                              <!-- About Content Box Start -->
-                              <div class="experience-counter wow fadeInUp" data-wow-delay="0.5s">
-                                  <div class="icon-box">
-                                      <img src="images/icon-experience-year2.svg" alt="">
-                                  </div>
-                                  <div class="experience-counter-content">
-                                      <h3><span class="counter">530</span></h3>
-                                      <p>mothers die every day in Africa from preventable causes</p>
-                                  </div>
+                      <div class="row mt-4">
+                          <div class="col-12">
+                              <div style="padding:18px; border:1px solid #e5e7eb; border-radius:16px; background:#f7fafc;">
+                                  <h4 style="margin:0 0 10px;">Real user feedback</h4>
+                                  <p style="margin:0; color:#4b5563;">"Maternanet helped me get to a clinic before the emergency. I finally felt supported." — Lucy Mwangi</p>
                               </div>
-                              <!-- About Content Box End -->
                           </div>
                       </div>
                   </div>
@@ -273,8 +281,8 @@
     <div class="container">
         <div class="section-title text-center" style="margin-bottom:40px;">
             <h3 class="wow fadeInUp">Who We Serve</h3>
-            <h2 class="text-anime-style-3" data-cursor="-opaque">Real Solutions for Every Role</h2>
-            <p style="color:#666; max-width:720px; margin:0 auto;">Whether you are a mother, a clinic leader, or a policymaker, this is built around your real challenges and outcomes.</p>
+            <h2 class="text-anime-style-3" data-cursor="-opaque">Built Around People That Matter</h2>
+            <p style="color:#666; max-width:720px; margin:0 auto;">We help intervene before the emergency strikes, before the 25-30km journey, and before it's too late.</p>
         </div>
 
         <div class="profile-tabs" style="display:flex; justify-content:center; gap:12px; margin-bottom:30px; flex-wrap:wrap;">
@@ -291,10 +299,10 @@
         <div class="profile-content" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px;">
             {#each profileCards as profile}
                 {#if activeProfile === profile.id}
-                    <div class="profile-card" style="display:flex; gap:18px; align-items:flex-start; padding:24px; border:1px solid #ececec; border-radius:16px; box-shadow:0 5px 20px rgba(0,0,0,0.05); background:#fff;">
+                    <div class="profile-card" style="display:flex; gap:18px; align-items:center; padding:24px; border:1px solid #ececec; border-radius:16px; box-shadow:0 5px 20px rgba(0,0,0,0.05); background:#fff;">
                         {#if profile.image}
-                            <div style="flex: 0 0 40%; max-width:40%;">
-                                <img src={profile.image} alt={profile.title} style="width:100%; height:200px; object-fit:cover; border-radius:12px;" on:error={onProfileImageError} />
+                            <div style="flex: 0 0 40%; max-width:40%; padding:10px; box-sizing:border-box;">
+                                <img src={profile.image} alt={profile.title} style="width:100%; height:100%; object-fit:cover; border-radius:12px;" on:error={onProfileImageError} />
                             </div>
                         {/if}
                         <div style="flex: 1 1 60%;">
