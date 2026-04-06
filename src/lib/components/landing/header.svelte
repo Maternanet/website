@@ -22,8 +22,8 @@
                             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>                                
                             <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-                            <li class="nav-item highlighted-menu"><a class="nav-link" href="/contact">Contact Us</a></li>                               
+                            <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                            <li class="nav-item highlighted-menu"><a class="nav-link" href="/contacts">Contact Us</a></li>                               
                         </ul>
                     </div>
                     <!-- Let’s Start Button Start -->
@@ -47,8 +47,8 @@
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>                                
                     <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-                    <li class="nav-item highlighted-menu"><a class="nav-link" href="/contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                    <li class="nav-item highlighted-menu"><a class="nav-link" href="/contacts">Contact Us</a></li>
                 </ul>
             </div>
         </div>

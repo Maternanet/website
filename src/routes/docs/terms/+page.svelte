@@ -62,7 +62,7 @@
 
         <div class="col-md-8 col-lg-9">
           <div class="mb-7">
-            <p>Thanks for using our products and services ("Services"). The Services are provided by Pixeel Ltd. ("Space"), located at 153 Williamson Plaza, Maggieberg, MT 09514, England, United Kingdom.</p>
+            <p>Thanks for using our products and services ("Services"). The Services are provided by Maternanet Ltd., located at 00100 - 30197, University Way, Nairobi, Kenya.</p>
 
             <p>By using our Services, you are agreeing to these terms. Please read them carefully.</p>
 
@@ -82,9 +82,9 @@
           <div id="linksToOtherWebsInfo" class="mb-7">
             <h4>2. Links to other websites</h4>
 
-            <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Space.</p>
+            <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Maternanet.</p>
 
-            <p>Space has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Space shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+            <p>Maternanet has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Maternanet shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
 
             <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
           </div>

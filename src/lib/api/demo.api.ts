@@ -10,7 +10,7 @@ export default class DemoService {
   //using promise instead of callback
   public static async requestDemo(data: DemoRequestDetails): Promise<any> {
     try {
-      const res = await axios.post("https://api.medisync.com/demo", data);
+      const res = await axios.post("/support/demo", data);
       return res.data;
     } catch (error) {
 

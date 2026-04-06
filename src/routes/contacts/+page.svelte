@@ -1,3 +1,41 @@
+<script lang="ts">
+    import ContactService from "$lib/api/contact.api";
+
+    let name = "";
+    let email = "";
+    let phone = "";
+    let message = "";
+    let statusMsg = "";
+    let isError = false;
+    let isSubmitting = false;
+
+    async function handleSubmit() {
+        if (isSubmitting) return;
+        isSubmitting = true;
+        statusMsg = "Sending message...";
+        isError = false;
+
+        try {
+            const res = await ContactService.sendContact({ name, email, phone, message });
+            if (res?.error) {
+                isError = true;
+                statusMsg = res.msg || "Unable to send form. Please try again later.";
+            } else {
+                statusMsg = "Message sent successfully! We will get back to you soon.";
+                name = "";
+                email = "";
+                phone = "";
+                message = "";
+            }
+        } catch (error) {
+            isError = true;
+            statusMsg = "An error occurred. Please try again.";
+        } finally {
+            isSubmitting = false;
+        }
+    }
+</script>
+
 <!-- Page Header Start -->
 	<div class="page-header">
 		<div class="container">
@@ -97,36 +135,38 @@
                             <p style="color: #666; font-size: 1rem;">Tell us about you and your role. We'll connect you with the right team member who can discuss how Maternanet can support your journey or partnership goals.</p>
                         </div>
 
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.5s">
+                        <form id="contactForm" on:submit|preventDefault={handleSubmit} data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.5s">
                             <div class="row">
                                 <div class="form-group col-md-12 mb-4">
                                     <label for="fullname">full name</label>
-                                    <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter Your Name" required>
+                                    <input type="text" bind:value={name} name="fullname" class="form-control" id="fullname" placeholder="Enter Your Name" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
                                     <label for="email">your email</label>
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+                                    <input type="email" bind:value={email} name ="email" class="form-control" id="email" placeholder="Enter Your Email" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
                                     <label for="phone">phone number</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Your Number" required>
+                                    <input type="text" bind:value={phone} name="phone" class="form-control" id="phone" placeholder="Enter Your Number" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-12 mb-4">
                                     <label for="message">message</label>
-                                    <textarea name="message" class="form-control" id="message" rows="7" placeholder="write Message..." required></textarea>
+                                    <textarea bind:value={message} name="message" class="form-control" id="message" rows="7" placeholder="write Message..." required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="col-lg-12">
                                     <div class="contact-form-btn">
-                                        <button type="submit" class="btn-default">Send</button>
-                                        <div id="msgSubmit" class="h3 hidden"></div>
+                                        <button type="submit" class="btn-default" disabled={isSubmitting}>{isSubmitting ? 'Sending...' : 'Send'}</button>
+                                        {#if statusMsg}
+                                            <div id="msgSubmit" class="h5" class:text-danger={isError} class:text-success={!isError} style="margin-top: 1rem;">{statusMsg}</div>
+                                        {/if}
                                     </div>
                                 </div>
                             </div>
