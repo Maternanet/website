@@ -2,6 +2,8 @@
 	"name": "website",
 	"version": "0.0.1",
 	"scripts": {
+		"prebuild": "node scripts/clean.js",
+		"clean": "node scripts/clean.js",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",

@@ -1,40 +1,40 @@
-<script>
-	import { onMount, onDestroy } from 'svelte';
+<script lang="ts">
+	import { onMount } from "svelte";
 	let current = 0;
 
 	const testimonials = [
 		{
-			text: `I was 28km from the nearest clinic with no transport. I worried constantly about my baby. Maternanet's AI monitoring flagged a high-risk sign at 6 months — something I would have missed until it was too late. I got care immediately, and my baby is healthy.`,
-			name: 'Lucy Mwangi',
-			role: 'Market Trader',
-			location: 'Nairobi',
-			outcome: '✓ Detected complications early',
-			image: '/images/testimonial1.jpg'
+			text: `It takes about 2-3 hours to get to the neareast clinic from my home. I worried constantly about my baby. When Maternanet came on board, they helped flag a high-risk sign at about 6 and a half months — something I would have missed until it was too late. I got care immediately, and my baby is healthy.`,
+			name: "Lucy Mwangi",
+			role: "Market Trader",
+			location: "Kajiado",
+			outcome: "✓ Detected complications early",
+			image: "/images/testimonial1.jpg",
 		},
 		{
-			text: `As a subsistence farmer, I couldn't afford the clinic visits. Maternanet's micro-savings wallet let me save $0.30/week without stress. When I went into pre-eclampsia, I had money saved and didn't have to choose between care and feeding my family.`,
-			name: 'Janet Wahu',
-			role: 'Subsistence Farmer',
-			location: 'Kiambu',
-			outcome: '✓ Eliminated financial barriers',
-			image: '/images/testimonial2.jpg'
+			text: `As a subsistence farmer, I couldn't afford the clinic visits regularly. When I heard of Maternanet, they let me save as little as 30 cents a week. When I went into pre-eclampsia, I had money saved and they let me borrow to top-up so that I could afford care without stress.`,
+			name: "Janet Wahu",
+			role: "Subsistence Farmer",
+			location: "Kiambu",
+			outcome: "✓ Eliminated financial barriers",
+			image: "/images/testimonial2.jpg",
 		},
 		{
-			text: `I didn't know if what I was experiencing was normal. My mother gave me different advice than my neighbor. Maternanet's personalized AI guidance on 2G network gave me medically accurate information I could trust. I finally understood my pregnancy.`,
-			name: 'Beatrice Otieno',
-			role: 'Student',
-			location: 'Kajiado',
-			outcome: '✓ Replaced confusion with confidence',
-			image: '/images/testimonial3.jpg'
+			text: `I didn't know if what I was experiencing was normal. My mother gave me different advice than my close friend. Then I heard from the community about Maternanet. I reached out to our community health worker who connected me to Maternanet. After that I felt confident and supported throughout my pregnancy.`,
+			name: "Beatrice Otieno",
+			role: "Student",
+			location: "Kajiado",
+			outcome: "✓ Replaced confusion with confidence",
+			image: "/images/testimonial3.jpg",
 		},
 		{
-			text: `I'm a first-time mother in a remote area with no nearby clinics. A Digital Doula visited me at home every month, checked my vitals with AI guidance, and answered my questions. My baby is 2 months old now, healthy, and I avoided an unnecessary clinic trip that would have cost me weeks of income.`,
-			name: 'Mary Soipan',
-			role: 'Stay-at-home-mom',
-			location: 'Narok',
-			outcome: '✓ Care came to my doorstep',
-			image: '/images/testimonial4.jpg'
-		}
+			text: `I'm a first-time mother and as you can see this is a remote area with no nearby clinics. All my pregany I relied on the CHW and Maternanet.The CHW visited me at home every month, checked my vitals with guidance, and answered my questions. My baby is 2 months old now, healthy, and I avoided an unnecessary clinic trip that would have cost me weeks of income.`,
+			name: "Mary Soipan",
+			role: "Stay-at-home-mom",
+			location: "Narok",
+			outcome: "✓ Care came to my doorstep",
+			image: "/images/testimonial4.jpg",
+		},
 	];
 
 	function next() {
@@ -45,7 +45,7 @@
 		current = (current - 1 + testimonials.length) % testimonials.length;
 	}
 
-	let intervalId;
+	let intervalId: ReturnType<typeof setInterval>;
 
 	onMount(() => {
 		intervalId = setInterval(() => {
@@ -59,6 +59,38 @@
 
 	// Optional: If you want to pause the slideshow on hover, you'd add more logic here.
 </script>
+
+<section class="section">
+	<h3>Real Impact, Real Lives</h3>
+	<h2>What are mothers saying?</h2>
+	<p>
+		Each story shows how we show up when you need us most. We are not just
+		providing critical care at the last-mile, we are building an ecosystem
+		of TRUST that sustains it. Data is the engine, CHPs are the network, and
+		mothers are the heart of it all.
+	</p>
+
+	<div class="card">
+		<div class="quote-icon">❝</div>
+		<img
+			src={testimonials[current].image}
+			alt={testimonials[current].name}
+			class="testimonial-image"
+		/>
+		<div class="text">{testimonials[current].text}</div>
+		<div class="outcome-badge">{testimonials[current].outcome}</div>
+		<div class="name">{testimonials[current].name}</div>
+		<div class="meta">
+			{testimonials[current].role}<br />
+			{testimonials[current].location}
+		</div>
+	</div>
+
+	<div class="nav-buttons">
+		<button on:click={prev}>←</button>
+		<button on:click={next}>→</button>
+	</div>
+</section>
 
 <style>
 	.section {
@@ -154,12 +186,14 @@
 		cursor: pointer;
 		color: #f76c6c;
 		font-size: 1.5rem;
-		transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition:
+			background 0.2s ease-in-out,
+			color 0.2s ease-in-out;
 	}
 
 	.outcome-badge {
 		display: inline-block;
-		background-color: #53C4AB;
+		background-color: #53c4ab;
 		color: white;
 		padding: 0.5rem 1rem;
 		border-radius: 20px;
@@ -167,30 +201,4 @@
 		font-size: 0.9rem;
 		margin: 1rem 0;
 	}
-
 </style>
-
-<section class="section">
-	<h3>Real Impact, Real Lives</h3>
-	<h2>Mothers like you transformed their pregnancies</h2>
-	<p>
-		Each story shows how Maternanet's solutions directly address the pain points mothers face — from distance and cost to fear and misinformation. See how mothers solved their biggest challenges.
-	</p>
-
-	<div class="card">
-		<div class="quote-icon">❝</div>
-		<img src={testimonials[current].image} alt={testimonials[current].name} class="testimonial-image" />
-		<div class="text">{testimonials[current].text}</div>
-		<div class="outcome-badge">{testimonials[current].outcome}</div>
-		<div class="name">{testimonials[current].name}</div>
-		<div class="meta">
-			{testimonials[current].role}<br />
-			{testimonials[current].location}
-		</div>
-	</div>
-
-	<div class="nav-buttons">
-		<button on:click={prev}>←</button>
-		<button on:click={next}>→</button>
-	</div>
-</section>

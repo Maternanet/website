@@ -33,7 +33,7 @@
   
             <div class="d-grid gap-3 mb-5">
                 <div class="accordion aos-init aos-animate" id="features-list" data-aos="fade-up" data-aos-duration="300">
-                    <div class="d-flex border-bottom pb-4" on:keydown={()=>{}} on:click={()=>update(0)}>
+                    <div class="d-flex border-bottom pb-4" on:keydown={()=>{}} on:click={()=>update(0)} role="button" tabindex="0">
                         <span class="bg-soft-success avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-primary me-3 flex-shrink-0">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 2.375L2 9.575V20.575C2 21.175 2.4 21.575 3 21.575H9C9.6 21.575 10 21.175 10 20.575V14.575C10 13.975 10.4 13.575 11 13.575H13C13.6 13.575 14 13.975 14 14.575V20.575C14 21.175 14.4 21.575 15 21.575H21C21.6 21.575 22 21.175 22 20.575V9.575L13 2.375C12.4 1.875 11.6 1.875 11 2.375Z" fill="#035A4B"></path>
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(1)}>
+                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(1)} role="button" tabindex="0">
                         <span class="bg-soft-success avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-success me-3 flex-shrink-0">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1671 18.1421C22.4827 18.4577 23.0222 18.2331 23.0206 17.7868L23.0039 13.1053V5.52632C23.0039 4.13107 21.8729 3 20.4776 3H8.68815C7.2929 3 6.16183 4.13107 6.16183 5.52632V9H13C14.6568 9 16 10.3431 16 12V15.6316H19.6565L22.1671 18.1421Z" fill="#035A4B"></path>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(2)}>
+                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(2)} role="button" tabindex="0">
                         <span class="bg-soft-success avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-success me-3 flex-shrink-0">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.3" d="M21 22H3C2.4 22 2 21.6 2 21V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5V21C22 21.6 21.6 22 21 22Z" fill="#035A4B"></path>
