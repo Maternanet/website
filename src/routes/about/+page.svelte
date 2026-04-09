@@ -742,9 +742,9 @@
         <p class="team-intro">
             We are here because this is our problem too. Our founders are a
             health engineer, a Kenyatta National Hospital OB-GYN, a distributed
-            systems architect who's shipped three offline-first health apps,
-            and a programme manager who has worked in eight African countries.
-            We understand the communities we build for because we are from them.
+            systems architect who's shipped three offline-first health apps, and
+            a programme manager who has worked in eight African countries. We
+            understand the communities we build for because we are from them.
         </p>
 
         <div class="team-grid">
@@ -759,8 +759,8 @@
                     <div class="tc-name">Owino Aketch</div>
                     <div class="tc-role">CEO · Team Lead</div>
                     <div class="tc-note">
-                        5+ years healthcare technology. Software Engineer,
-                        2x Founder. Stanford Medicine 25 Program, 2024.
+                        5+ years healthcare technology. Software Engineer, 2x
+                        Founder. Stanford Medicine 25 Program, 2024.
                     </div>
                 </div>
             </div>
@@ -820,10 +820,9 @@
                 <strong
                     >We are African innovators who understand both the cultural
                     nuances and technical requirements for sustainable impact.</strong
-                > The communities we build for are not our users — they are our
-                neighbours, our families, and in many cases, ourselves. That is
-                not a marketing line. It is the single most important thing we
-                bring to this problem.
+                > The communities we build for are not our users — they are our neighbours,
+                our families, and in many cases, ourselves. That is not a marketing
+                line. It is the single most important thing we bring to this problem.
             </div>
             <a
                 href="/contacts#contactForm"
@@ -861,13 +860,11 @@
                 <div class="seg-ctas">
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-ghost btn-arrow"
-                        >Find a CHP near you</a
+                        class="btn btn-ghost btn-arrow">Find a CHP near you</a
                     >
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-white-translucent"
-                        >Talk to us</a
+                        class="btn btn-white-translucent">Talk to us</a
                     >
                 </div>
             </div>
@@ -892,8 +889,7 @@
                     >
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-white-translucent"
-                        >Talk to us</a
+                        class="btn btn-white-translucent">Talk to us</a
                     >
                 </div>
             </div>
@@ -913,13 +909,11 @@
                 <div class="seg-ctas">
                     <a
                         href="mailto:careconnect.afrika@gmail.com"
-                        class="btn btn-ghost btn-arrow"
-                        >Start a conversation</a
+                        class="btn btn-ghost btn-arrow">Start a conversation</a
                     >
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-white-translucent"
-                        >Request our brief</a
+                        class="btn btn-white-translucent">Request our brief</a
                     >
                 </div>
             </div>
@@ -945,8 +939,8 @@
                     <h4 class="tp-title">Your Data, Your Ownership</h4>
                     <p class="tp-desc">
                         Mothers can export or delete their full health record
-                        via USSD. Compliant with Kenya’s Data Protection
-                        Act (2019).
+                        via USSD. Compliant with Kenya’s Data Protection Act
+                        (2019).
                     </p>
                 </div>
             </div>
@@ -1008,9 +1002,8 @@
             <div class="vc-text">
                 "By 2035, majority of pharmaceutical companys, insurers, or
                 government ministries should be able to reach East African women
-                at clinical precision with Maternanet's network. Not because
-                we built a wall — but because we built something worth relying
-                on."
+                at clinical precision with Maternanet's network. Not because we
+                built a wall — but because we built something worth relying on."
             </div>
         </div>
     </div>
