@@ -5,7 +5,7 @@
         <div class="row align-items-md-center">
           <div class="col-md-5 col-lg-6 mb-5 mb-lg-0">
             <div class="text-center">
-              <img class="img-fluid" src="assets/svg/illustrations/oc-unlock.svg" alt="Image Description" style="max-width: 17rem;">
+              <img class="img-fluid" src="assets/svg/illustrations/oc-unlock.svg" alt="" style="max-width: 17rem;">
             </div>
           </div>
           <!-- End Col -->
@@ -21,7 +21,7 @@
             </div>
             <!-- End Row -->
     
-            <a class="link text-white " href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+            <a class="link text-white " href="/services">Learn more <i class="bi-chevron-right small ms-1"></i></a>
           </div>
           <!-- End Col -->
         </div>

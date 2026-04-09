@@ -197,7 +197,7 @@ body{
 	background: var(--accent-color);
 	color: var(--white-color);
 	border-radius: 14px;
-	padding: 17px 60px 17px 18px;
+	padding: 17px 78px 17px 23px;
 	border: none;
 	transition: all 0.5s ease-in-out;
 	overflow: hidden;
@@ -220,12 +220,12 @@ body{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 16px auto;
-	transform: translate(-30px, -50%);
+	transform: translate(-21px, -50%);
 	transition: all 0.4s ease-in-out;
 }
 
 .btn-default:hover::before{
-	transform: translate(-27px, -50%);
+	transform: translate(-18px, -50%);
 }
 
 .btn-default::after{
@@ -252,7 +252,7 @@ body{
 
 .btn-default.btn-highlighted{
 	border: 1px solid var(--accent-color);
-	padding: 16px 60px 16px 18px;
+	padding: 16px 78px 16px 23px;
 }
 
 .btn-default.btn-highlighted:hover{

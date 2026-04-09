@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
     import Testimonial from "$lib/components/facility/testimonials.svelte";
 
     let activeProfile = "mothers";
 
     const fallbackProfileImage = "/images/404-error-img.png";
 
-    function onProfileImageError(event) {
-        event.target.src = fallbackProfileImage;
+    function onProfileImageError(event: Event) {
+        (event.target as HTMLImageElement).src = fallbackProfileImage;
     }
 
     const profileCards = [
@@ -26,6 +26,8 @@
                 "Digital Doula home visits and fast community-to-clinic coordination.",
                 "Micro-savings wallet + payment flexibility for safe delivery.",
             ],
+            ctaLabel: "Check Availability in Your Region",
+            ctaLink: "/contacts#contactForm",
         },
         {
             id: "clinics",
@@ -43,6 +45,8 @@
                 "Early triage to reduce unnecessary referrals.",
                 "Seamless EMR/DHIS2 integration for data-driven planning & reporting.",
             ],
+            ctaLabel: "Request Integration Setup",
+            ctaLink: "/contacts#contactForm",
         },
         {
             id: "policy",
@@ -60,6 +64,8 @@
                 "Cost-effectiveness evidence to justify investments and insights into maternal health population-level trends.",
                 "Outcome tracking to validate impact in lives saved at scale.",
             ],
+            ctaLabel: "Access Analytics Demo",
+            ctaLink: "/contacts#contactForm",
         },
     ];
 </script>
@@ -601,11 +607,22 @@
                             >
                                 How Maternanet Helps
                             </div>
-                            <ul style="padding-left:20px; color:#555;">
+                            <ul
+                                style="padding-left:20px; color:#555; margin-bottom:24px;"
+                            >
                                 {#each profile.solutions as sol}
                                     <li style="margin-bottom:8px;">{sol}</li>
                                 {/each}
                             </ul>
+
+                            <div class="profile-cta">
+                                <a
+                                    href={profile.ctaLink}
+                                    class="btn-default"
+                                    style="padding: 12px 78px 12px 23px; font-size: 0.95rem;"
+                                    >{profile.ctaLabel}</a
+                                >
+                            </div>
                         </div>
                     </div>
                 {/if}
@@ -926,7 +943,7 @@
                 style="text-align: center; margin-bottom: 2.5rem;"
             >
                 <h3 style="color: #1c2348; font-weight: 800; font-size: 2rem;">
-                    Projected Impact Trajectory
+                    Impact Trajectory
                 </h3>
             </div>
         </div>

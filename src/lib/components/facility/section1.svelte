@@ -26,7 +26,7 @@
             </div>
             <div class="col-lg-5 offset-lg-1">
                 <div class="accordion aos-init aos-animate" id="features-list" data-aos="fade-up" data-aos-duration="300">
-                    <div class="d-flex border-bottom pb-4" on:keydown={()=>{}} on:click={()=>update(0)}>
+                    <div class="d-flex border-bottom pb-4" on:keydown={()=>{}} on:click={()=>update(0)} role="button" tabindex="0">
                         <span class="bg-soft-success avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-primary me-3 flex-shrink-0">
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M13 5.91517C15.8 6.41517 18 8.81519 18 11.8152C18 12.5152 17.9 13.2152 17.6 13.9152L20.1 15.3152C20.6 15.6152 21.4 15.4152 21.6 14.8152C21.9 13.9152 22.1 12.9152 22.1 11.8152C22.1 7.01519 18.8 3.11521 14.3 2.01521C13.7 1.91521 13.1 2.31521 13.1 3.01521V5.91517H13Z" fill="#035A4B"></path>
@@ -34,7 +34,7 @@
                           </svg>
                         </span>                            
                         <div class="flex-grow-1">
-                            <a href="#" class="text-dark h4 {data[0]?"":"collapsed"}">
+                            <a href="/services" class="text-dark h4 {data[0]?"":"collapsed"}">
                               Grow your practice with healthcare marketing
                             </a>
 
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(1)}>
+                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(1)} role="button" tabindex="0">
                         <span class="bg-soft-success avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-success me-3 flex-shrink-0">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13 5.91517C15.8 6.41517 18 8.81519 18 11.8152C18 12.5152 17.9 13.2152 17.6 13.9152L20.1 15.3152C20.6 15.6152 21.4 15.4152 21.6 14.8152C21.9 13.9152 22.1 12.9152 22.1 11.8152C22.1 7.01519 18.8 3.11521 14.3 2.01521C13.7 1.91521 13.1 2.31521 13.1 3.01521V5.91517H13Z" fill="#035A4B"></path>
@@ -61,7 +61,7 @@
                             </svg>
                         </span>
                         <div class="flex-grow-1">
-                            <a href="#" class="text-dark h4 {data[1]?"":"collapsed"}"  role="button" >
+                            <a href="/services" class="text-dark h4 {data[1]?"":"collapsed"}"  role="button" >
                               Modernize patient engagement
                             </a>
 
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(2)}>
+                    <div class="d-flex border-bottom py-4" on:keydown={()=>{}} on:click={()=>update(2)} role="button" tabindex="0">
                         <span class="bg-soft-success avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-success me-3 flex-shrink-0">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.3" d="M4.05424 15.1982C8.34524 7.76818 13.5782 3.26318 20.9282 2.01418C21.0729 1.98837 21.2216 1.99789 21.3618 2.04193C21.502 2.08597 21.6294 2.16323 21.7333 2.26712C21.8372 2.37101 21.9144 2.49846 21.9585 2.63863C22.0025 2.7788 22.012 2.92754 21.9862 3.07218C20.7372 10.4222 16.2322 15.6552 8.80224 19.9462L4.05424 15.1982ZM3.81924 17.3372L2.63324 20.4482C2.58427 20.5765 2.5735 20.7163 2.6022 20.8507C2.63091 20.9851 2.69788 21.1082 2.79503 21.2054C2.89218 21.3025 3.01536 21.3695 3.14972 21.3982C3.28408 21.4269 3.42387 21.4161 3.55224 21.3672L6.66524 20.1802L3.81924 17.3372ZM16.5002 5.99818C16.2036 5.99818 15.9136 6.08615 15.6669 6.25097C15.4202 6.41579 15.228 6.65006 15.1144 6.92415C15.0009 7.19824 14.9712 7.49984 15.0291 7.79081C15.0869 8.08178 15.2298 8.34906 15.4396 8.55884C15.6494 8.76862 15.9166 8.91148 16.2076 8.96935C16.4986 9.02723 16.8002 8.99753 17.0743 8.884C17.3484 8.77046 17.5826 8.5782 17.7474 8.33153C17.9123 8.08486 18.0002 7.79485 18.0002 7.49818C18.0002 7.10035 17.8422 6.71882 17.5609 6.43752C17.2796 6.15621 16.8981 5.99818 16.5002 5.99818Z" fill="#035A4B"></path>
@@ -84,7 +84,7 @@
                             
                         </span>
                         <div class="flex-grow-1">
-                            <a href="#" class="text-dark h4 {data[2]?"":"collapsed"}" > Streamline medical practice management </a>
+                            <a href="/services" class="text-dark h4 {data[2]?"":"collapsed"}" > Streamline medical practice management </a>
 
                             <div class="collapse {data[2]?"show":""}" id="feature2ex" data-bs-parent="#features-list" style="">
                                 <p class=" mt-1 mb-4">

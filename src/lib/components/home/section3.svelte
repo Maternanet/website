@@ -18,7 +18,7 @@
       <div class="row justify-content-end align-items-md-center">
         <div class="d-none d-md-block col-md-4 position-absolute top-0 start-0 bg-img-center h-100" style="background-image: url(https://htmlstream.com/preview/space-v2.3.1/assets/img/900x700/img7.jpg);"></div>
         <div class="d-md-none mb-5 mb-md-0">
-          <img class="img-fluid" src="https://htmlstream.com/preview/space-v2.3.1/assets/img/900x700/img7.jpg" alt="Image Description">
+          <img class="img-fluid" src="https://htmlstream.com/preview/space-v2.3.1/assets/img/900x700/img7.jpg" alt="">
         </div>
   
         <div class="col-md-8">
@@ -41,7 +41,7 @@
                             
                         </span>                            
                         <div class="flex-grow-1">
-                            <a href="#" class="text-dark h4 {data[0]?"":"collapsed"}">
+                            <a href="/services" class="text-dark h4 {data[0]?"":"collapsed"}">
                                 Get your Health data on demand
                             </a>
 
@@ -49,7 +49,7 @@
                                 <p class=" mt-1 mb-4">
                                     Streamline care and emergency preparedness with on-demand health data sharing.
                                 </p>
-                                <a href="#" class="h6 text-primary pt-3 d-flex ">Learn more <i class="ri-arrow-right-line align-self-center mx-2"></i></a>
+                                <a href="/services" class="h6 text-primary pt-3 d-flex ">Learn more <i class="ri-arrow-right-line align-self-center mx-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             
                         </span>
                         <div class="flex-grow-1">
-                            <a href="#" class="text-dark h4 {data[1]?"":"collapsed"}"  role="button" >
+                            <a href="/services" class="text-dark h4 {data[1]?"":"collapsed"}"  role="button" >
                                 Informed decision making for critical care
 
                             </a>
@@ -71,7 +71,7 @@
                                 <p class=" mt-1 mb-4">
                                     Get second opinions faster & make informed healthcare decisions even during crucial times.
                                 </p>
-                                <a href="#" class="h6 text-primary pt-3 d-flex ">Learn more <i class="ri-arrow-right-line align-self-center mx-2"></i></a>
+                                <a href="/services" class="h6 text-primary pt-3 d-flex ">Learn more <i class="ri-arrow-right-line align-self-center mx-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -85,13 +85,13 @@
                             
                         </span>
                         <div class="flex-grow-1">
-                            <a href="#" class="text-dark h4 {data[2]?"":"collapsed"}" > Detailed health profile at your fingertips </a>
+                            <a href="/services" class="text-dark h4 {data[2]?"":"collapsed"}" > Detailed health profile at your fingertips </a>
 
                             <div class="collapse {data[2]?"show":""}" id="feature2ex" data-bs-parent="#features-list" style="">
                                 <p class=" mt-1 mb-4">
                                     Access & manage your profile from the phone for a complete, easy-to-use health overview.
                                 </p>
-                                <a href="#" class="h6 text-primary pt-3 d-flex ">Learn more <i class="ri-arrow-right-line align-self-center mx-2"></i></a>
+                                <a href="/services" class="h6 text-primary pt-3 d-flex ">Learn more <i class="ri-arrow-right-line align-self-center mx-2"></i></a>
                             </div>
                         </div>
                     </div>
