@@ -1487,7 +1487,27 @@
         font-weight: 600;
     }
     .tc-body {
-        padding: 20px;
+        padding: 24px;
+    }
+    .tc-name {
+        font-family: "Fraunces", serif;
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--ink);
+        margin-bottom: 6px;
+    }
+    .tc-role {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--forest);
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .tc-note {
+        font-size: 14px;
+        color: var(--ink-2);
+        line-height: 1.6;
     }
 
     /* Join segments */

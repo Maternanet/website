@@ -1,26 +1,26 @@
 <script lang="ts">
-  import { categories, filters, type FaqCategory } from '$lib/content/faq';
+  import { categories, filters, type FaqCategory } from "$lib/content/faq";
 
-  let searchQuery = '';
-  let activeFilter = 'all';
+  let searchQuery = "";
+  let activeFilter = "all";
   let openItem: string | null = null;
 
   $: filteredCategories = categories.filter((cat) => {
-    if (activeFilter !== 'all' && cat.id !== activeFilter) return false;
+    if (activeFilter !== "all" && cat.id !== activeFilter) return false;
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
-    return cat.items.some((item) =>
-      item.q.toLowerCase().includes(q) ||
-      item.a.toLowerCase().includes(q)
+    return cat.items.some(
+      (item) =>
+        item.q.toLowerCase().includes(q) || item.a.toLowerCase().includes(q),
     );
   });
 
   const visibleItems = (cat: FaqCategory) => {
     if (!searchQuery.trim()) return cat.items;
     const q = searchQuery.toLowerCase();
-    return cat.items.filter((item) =>
-      item.q.toLowerCase().includes(q) ||
-      item.a.toLowerCase().includes(q)
+    return cat.items.filter(
+      (item) =>
+        item.q.toLowerCase().includes(q) || item.a.toLowerCase().includes(q),
     );
   };
 
@@ -35,23 +35,36 @@
 </script>
 
 <svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
 </svelte:head>
 
 <section class="faq-section">
-
   <!-- Hero Header -->
   <div class="faq-header">
     <div class="eyebrow">Frequently asked questions</div>
     <h2 class="section-title">The questions we get <em>most</em></h2>
-    <p class="section-sub">For mothers, community health workers, clinicians, donors, NGO partners, and government stakeholders.</p>
+    <p class="section-sub">
+      From mothers, community health providers, clinicians, donors, NGO
+      partners, and government stakeholders.
+    </p>
   </div>
 
   <!-- Search -->
   <div class="search-wrap">
-    <svg class="search-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    <svg
+      class="search-icon"
+      width="18"
+      height="18"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+    >
+      <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
     </svg>
     <input
       type="text"
@@ -61,8 +74,19 @@
       autocomplete="off"
     />
     {#if searchQuery}
-      <button class="search-clear" on:click={() => searchQuery = ''} aria-label="Clear search">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      <button
+        class="search-clear"
+        on:click={() => (searchQuery = "")}
+        aria-label="Clear search"
+      >
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12" /></svg
+        >
       </button>
     {/if}
   </div>
@@ -86,9 +110,17 @@
   <div class="faq-body">
     {#if filteredCategories.length === 0}
       <div class="no-results">
-        <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <svg
+          width="40"
+          height="40"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          ><circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" /></svg
+        >
         <p>No questions match <strong>"{searchQuery}"</strong></p>
-        <button on:click={() => searchQuery = ''}>Clear search</button>
+        <button on:click={() => (searchQuery = "")}>Clear search</button>
       </div>
     {:else}
       {#each filteredCategories as cat}
@@ -112,8 +144,14 @@
                   >
                     <span class="q-num">{item.num}</span>
                     <span class="q-text">{item.q}</span>
-                    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                      <polyline points="6 9 12 15 18 9"/>
+                    <svg
+                      class="chevron"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
                     </svg>
                   </button>
                   <div class="faq-a">
@@ -133,19 +171,27 @@
   <!-- Schema note -->
   <div class="schema-note">
     <span class="schema-icon">i</span>
-    <span>The content in this page is structured as an FAQ page and may include content that has since been updated.</span>
+    <span
+      >The content in this page is structured as an FAQ page and may include
+      content that has since been updated.</span
+    >
   </div>
-
 </section>
 
 <!-- CTA Band -->
 <section class="cta-band">
   <div class="cta-inner">
     <h2>Still have questions? <em>Let's talk.</em></h2>
-    <p>We respond to every message within 48 hours — and yes, a human reads every email.</p>
+    <p>
+      We respond to every message within 48 hours — and yes, a human reads every
+      email.
+    </p>
     <div class="cta-buttons">
-      <a href="mailto:info@maternanet.com" class="btn-primary">Email our team</a>
-      <a href="mailto:owinoaketch@maternanet.com" class="btn-ghost">Speak to our CEO</a>
+      <a href="mailto:info@maternanet.com" class="btn-primary">Email our team</a
+      >
+      <a href="mailto:owinoaketch@maternanet.com" class="btn-ghost"
+        >Speak to our CEO</a
+      >
     </div>
   </div>
 </section>
@@ -153,35 +199,37 @@
 <style>
   /* ── Variables ───────────────────────────────────────── */
   :root {
-    --bg:          #f9f7f4;
-    --bg-card:     #ffffff;
-    --fg:          #1c1a17;
-    --fg-mid:      #5a5248;
-    --fg-light:    #9b9188;
-    --border:      #e8e3dc;
+    --bg: #f9f7f4;
+    --bg-card: #ffffff;
+    --fg: #1c1a17;
+    --fg-mid: #5a5248;
+    --fg-light: #9b9188;
+    --border: #e8e3dc;
 
-    --green:       #0e5c48;
-    --green-mid:   #1a7a60;
-    --green-pale:  #eaf4f0;
+    --green: #0e5c48;
+    --green-mid: #1a7a60;
+    --green-pale: #eaf4f0;
 
-    --gold:        #b8831e;
-    --gold-pale:   #fdf6e8;
+    --gold: #b8831e;
+    --gold-pale: #fdf6e8;
 
-    --coral:       #c94a2e;
-    --coral-pale:  #fdf0ed;
+    --coral: #c94a2e;
+    --coral-pale: #fdf0ed;
 
-    --ink:         #2c3a4a;
-    --ink-pale:    #eef1f5;
+    --ink: #2c3a4a;
+    --ink-pale: #eef1f5;
 
-    --teal:        #1a7a8a;
-    --teal-pale:   #eaf6f8;
+    --teal: #1a7a8a;
+    --teal-pale: #eaf6f8;
 
-    --radius:      12px;
-    --radius-sm:   8px;
-    --transition:  0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    --plum: #1c2348;
 
-    --font-display: 'Lora', Georgia, serif;
-    --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --font-display: "Lora", Georgia, serif;
+    --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
   }
 
   /* ── Base ────────────────────────────────────────────── */
@@ -263,10 +311,14 @@
     color: var(--fg);
     outline: none;
     box-sizing: border-box;
-    transition: border-color var(--transition), box-shadow var(--transition);
+    transition:
+      border-color var(--transition),
+      box-shadow var(--transition);
   }
 
-  .faq-search::placeholder { color: var(--fg-light); }
+  .faq-search::placeholder {
+    color: var(--fg-light);
+  }
 
   .faq-search:focus {
     border-color: var(--green);
@@ -293,7 +345,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background var(--transition), color var(--transition);
+    transition:
+      background var(--transition),
+      color var(--transition);
   }
 
   .search-clear:hover {
@@ -374,20 +428,40 @@
   }
 
   /* Category colour tokens */
-  .cat-purple .cat-label { color: #7c4dff; }
-  .cat-purple .cat-dot   { background: #7c4dff; }
+  .cat-purple .cat-label {
+    color: #7c4dff;
+  }
+  .cat-purple .cat-dot {
+    background: #7c4dff;
+  }
 
-  .cat-teal .cat-label   { color: var(--teal); }
-  .cat-teal .cat-dot     { background: var(--teal); }
+  .cat-teal .cat-label {
+    color: var(--teal);
+  }
+  .cat-teal .cat-dot {
+    background: var(--teal);
+  }
 
-  .cat-gold .cat-label   { color: var(--gold); }
-  .cat-gold .cat-dot     { background: var(--gold); }
+  .cat-gold .cat-label {
+    color: var(--gold);
+  }
+  .cat-gold .cat-dot {
+    background: var(--gold);
+  }
 
-  .cat-coral .cat-label  { color: var(--coral); }
-  .cat-coral .cat-dot    { background: var(--coral); }
+  .cat-coral .cat-label {
+    color: var(--coral);
+  }
+  .cat-coral .cat-dot {
+    background: var(--coral);
+  }
 
-  .cat-ink .cat-label    { color: var(--ink); }
-  .cat-ink .cat-dot      { background: var(--ink); }
+  .cat-ink .cat-label {
+    color: var(--ink);
+  }
+  .cat-ink .cat-dot {
+    background: var(--ink);
+  }
 
   /* ── FAQ Items ───────────────────────────────────────── */
   .faq-list {
@@ -440,7 +514,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background var(--transition), color var(--transition);
+    transition:
+      background var(--transition),
+      color var(--transition);
   }
 
   .faq-item.open .q-num {
@@ -462,7 +538,9 @@
     height: 18px;
     color: var(--fg-light);
     transform: rotate(0deg);
-    transition: transform var(--transition), color var(--transition);
+    transition:
+      transform var(--transition),
+      color var(--transition);
   }
 
   .faq-item.open .chevron {
@@ -475,7 +553,10 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, padding 0.35s ease;
+    transition:
+      max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s ease,
+      padding 0.35s ease;
     background: #fbfcfe;
   }
 
@@ -652,7 +733,7 @@
 
   /* ── CTA Band ────────────────────────────────────────── */
   .cta-band {
-    background: var(--green);
+    background: var(--plum);
     color: white;
     padding: 72px 24px;
     text-align: center;
@@ -673,7 +754,7 @@
 
   .cta-band h2 em {
     font-style: italic;
-    color: rgba(255,255,255,0.75);
+    color: rgba(255, 255, 255, 0.75);
   }
 
   .cta-band p {
@@ -696,18 +777,20 @@
     height: 48px;
     padding: 0 28px;
     background: #fff;
-    color: var(--green);
+    color: var(--plum);
     font-family: var(--font-body);
     font-size: 0.9rem;
     font-weight: 600;
     border-radius: 100px;
     text-decoration: none;
-    transition: transform var(--transition), box-shadow var(--transition);
+    transition:
+      transform var(--transition),
+      box-shadow var(--transition);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
 
   .btn-ghost {
@@ -717,28 +800,46 @@
     padding: 0 28px;
     background: transparent;
     color: #fff;
-    border: 1.5px solid rgba(255,255,255,0.5);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
     font-family: var(--font-body);
     font-size: 0.9rem;
     font-weight: 500;
     border-radius: 100px;
     text-decoration: none;
-    transition: border-color var(--transition), background var(--transition);
+    transition: border-color var(--transition);
+    background: var(--transition);
   }
 
   .btn-ghost:hover {
     border-color: #fff;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   /* ── Responsive ──────────────────────────────────────── */
   @media (max-width: 600px) {
-    .faq-section { padding: 48px 16px 40px; }
-    .faq-q { padding: 16px; gap: 10px; }
-    .faq-a-inner { padding-left: 16px; }
-    .faq-item.open .faq-a-inner { padding-bottom: 18px; }
-    .q-num { width: 22px; height: 22px; font-size: 0.65rem; }
-    .cat-title { font-size: 1.25rem; }
-    .cta-band { padding: 48px 16px; }
+    .faq-section {
+      padding: 48px 16px 40px;
+    }
+    .faq-q {
+      padding: 16px;
+      gap: 10px;
+    }
+    .faq-a-inner {
+      padding-left: 16px;
+    }
+    .faq-item.open .faq-a-inner {
+      padding-bottom: 18px;
+    }
+    .q-num {
+      width: 22px;
+      height: 22px;
+      font-size: 0.65rem;
+    }
+    .cat-title {
+      font-size: 1.25rem;
+    }
+    .cta-band {
+      padding: 48px 16px;
+    }
   }
 </style>

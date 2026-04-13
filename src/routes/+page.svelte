@@ -857,9 +857,11 @@
                 style="text-align: center; margin-bottom: 3rem;"
             >
                 <div class="section-title">
-                    <h3 class="wow fadeInUp">real impact, real lives</h3>
+                    <h3 class="wow fadeInUp">
+                        real impact, real lives, real progress.
+                    </h3>
                     <h2 class="text-anime-style-3" data-cursor="-opaque">
-                        What This Means for Mothers Like You
+                        What This Means for Mothers
                     </h2>
                     <p class="wow fadeInUp" data-wow-delay="0.25s">
                         These aren't just org metrics—they're mothers who got
@@ -869,70 +871,60 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: center;">
-            <div class="col-lg-3 col-md-6" style="margin-bottom: 2rem;">
-                <div class="wow fadeInUp">
-                    <div
-                        style="font-size: 2.5rem; font-weight: 800; color: #F67C4E; margin-bottom: 0.5rem;"
+        <div class="impact-grid wow fadeInUp">
+            <div class="imp-card featured">
+                <div class="imp-n">
+                    <span class="counter">11000</span><span class="accent"
+                        >+</span
                     >
-                        <span class="counter">11000</span>+
-                    </div>
-                    <p style="font-size: 1.1rem; color: #555;">
-                        Mothers Served
-                    </p>
-                    <p style="color: #888; font-size: 0.95rem;">
-                        Mothers who found their way out of the crisis
-                    </p>
+                </div>
+                <div class="imp-label">Mothers currently supported</div>
+                <div class="imp-note">
+                    Across 4 counties, 33 integrated clinics, 410 Digital Doulas
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6" style="margin-bottom: 2rem;">
-                <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div
-                        style="font-size: 2.5rem; font-weight: 800; color: #53C4AB; margin-bottom: 0.5rem;"
-                    >
-                        <span class="counter">410</span>+
-                    </div>
-                    <p style="font-size: 1.1rem; color: #555;">
-                        Active Digital Doulas
-                    </p>
-                    <p style="color: #888; font-size: 0.95rem;">
-                        Trained community health workers bringing care home
-                    </p>
+            <div class="imp-card">
+                <div class="imp-n">
+                    <span class="counter">79</span><span class="accent">%</span>
+                </div>
+                <div class="imp-label">
+                    High-risk pregnancies correctly identified
+                </div>
+                <div class="imp-note">
+                    With 81% precision—providers are not overwhelmed with false
+                    alarms.
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6" style="margin-bottom: 2rem;">
-                <div class="wow fadeInUp" data-wow-delay="0.4s">
-                    <div
-                        style="font-size: 2.5rem; font-weight: 800; color: #880ED4; margin-bottom: 0.5rem;"
-                    >
-                        <span class="counter">12</span>+
-                    </div>
-                    <p style="font-size: 1.1rem; color: #555;">
-                        Maternal Deaths Prevented/Year
-                    </p>
-                    <p style="color: #888; font-size: 0.95rem;">
-                        Complications caught before they became emergencies
-                    </p>
+            <div class="imp-card">
+                <div class="imp-n">
+                    <span class="counter">12</span><span class="accent">+</span>
+                </div>
+                <div class="imp-label">Maternal deaths prevented this year</div>
+                <div class="imp-note">
+                    Conservatively estimated families kept whole because of
+                    proactive care.
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6" style="margin-bottom: 2rem;">
-                <div class="wow fadeInUp" data-wow-delay="0.6s">
-                    <div
-                        style="font-size: 2.5rem; font-weight: 800; color: #F67C4E; margin-bottom: 0.5rem;"
-                    >
-                        <span class="counter">70</span>%
-                    </div>
-                    <p style="font-size: 1.1rem; color: #555;">
-                        Cost Reduction in Early Care
-                    </p>
-                    <p style="color: #888; font-size: 0.95rem;">
-                        Catching problems early = fewer emergencies = less money
-                        spent
-                    </p>
+            <div class="imp-card">
+                <div class="imp-n">
+                    <span class="counter">70</span><span class="accent">%</span>
                 </div>
+                <div class="imp-label">Reduction in early care costs</div>
+                <div class="imp-note">
+                    Catching problems early translates to fewer emergencies and
+                    out-of-pocket costs.
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 2rem;">
+            <div class="col-lg-12" style="text-align: center;">
+                <a
+                    href="/about#impact"
+                    class="btn-default"
+                    style="display: inline-block;"
+                    >Explore More Detailed Impact Metrics →</a
+                >
             </div>
         </div>
 
@@ -1176,4 +1168,74 @@
 
 <!-- Our Testimonial Section Start -->
 <Testimonial></Testimonial>
+
 <!-- Our Testimonial Section End -->
+
+<style>
+    /* Impact Presentation Grid */
+    .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .imp-card {
+        background: #ffffff;
+        border: 1px solid rgba(60, 40, 25, 0.18);
+        border-radius: 20px;
+        padding: 32px 24px;
+        text-align: center;
+        transition:
+            transform 0.2s,
+            box-shadow 0.2s;
+    }
+    .imp-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+    }
+    .imp-n {
+        font-family: "Fraunces", serif;
+        font-size: 46px;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        color: #7c3c9c;
+        margin-bottom: 6px;
+    }
+    .imp-card.featured {
+        background: #f36365;
+        border-color: #f36365;
+        color: #fff;
+    }
+    .imp-card.featured .imp-n {
+        color: #fff;
+    }
+    .imp-label {
+        font-size: 16px;
+        font-weight: 600;
+        color: inherit;
+        margin-bottom: 8px;
+    }
+    .imp-note {
+        font-size: 13px;
+        color: #7a6558;
+        line-height: 1.5;
+    }
+    .imp-card.featured .imp-note {
+        color: rgba(255, 255, 255, 0.85);
+    }
+    .imp-card:not(.featured) .imp-label {
+        color: #333;
+    }
+    @media (max-width: 900px) {
+        .impact-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 580px) {
+        .impact-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
