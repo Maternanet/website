@@ -338,7 +338,7 @@ body{
 }
 
 .section-row{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .section-row .section-title{
@@ -672,7 +672,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .hero{
-	padding: 120px 0;
+	padding: 80px 0;
 	background: url('../images/section-bg-shape.svg'), var(--primary-color);
 	background-repeat: no-repeat;
 	background-position: bottom center;
@@ -1030,7 +1030,7 @@ header.main-header .header-sticky.active{
 /*************************************/
 
 .about-us{
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 .about-image{
@@ -1228,7 +1228,7 @@ header.main-header .header-sticky.active{
 /*************************************/
 
 .our-service{
-	padding: 100px 0 70px;
+	padding: 60px 0 40px;
 	background: var(--secondary-color);
 }
 
@@ -1358,7 +1358,7 @@ header.main-header .header-sticky.active{
 /*************************************/
 
 .our-process{
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 .our-process-content{

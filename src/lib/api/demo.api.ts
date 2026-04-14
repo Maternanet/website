@@ -5,15 +5,26 @@ interface DemoRequestDetails {
   company?: string
 }
 
-import axios from "axios";
+export interface DemoResponse {
+  success?: boolean;
+  error?: boolean;
+  msg?: string;
+}
+
 export default class DemoService {
   //using promise instead of callback
-  public static async requestDemo(data: DemoRequestDetails): Promise<any> {
+  public static async requestDemo(data: DemoRequestDetails): Promise<DemoResponse> {
     try {
-      const res = await axios.post("/support/demo", data);
-      return res.data;
-    } catch (error) {
+      const res = await fetch("/support/demo", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
 
+      if (!res.ok) throw new Error(`Demo request failed with status ${res.status}`);
+      return await res.json();
+    } catch (error) {
+      console.error("[DemoService Error]: Failed to request demo", error);
       return { error: true, msg: "Unable to send form. Please try again later." };
     }
   }

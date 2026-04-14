@@ -528,9 +528,9 @@
 <!-- Your Challenges Section End -->
 
 <!-- User Profiles Section Start -->
-<div class="user-profile-section" style="background:#fff; padding:60px 0;">
+<div class="user-profile-section" style="background:#fff; padding:40px 0;">
     <div class="container">
-        <div class="section-title text-center" style="margin-bottom:40px;">
+        <div class="section-title text-center" style="margin-bottom:20px;">
             <h3 class="wow fadeInUp">Who We Serve</h3>
             <h2 class="text-anime-style-3" data-cursor="-opaque">
                 Built Around People That Matter
@@ -849,7 +849,7 @@
 <!-- Your Journey Section End -->
 
 <!-- Impact Stats Section Start -->
-<div class="our-process" style="background-color: #f9f9f9; padding: 5rem 0;">
+<div class="our-process" style="background-color: #f9f9f9; padding: 3rem 0;">
     <div class="container">
         <div class="row section-row">
             <div

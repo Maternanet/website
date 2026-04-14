@@ -908,7 +908,7 @@
                 </div>
                 <div class="seg-ctas">
                     <a
-                        href="mailto:careconnect.afrika@gmail.com"
+                        href="/contacts#contactForm"
                         class="btn btn-ghost btn-arrow">Start a conversation</a
                     >
                     <a

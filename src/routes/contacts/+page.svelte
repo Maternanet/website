@@ -1,52 +1,9 @@
 <script lang="ts">
-    import ContactService from "$lib/api/contact.api";
+    import { enhance } from "$app/forms";
 
-    let name = "";
-    let email = "";
-    let phone = "";
-    let organization = "";
-    let partnership_type = "Healthcare Facility Partnership";
-    let message = "";
     let statusMsg = "";
     let isError = false;
     let isSubmitting = false;
-
-    async function handleSubmit() {
-        if (isSubmitting) return;
-        isSubmitting = true;
-        statusMsg = "Sending message...";
-        isError = false;
-
-        try {
-            const res = await ContactService.sendContact({
-                name,
-                email,
-                phone,
-                organization,
-                partnership_type,
-                message,
-            });
-            if (res?.error) {
-                isError = true;
-                statusMsg =
-                    res.msg || "Unable to send form. Please try again later.";
-            } else {
-                statusMsg =
-                    "Message sent successfully! We will get back to you soon.";
-                name = "";
-                email = "";
-                phone = "";
-                organization = "";
-                partnership_type = "Healthcare Facility Partnership";
-                message = "";
-            }
-        } catch (error) {
-            isError = true;
-            statusMsg = "An error occurred. Please try again.";
-        } finally {
-            isSubmitting = false;
-        }
-    }
 </script>
 
 <!-- Page Header Start -->
@@ -60,13 +17,13 @@
                         Let's Reimagine Maternal Care Together
                     </h1>
                     <p
-                        style="font-size: 1.0rem; color: #808080; margin-top: 3rem;"
+                        style="font-size: 1.0rem; color: #FAFAFA; margin-top: 3rem; text-align: center;"
                     >
                         Whether you're an expecting mother, healthcare provider,
                         government agency, or partner organization—we empower
-                        you with the data foundation, to the last-mile, that
-                        allows us to work together to end preventable maternal
-                        deaths.
+                        you with the data necessary to generate visibility at
+                        the last-mile, that allows for essential services to
+                        reach women who need them most.
                     </p>
                 </div>
                 <!-- Page Header Box End -->
@@ -151,7 +108,6 @@
                                 <a
                                     href="https://www.facebook.com/maternanetafrica/"
                                     aria-label="Facebook"
-                                    on:click={(e) => e.preventDefault()}
                                     ><i class="fa-brands fa-facebook-f"></i></a
                                 >
                             </li>
@@ -159,7 +115,6 @@
                                 <a
                                     href="https://x.com/CareconnectA"
                                     aria-label="Twitter"
-                                    on:click={(e) => e.preventDefault()}
                                     ><i class="fa-brands fa-x-twitter"></i></a
                                 >
                             </li>
@@ -167,7 +122,6 @@
                                 <a
                                     href="https://www.linkedin.com/company/maternanet-africa-ltd/"
                                     aria-label="LinkedIn"
-                                    on:click={(e) => e.preventDefault()}
                                     ><i class="fa-brands fa-linkedin-in"></i></a
                                 >
                             </li>
@@ -175,7 +129,6 @@
                                 <a
                                     href="https://www.instagram.com/maternanet_africa/"
                                     aria-label="Instagram"
-                                    on:click={(e) => e.preventDefault()}
                                     ><i class="fa-brands fa-instagram"></i></a
                                 >
                             </li>
@@ -228,7 +181,38 @@
 
                     <form
                         id="contactForm"
-                        on:submit|preventDefault={handleSubmit}
+                        method="POST"
+                        use:enhance={() => {
+                            isSubmitting = true;
+                            statusMsg = "Sending message...";
+                            isError = false;
+
+                            return async ({ result, update }) => {
+                                isSubmitting = false;
+                                if (result.type === "success") {
+                                    const data = result.data as
+                                        | { msg?: string }
+                                        | undefined;
+                                    statusMsg =
+                                        data?.msg ??
+                                        "Message sent successfully!";
+                                    isError = false;
+                                    await update({ reset: true });
+                                } else if (result.type === "failure") {
+                                    const data = result.data as
+                                        | { msg?: string }
+                                        | undefined;
+                                    statusMsg =
+                                        data?.msg ??
+                                        "Unable to send form. Please try again later.";
+                                    isError = true;
+                                } else {
+                                    statusMsg =
+                                        "An unexpected error occurred. Please try again.";
+                                    isError = true;
+                                }
+                            };
+                        }}
                         data-toggle="validator"
                         class="wow fadeInUp"
                         data-wow-delay="0.5s"
@@ -238,8 +222,7 @@
                                 <label for="fullname">full name</label>
                                 <input
                                     type="text"
-                                    bind:value={name}
-                                    name="fullname"
+                                    name="name"
                                     class="form-control"
                                     id="fullname"
                                     placeholder="Enter Your Name"
@@ -252,7 +235,6 @@
                                 <label for="email">your email</label>
                                 <input
                                     type="email"
-                                    bind:value={email}
                                     name="email"
                                     class="form-control"
                                     id="email"
@@ -266,7 +248,6 @@
                                 <label for="phone">phone number</label>
                                 <input
                                     type="text"
-                                    bind:value={phone}
                                     name="phone"
                                     class="form-control"
                                     id="phone"
@@ -280,7 +261,6 @@
                                 <label for="organization">organization</label>
                                 <input
                                     type="text"
-                                    bind:value={organization}
                                     name="organization"
                                     class="form-control"
                                     id="organization"
@@ -294,7 +274,6 @@
                                     >I'm interested as</label
                                 >
                                 <select
-                                    bind:value={partnership_type}
                                     name="partnership_type"
                                     class="form-control"
                                     id="partnership_type"
@@ -328,7 +307,6 @@
                             <div class="form-group col-md-12 mb-4">
                                 <label for="message">message</label>
                                 <textarea
-                                    bind:value={message}
                                     name="message"
                                     class="form-control"
                                     id="message"
