@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, FORMSUBMIT_URL } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
 
@@ -8,7 +8,7 @@ export const actions: Actions = {
 		const data = Object.fromEntries(formData);
 
 		try {
-			const response = await fetch(`${FORMSUBMIT_URL}${CONTACT_EMAIL}`, {
+			const response = await fetch(`${env.FORMSUBMIT_URL}${env.CONTACT_EMAIL}`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({
