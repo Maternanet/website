@@ -28,6 +28,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"posthog-js": "^1.369.1",
+		"posthog-node": "^5.29.2",
 		"svelte-french-toast": "^2.0.0-alpha.0"
 	},
 	"packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { analytics } from "$lib/utils/analytics";
     import Testimonial from "$lib/components/facility/testimonials.svelte";
 
     let activeProfile = "mothers";
@@ -7,6 +8,13 @@
 
     function onProfileImageError(event: Event) {
         (event.target as HTMLImageElement).src = fallbackProfileImage;
+    }
+
+    function trackCTA(label: string) {
+        analytics.track('cta_click', {
+            label,
+            page: 'home'
+        });
     }
 
     const profileCards = [
@@ -104,6 +112,7 @@
                         <a
                             href="/contacts#contactForm"
                             class="btn-default btn-highlighted"
+                            on:click={() => trackCTA('Start Your Journey')}
                             >Start Your Journey</a
                         >
                     </div>
@@ -514,7 +523,7 @@
                         class="about-content-btn wow fadeInUp"
                         data-wow-delay="0.75s"
                     >
-                        <a href="#our-service" class="btn-default"
+                        <a href="#our-service" class="btn-default" on:click={() => trackCTA('See how we help')}
                             >See how we help</a
                         >
                     </div>
@@ -620,6 +629,7 @@
                                     href={profile.ctaLink}
                                     class="btn-default"
                                     style="padding: 12px 78px 12px 23px; font-size: 0.95rem;"
+                                    on:click={() => trackCTA(profile.ctaLabel)}
                                     >{profile.ctaLabel}</a
                                 >
                             </div>
@@ -768,7 +778,7 @@
 
                     <!-- Section Button Start -->
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
-                        <a href="/contacts#contactForm" class="btn-default"
+                        <a href="/contacts#contactForm" class="btn-default" on:click={() => trackCTA('Join Now')}
                             >Join Now — It's Free</a
                         >
                     </div>

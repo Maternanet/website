@@ -1,9 +1,11 @@
 <script lang="ts">
   import { categories, filters, type FaqCategory } from "$lib/content/faq";
+  import { analytics } from "$lib/utils/analytics";
 
   let searchQuery = "";
   let activeFilter = "all";
   let openItem: string | null = null;
+  let searchTimeout: ReturnType<typeof setTimeout> | null = null;
 
   $: filteredCategories = categories.filter((cat) => {
     if (activeFilter !== "all" && cat.id !== activeFilter) return false;
@@ -25,12 +27,27 @@
   };
 
   function toggleItem(id: string) {
-    openItem = openItem === id ? null : id;
+    const isOpening = openItem !== id;
+    openItem = isOpening ? id : null;
+    if (isOpening) {
+      const item = categories.flatMap((c) => c.items).find((i) => i.id === id);
+      analytics.track('faq_item_opened', { item_id: id, question: item?.q, filter: activeFilter });
+    }
   }
 
   function setFilter(id: string) {
     activeFilter = id;
     openItem = null;
+    analytics.track('faq_filter_changed', { filter: id });
+  }
+
+  function onSearchInput() {
+    if (searchTimeout) clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      if (searchQuery.trim()) {
+        analytics.track('faq_searched', { query: searchQuery.trim(), results: filteredCategories.length });
+      }
+    }, 600);
   }
 </script>
 
@@ -72,6 +89,7 @@
       placeholder="Search all questions…"
       bind:value={searchQuery}
       autocomplete="off"
+      on:input={onSearchInput}
     />
     {#if searchQuery}
       <button

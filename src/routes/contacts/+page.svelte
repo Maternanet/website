@@ -1,9 +1,14 @@
 <script lang="ts">
     import { enhance } from "$app/forms";
+    import { analytics } from "$lib/utils/analytics";
 
     let statusMsg = "";
     let isError = false;
     let isSubmitting = false;
+
+    function trackSocial(platform: string) {
+        analytics.track('social_click', { platform });
+    }
 </script>
 
 <!-- Page Header Start -->
@@ -108,6 +113,7 @@
                                 <a
                                     href="https://www.facebook.com/maternanetafrica/"
                                     aria-label="Facebook"
+                                    on:click={() => trackSocial('Facebook')}
                                     ><i class="fa-brands fa-facebook-f"></i></a
                                 >
                             </li>
@@ -115,6 +121,7 @@
                                 <a
                                     href="https://x.com/CareconnectA"
                                     aria-label="Twitter"
+                                    on:click={() => trackSocial('Twitter')}
                                     ><i class="fa-brands fa-x-twitter"></i></a
                                 >
                             </li>
@@ -122,6 +129,7 @@
                                 <a
                                     href="https://www.linkedin.com/company/maternanet-africa-ltd/"
                                     aria-label="LinkedIn"
+                                    on:click={() => trackSocial('LinkedIn')}
                                     ><i class="fa-brands fa-linkedin-in"></i></a
                                 >
                             </li>
@@ -129,6 +137,7 @@
                                 <a
                                     href="https://www.instagram.com/maternanet_africa/"
                                     aria-label="Instagram"
+                                    on:click={() => trackSocial('Instagram')}
                                     ><i class="fa-brands fa-instagram"></i></a
                                 >
                             </li>
@@ -182,14 +191,18 @@
                     <form
                         id="contactForm"
                         method="POST"
-                        use:enhance={() => {
+                        use:enhance={({ formData }) => {
                             isSubmitting = true;
                             statusMsg = "Sending message...";
                             isError = false;
 
+                            const partnershipType = formData.get('partnership_type');
+                            analytics.track('form_submit_start', { partnershipType });
+
                             return async ({ result, update }) => {
                                 isSubmitting = false;
                                 if (result.type === "success") {
+                                    analytics.track('form_submit_success', { partnershipType });
                                     const data = result.data as
                                         | { msg?: string }
                                         | undefined;
@@ -199,6 +212,10 @@
                                     isError = false;
                                     await update({ reset: true });
                                 } else if (result.type === "failure") {
+                                    analytics.track('form_submit_error', { 
+                                        partnershipType,
+                                        error: 'validation_failure'
+                                    });
                                     const data = result.data as
                                         | { msg?: string }
                                         | undefined;
@@ -207,6 +224,10 @@
                                         "Unable to send form. Please try again later.";
                                     isError = true;
                                 } else {
+                                    analytics.track('form_submit_error', { 
+                                        partnershipType,
+                                        error: 'system_error'
+                                    });
                                     statusMsg =
                                         "An unexpected error occurred. Please try again.";
                                     isError = true;
