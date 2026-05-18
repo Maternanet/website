@@ -576,23 +576,17 @@
         >
             {#each profileCards as profile}
                 {#if activeProfile === profile.id}
-                    <div
-                        class="profile-card"
-                        style="display:flex; gap:18px; align-items:center; padding:24px; border:1px solid #ececec; border-radius:16px; box-shadow:0 5px 20px rgba(0,0,0,0.05); background:#fff;"
-                    >
+                    <div class="profile-card">
                         {#if profile.image}
-                            <div
-                                style="flex: 0 0 40%; max-width:40%; padding:10px; box-sizing:border-box;"
-                            >
+                            <div class="profile-card-image">
                                 <img
                                     src={profile.image}
                                     alt={profile.title}
-                                    style="width:100%; height:100%; object-fit:cover; border-radius:12px;"
                                     on:error={onProfileImageError}
                                 />
                             </div>
                         {/if}
-                        <div style="flex: 1 1 60%;">
+                        <div class="profile-card-content">
                             <h4 style="margin-bottom:12px;">{profile.title}</h4>
                             <p
                                 style="color: #666; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;"
@@ -1246,6 +1240,53 @@
     @media (max-width: 580px) {
         .impact-grid {
             grid-template-columns: 1fr;
+        }
+    }
+
+    /* User Profile Cards Responsive Layout */
+    .profile-card {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        padding: 24px;
+        border: 1px solid #ececec;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        background: #fff;
+    }
+
+    .profile-card-image {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .profile-card-image img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .profile-card-content {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .profile-card {
+            flex-direction: row;
+        }
+
+        .profile-card-image {
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+
+        .profile-card-content {
+            flex: 1 1 60%;
         }
     }
 </style>
