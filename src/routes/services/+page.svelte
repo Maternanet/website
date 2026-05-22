@@ -248,13 +248,13 @@
                         <p
                             style="font-size: 14px; color: var(--text-color); line-height: 1.6;"
                         >
-                            We train the CHWs to identify risks early using
+                            We empower existing government CHPs to identify risks early using
                             predictive tools, facilitate fast
                             community-to-clinic linkages & referrals and offer
-                            personalized contunious support. They essentially
+                            personalized continuous support. They essentially
                             act as a bridge, reaching you before complications
                             become emergencies, offering support to relieve
-                            emotions of loneliness or anxiety and triger timely
+                            emotions of loneliness or anxiety and trigger timely
                             referrals to avert crises.
                         </p>
                     </div>
@@ -288,8 +288,8 @@
                         <p
                             style="font-size: 14px; color: var(--text-color); line-height: 1.6;"
                         >
-                            We partner with CHWs in your community to offer you
-                            personalized support from CHWs who know your
+                            We partner with CHPs in your community to offer you
+                            personalized support from CHPs who know your
                             language and live in your neighborhood.
                         </p>
                     </div>
@@ -446,6 +446,79 @@
                                 integration.
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DATA GOVERNANCE HORIZONTAL CARD -->
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <div
+                        class="service-card"
+                        style="background: white; border: 1px solid var(--divider-color); padding: 40px; border-radius: 12px; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.02);"
+                    >
+                        <div class="row align-items-center mb-4">
+                            <div class="col-md-auto mb-3 mb-md-0">
+                                <div
+                                    class="service-card-icon"
+                                    style="width: 50px; height: 50px; background: rgba(124, 60, 156, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;"
+                                >
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="var(--primary-color)"
+                                        stroke-width="2"
+                                    >
+                                        <rect x="3" y="11" width="18" height="10" rx="2" />
+                                        <circle cx="12" cy="5" r="2" />
+                                        <path d="M12 7v4" />
+                                        <line x1="8" y1="16" x2="8" y2="16" />
+                                        <line x1="16" y1="16" x2="16" y2="16" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h4
+                                    style="color: var(--primary-color); font-size: 1.25rem;"
+                                >
+                                    Data Governance & Two-Channel Architecture
+                                </h4>
+                                <p
+                                    style="color: var(--text-color); margin-top: 10px; font-size: 14px; margin-bottom: 0;"
+                                >
+                                    Protecting MOH data boundaries while securing proprietary longitudinal depth. Fully aligned with DPA 2019 compliance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul
+                                    style="color: var(--text-color); font-size: 14px; padding-left: 20px; list-style-type: disc; line-height: 1.8;"
+                                >
+                                    <li>
+                                        <strong>Channel A (OpenHIM):</strong> Clinical data routed directly to government eCHIS networks.
+                                    </li>
+                                    <li>
+                                        <strong>Channel B (Maternanet Direct):</strong> Proprietary socioeconomic & depth data gathered via direct maternal consent.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul
+                                    style="color: var(--text-color); font-size: 14px; padding-left: 20px; list-style-type: disc; line-height: 1.8;"
+                                >
+                                    <li>
+                                        Mothers self-enroll (QR/USSD), taking ownership of their health records.
+                                    </li>
+                                    <li>
+                                        <strong>On-Device Inference SDK</strong> guarantees connectivity-independent alerts, protecting data integrity offline.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -693,13 +766,13 @@
                 <div class="col-md-4">
                     <div style="padding: 15px;">
                         <h4 style="color: #F67C4E; font-size: 1.3rem;">
-                            Offline-First
+                            On-Device SDK
                         </h4>
                         <p
                             style="color: rgba(255,255,255,0.6); font-size: 13px;"
                         >
-                            Proprietary predictive model optimized for 2G
-                            feature phones.
+                            Proprietary on-device inference model optimized for 2G
+                            feature phones, ensuring CHPs get offline alerts.
                         </p>
                     </div>
                 </div>

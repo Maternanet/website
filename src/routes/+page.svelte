@@ -11,9 +11,9 @@
     }
 
     function trackCTA(label: string) {
-        analytics.track('cta_click', {
+        analytics.track("cta_click", {
             label,
-            page: 'home'
+            page: "home",
         });
     }
 
@@ -38,39 +38,39 @@
             ctaLink: "/contacts#contactForm",
         },
         {
-            id: "clinics",
-            title: "Hospitals & Clinics",
+            id: "chps",
+            title: "Community Health Promoters",
             description:
-                "We provide the tools to save you time, reduce costs, and improve outcomes.",
-            image: "/images/clinic.jpg",
+                "We empower existing eCHIS networks with predictive intelligence to make every home visit count.",
+            image: "/images/chp.jpg",
             painPoints: [
-                "Overwhelmed maternity wards with uncertain case loads.",
-                "Late referrals creating emergency pressure.",
-                "Limited visibility into community-level risk trends.",
+                "Burden of manual paper reporting and fragmented data.",
+                "Lack of predictive tools to prioritize household visits.",
+                "Limited recognition and incentives for impact.",
             ],
             solutions: [
-                "Predictive dashboard for patient volume and risk stratification.",
-                "Early triage to reduce unnecessary referrals.",
-                "Seamless EMR/DHIS2 integration for data-driven planning & reporting.",
+                "We embed predictive CWHI scoring into the government's eCHIS app you already use.",
+                "On-device offline inference for connectivity-independent alerts.",
+                "Automated reporting and performance-based incentives.",
             ],
-            ctaLabel: "Request Integration Setup",
+            ctaLabel: "Learn More",
             ctaLink: "/contacts#contactForm",
         },
         {
             id: "policy",
-            title: "Government & Insurers",
+            title: "Health Systems & Partners",
             description:
-                "We provide the data and insights to make informed decisions and improve maternal health outcomes at scale.",
-            image: "/images/policy.jpg",
+                "We are the mediators between eCHIS and clinical decision intelligence, delivering actionable insights for maternal health at scale.",
+            image: "/images/clinic.jpg",
             painPoints: [
-                "Inadequate data for budgeting and policy decisions.",
+                "Overwhelmed maternity wards with uncertain case loads.",
                 "Expensive emergency obstetric care for public systems.",
-                "Lack of measurable outcomes for maternal health programs.",
+                "Lack of validated, longitudinal maternal outcome data.",
             ],
             solutions: [
-                "Real-time population health analytics for counties and maternal health programs.",
-                "Cost-effectiveness evidence to justify investments and insights into maternal health population-level trends.",
-                "Outcome tracking to validate impact in lives saved at scale.",
+                "Seamless eCHIS/DHIS2 integration and two-channel data architecture.",
+                "Real-time population health analytics for county programs.",
+                "Validated impact tracking and cost-effectiveness evidence.",
             ],
             ctaLabel: "Access Analytics Demo",
             ctaLink: "/contacts#contactForm",
@@ -112,8 +112,8 @@
                         <a
                             href="/contacts#contactForm"
                             class="btn-default btn-highlighted"
-                            on:click={() => trackCTA('Start Your Journey')}
-                            >Start Your Journey</a
+                            on:click={() => trackCTA("Journey Starts Here")}
+                            >Your Journey Starts Here</a
                         >
                     </div>
                     <!-- Hero Content Body End -->
@@ -523,7 +523,10 @@
                         class="about-content-btn wow fadeInUp"
                         data-wow-delay="0.75s"
                     >
-                        <a href="#our-service" class="btn-default" on:click={() => trackCTA('See how we help')}
+                        <a
+                            href="#our-service"
+                            class="btn-default"
+                            on:click={() => trackCTA("See how we help")}
                             >See how we help</a
                         >
                     </div>
@@ -690,9 +693,10 @@
                         <h3>Care That Comes to You 🏥</h3>
                         <p>
                             <strong>Solves:</strong> The 25-30km journey to
-                            clinics<br /><br />Community Health Workers trained
-                            with our team offering home visits and follow-ups.
-                            No 6-hour journeys on bad roads.
+                            clinics<br /><br />We equip your community's
+                            existing health promoters with predictive tools for
+                            home visits and follow-ups. No 6-hour journeys on
+                            bad roads.
                         </p>
                     </div>
                     <div class="service-btn">
@@ -713,8 +717,9 @@
                         <p>
                             <strong>Solves:</strong> 85% out-of-pocket costs.<br
                             /><br />Micro-savings wallets let you save as little
-                            as $0.30/day and access instant micro-loans. No
-                            emergency debt when baby is born.
+                            as $0.30/day and access clinically-authorized
+                            emergency credit. No emergency debt when baby is
+                            born.
                         </p>
                     </div>
                     <div class="service-btn">
@@ -772,7 +777,10 @@
 
                     <!-- Section Button Start -->
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.5s">
-                        <a href="/contacts#contactForm" class="btn-default" on:click={() => trackCTA('Join Now')}
+                        <a
+                            href="/contacts#contactForm"
+                            class="btn-default"
+                            on:click={() => trackCTA("Join Now")}
                             >Join Now — It's Free</a
                         >
                     </div>
@@ -794,15 +802,13 @@
                             </figure>
                         </div>
                         <div class="process-item-content">
-                            <h3>Step 1: Sign Up (30 seconds)</h3>
+                            <h3>Step 1: Direct Consent & Self-Enrollment</h3>
                             <p>
-                                (Kindly take note: At the moment we are doing
-                                community-based deployments. In other words, we
-                                are coming to you to be able to experience your
-                                painpoints first-hand. Be on the look-out we
-                                might be in your community next. You can also
-                                get in touch with us to reccommend where we
-                                should be next.)
+                                Mothers self-enroll via a simple QR code or USSD
+                                menu, providing direct consent. You take
+                                ownership of your health story and establish a
+                                direct connection with the Maternanet
+                                intelligence layer.
                             </p>
                         </div>
                     </div>
@@ -816,10 +822,13 @@
                             </figure>
                         </div>
                         <div class="process-item-content">
-                            <h3>Step 2: Get Your Pregnancy Companion</h3>
+                            <h3>
+                                Step 2: Connect with Your Community Promoter
+                            </h3>
                             <p>
-                                Get connected to a CHP in your community. Start
-                                receiving personalized pregnancy insights, risk
+                                A trained Community Health Promoter (CHP)
+                                becomes your entry point. Start receiving
+                                personalized pregnancy insights, risk
                                 monitoring, and health tips. Real guidance from
                                 real people you trust, tailored just for you.
                             </p>
@@ -1252,7 +1261,7 @@
         padding: 24px;
         border: 1px solid #ececec;
         border-radius: 16px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         background: #fff;
     }
 

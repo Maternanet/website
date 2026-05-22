@@ -46,7 +46,7 @@ export const categories: FaqCategory[] = [
         id: 'platform-5',
         num: '5',
         q: 'How does Maternanet integrate with existing health systems — DHIS2, EMRs?',
-        a: '<p>Maternanet integrates natively with Kenya\'s national <strong>DHIS2</strong> system and most facility-level EMRs in active counties:</p><ul><li>County health departments access population-level risk dashboards without additional data entry</li><li>Outcome data validates automatically against government records</li><li>Facilities do not change existing workflows — our platform reads from and writes to systems they already use. Generates automatic SHA claims reports.</li></ul><p><strong>Setup:</strong> 2–4 weeks including staff training. One-time $399 fee + $85/month facility licence. Contact info@maternanet.com for a free trial.</p>'
+        a: '<p>Maternanet operates on a <strong>Two-Channel Architecture</strong> to integrate natively with Kenya\'s national <strong>DHIS2</strong> system and EMRs while securing direct depth data:</p><ul><li><strong>Channel A (OpenHIM):</strong> Clinical data routes directly to government eCHIS networks without manual entry.</li><li><strong>Channel B (Maternanet Direct):</strong> Proprietary socioeconomic & depth data is gathered via direct maternal consent (QR/USSD).</li><li>County health departments access population-level dashboards. Generates automatic SHA claims reports.</li></ul><p><strong>Setup:</strong> 2–4 weeks including staff training. One-time $399 fee + $85/month facility licence. Contact info@maternanet.com for a free trial.</p>'
       }
     ]
   },
@@ -86,7 +86,7 @@ export const categories: FaqCategory[] = [
         id: 'community-1',
         num: '9',
         q: 'What is a Digital Doula and how are they trained?',
-        a: '<p>A Digital Doula is a community health provider (CHP) trained and equipped by Maternanet to conduct community-level screenings, follow up on flagged high-risk mothers, and bridge the household-to-clinic gap where most maternal deaths happen.</p><ul><li><strong>10-day intensive bootcamp:</strong> clinical basics, app usage, device handling, escalation protocols</li><li><strong>Continuous digital refreshers</strong> accessible offline on tablet or SMS</li><li><strong>Quarterly in-person workshops</strong> for peer learning and protocol updates</li><li><strong>Maximum 45-60 mothers per CHP</strong> with performance-based incentives</li></ul><p>Currently <strong>410 active Digital Doulas</strong> across 4 counties, with a <strong>96% retention rate</strong>.</p>'
+        a: '<p>A Digital Doula is an existing community health provider (CHP) equipped by Maternanet to conduct community-level screenings, follow up on flagged high-risk mothers, and bridge the household-to-clinic gap where most maternal deaths happen.</p><ul><li><strong>10-day intensive bootcamp:</strong> clinical basics, app usage, device handling, escalation protocols</li><li><strong>Continuous digital refreshers</strong> accessible offline on tablet or SMS</li><li><strong>Quarterly in-person workshops</strong> for peer learning and protocol updates</li><li><strong>Maximum 45-60 mothers per CHP</strong> with performance-based incentives</li></ul><p>Currently <strong>410 active Digital Doulas</strong> across 4 counties, with a <strong>96% retention rate</strong>.</p>'
       },
       {
         id: 'community-2',
@@ -98,7 +98,7 @@ export const categories: FaqCategory[] = [
         id: 'community-3',
         num: '11',
         q: 'What happens when a mother can\'t afford care after being flagged as high-risk?',
-        a: '<p>Detecting risk without removing the barrier to acting on it is not a solution; fortunately we realized this earlier on. Maternanet addresses the financial barrier through two mechanisms:</p><ul><li><strong>Care Now, Lipa Later:</strong> Microfinance institution partnerships providing credit for predictively identified high-risk interventions — accessible at the point of the alert, not after a missed appointment but must be approved by a clinician.</li><li><strong>Micro-saving wallets:</strong> Mothers save incrementally via mobile wallet — as little as KSh 30 per deposit — earmarked for delivery costs, reducing reliance on emergency borrowing</li></ul><p>Our B2B revenue model subsidises care at the community level. The mother pays nothing extra. We take from the institutional top of the pyramid and give to the bottom.</p>'
+        a: '<p>Detecting risk without removing the barrier to acting on it is not a solution; fortunately we realized this earlier on. Maternanet addresses the financial barrier through two mechanisms:</p><ul><li><strong>Care Now, Lipa Later:</strong> Microfinance institution partnerships providing clinically-authorized emergency credit for predictively identified high-risk interventions — accessible at the point of the alert, but requiring mandatory Clinical Officer confirmation to prevent debt cycles.</li><li><strong>Micro-saving wallets:</strong> Mothers save incrementally via mobile wallet — as little as KSh 30 per deposit — earmarked for delivery costs, reducing reliance on emergency borrowing</li></ul><p>Our B2B revenue model subsidises care at the community level. The mother pays nothing extra. We take from the institutional top of the pyramid and give to the bottom.</p>'
       }
     ]
   },
@@ -112,7 +112,7 @@ export const categories: FaqCategory[] = [
         id: 'partner-1',
         num: '12',
         q: 'How can our hospital, clinic, or county health department integrate with Maternanet?',
-        a: '<p>Integration follows a four-step pathway:</p><ul><li><strong>Assessment (1–2 weeks):</strong> IT readiness, EMR/DHIS2 setup, catchment area characteristics</li><li><strong>Integration and setup (2–4 weeks):</strong> Technical integration, tablet/PC installation, staff training</li><li><strong>Digital Doula deployment:</strong> CHPs recruited and trained from your community catchment area</li><li><strong>Go-live:</strong> Real-time dashboard showing population risk distribution, referral rates, outcome tracking</li></ul><p><strong>Pricing:</strong> $85/month facility licence + $399 one-time setup. Revenue-sharing partnerships available. Contact info@maternanet.com.</p>'
+        a: '<p>Integration follows a four-step pathway:</p><ul><li><strong>Assessment (1–2 weeks):</strong> IT readiness, EMR/DHIS2 setup, catchment area characteristics</li><li><strong>Integration and setup (2–4 weeks):</strong> Technical integration, tablet/PC installation, staff training</li><li><strong>Digital Doula deployment:</strong> Existing CHPs from your community are equipped with our predictive tools</li><li><strong>Go-live:</strong> Real-time dashboard showing population risk distribution, referral rates, outcome tracking</li></ul><p><strong>Pricing:</strong> $85/month facility licence + $399 one-time setup. Revenue-sharing partnerships available. Contact info@maternanet.com.</p>'
       },
       {
         id: 'partner-2',
