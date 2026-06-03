@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher, onMount } from 'svelte';
   import { fade, fly } from 'svelte/transition';
+  import { analytics } from '$lib/utils/analytics';
 
   const dispatch = createEventDispatcher();
 
@@ -18,6 +19,10 @@
   });
 
   function save() {
+    analytics.track('cookie_preferences_saved', {
+      analytics: preferences.analytics,
+      marketing: preferences.marketing
+    });
     dispatch('save', preferences);
   }
 

@@ -3,6 +3,7 @@
   import { fade, fly } from 'svelte/transition';
   import CookieSettingsModal from './CookieSettingsModal.svelte';
   import { consent } from '$lib/stores/consent';
+  import { analytics } from '$lib/utils/analytics';
 
   let showBanner = false;
   let showModal = false;
@@ -23,6 +24,7 @@
       analytics: true,
       marketing: true
     });
+    analytics.track('cookie_consent_accepted');
     showBanner = false;
   }
 
@@ -32,6 +34,7 @@
       analytics: false,
       marketing: false
     });
+    analytics.track('cookie_consent_declined');
     showBanner = false;
   }
 

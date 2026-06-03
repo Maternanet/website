@@ -1,5 +1,10 @@
-<script>
+<script lang="ts">
     import { onMount } from "svelte";
+    import { analytics } from "$lib/utils/analytics";
+
+    function trackAboutCTA(label: string) {
+        analytics.track('about_cta_click', { label, page: 'about' });
+    }
 
     onMount(() => {
         /* Reveal on scroll */
@@ -860,11 +865,13 @@
                 <div class="seg-ctas">
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-ghost btn-arrow">Find a CHP near you</a
+                        class="btn btn-ghost btn-arrow"
+                        on:click={() => trackAboutCTA('Find a CHP near you')}>Find a CHP near you</a
                     >
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-white-translucent">Talk to us</a
+                        class="btn btn-white-translucent"
+                        on:click={() => trackAboutCTA('Talk to us - mothers')}>Talk to us</a
                     >
                 </div>
             </div>
@@ -885,11 +892,13 @@
                     <a
                         href="/contacts#contactForm"
                         class="btn btn-ghost btn-arrow"
+                        on:click={() => trackAboutCTA('Become a Digital Doula')}
                         >Become a Digital Doula</a
                     >
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-white-translucent">Talk to us</a
+                        class="btn btn-white-translucent"
+                        on:click={() => trackAboutCTA('Talk to us - chp')}>Talk to us</a
                     >
                 </div>
             </div>
@@ -909,11 +918,13 @@
                 <div class="seg-ctas">
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-ghost btn-arrow">Start a conversation</a
+                        class="btn btn-ghost btn-arrow"
+                        on:click={() => trackAboutCTA('Start a conversation')}>Start a conversation</a
                     >
                     <a
                         href="/contacts#contactForm"
-                        class="btn btn-white-translucent">Request our brief</a
+                        class="btn btn-white-translucent"
+                        on:click={() => trackAboutCTA('Request our brief')}>Request our brief</a
                     >
                 </div>
             </div>

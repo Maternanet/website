@@ -1,8 +1,15 @@
-import posthog from 'posthog-js';
 import { browser } from '$app/environment';
 
 // PostHog is initialized in src/hooks.client.ts with opt_out_capturing_by_default: true.
 // This module manages consent-based opt-in/opt-out.
+
+let posthogClient: any = null;
+
+if (browser) {
+  import('posthog-js').then((mod) => {
+    posthogClient = mod.default;
+  });
+}
 
 export const analytics = {
   /**
@@ -10,7 +17,13 @@ export const analytics = {
    */
   init: () => {
     if (!browser) return;
-    posthog.opt_in_capturing();
+    if (posthogClient) {
+      posthogClient.opt_in_capturing();
+    } else {
+      import('posthog-js').then((mod) => {
+        mod.default.opt_in_capturing();
+      });
+    }
   },
 
   /**
@@ -18,7 +31,13 @@ export const analytics = {
    */
   track: (eventName: string, properties?: Record<string, any>) => {
     if (!browser) return;
-    posthog.capture(eventName, properties);
+    if (posthogClient) {
+      posthogClient.capture(eventName, properties);
+    } else {
+      import('posthog-js').then((mod) => {
+        mod.default.capture(eventName, properties);
+      });
+    }
   },
 
   /**
@@ -26,7 +45,13 @@ export const analytics = {
    */
   identify: (distinctId: string, properties?: Record<string, any>) => {
     if (!browser) return;
-    posthog.identify(distinctId, properties);
+    if (posthogClient) {
+      posthogClient.identify(distinctId, properties);
+    } else {
+      import('posthog-js').then((mod) => {
+        mod.default.identify(distinctId, properties);
+      });
+    }
   },
 
   /**
@@ -34,6 +59,13 @@ export const analytics = {
    */
   optOut: () => {
     if (!browser) return;
-    posthog.opt_out_capturing();
+    if (posthogClient) {
+      posthogClient.opt_out_capturing();
+    } else {
+      import('posthog-js').then((mod) => {
+        mod.default.opt_out_capturing();
+      });
+    }
   }
 };
+

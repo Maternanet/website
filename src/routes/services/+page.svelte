@@ -1,5 +1,10 @@
-<script>
+<script lang="ts">
     import { onMount } from "svelte";
+    import { analytics } from "$lib/utils/analytics";
+
+    function trackServicesCTA(label: string) {
+        analytics.track('services_cta_click', { label, page: 'services' });
+    }
 
     onMount(() => {
         document.querySelectorAll('a[href^="#"]').forEach((a) => {
@@ -614,6 +619,7 @@
                         href="/contacts#contactForm"
                         class="btn-default"
                         style="padding: 16px 35px; font-size: 15px; background: #F67C4E; border: 1px solid #F67C4E; color: white; font-weight: 600; border-radius: 100px;"
+                        on:click={() => trackServicesCTA('Join As a Community Partner')}
                     >
                         Join As a Community Partner <span class="btn-arrow"
                             >&nbsp;&nbsp;→</span
@@ -625,6 +631,7 @@
                         href="/contacts#contactForm"
                         class="btn-default btn-highlighted"
                         style="padding: 16px 35px; font-size: 15px; background: white; border: 1px solid var(--divider-color); color: var(--primary-color); border-radius: 100px;"
+                        on:click={() => trackServicesCTA('I represent health system or NGO')}
                     >
                         I represent health system or NGO <span class="btn-arrow"
                             >&nbsp;&nbsp;→</span
@@ -709,6 +716,7 @@
                         href="/contacts#contactForm"
                         class="btn-default btn-highlighted"
                         style="padding: 16px 35px; font-size: 15px; background: white; border: 1px solid var(--divider-color); color: var(--primary-color); border-radius: 100px;"
+                        on:click={() => trackServicesCTA('Integrate with Your Facility')}
                     >
                         Integrate with Your Facility <span class="btn-arrow"
                             >&nbsp;&nbsp;→</span
@@ -720,6 +728,7 @@
                         href="/contacts#contactForm"
                         class="btn-default"
                         style="padding: 16px 35px; font-size: 15px; background: #F67C4E; border: 1px solid #F67C4E; color: white; font-weight: 600; border-radius: 100px;"
+                        on:click={() => trackServicesCTA('Request Data Partnership Brief')}
                     >
                         Request Data Partnership Brief <span class="btn-arrow"
                             >&nbsp;&nbsp;→</span

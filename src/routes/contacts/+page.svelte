@@ -197,11 +197,17 @@
                             isError = false;
 
                             const partnershipType = formData.get('partnership_type');
+                            const email = String(formData.get('email') ?? '');
+                            const name = String(formData.get('name') ?? '');
+                            const organization = String(formData.get('organization') ?? '');
                             analytics.track('form_submit_start', { partnershipType });
 
                             return async ({ result, update }) => {
                                 isSubmitting = false;
                                 if (result.type === "success") {
+                                    if (email) {
+                                        analytics.identify(email, { name, organization, partnership_type: partnershipType });
+                                    }
                                     analytics.track('form_submit_success', { partnershipType });
                                     const data = result.data as
                                         | { msg?: string }

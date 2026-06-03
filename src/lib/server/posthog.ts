@@ -4,6 +4,13 @@ import { env } from '$env/dynamic/public';
 let posthogClient: PostHog | null = null;
 
 export function getPostHogClient() {
+	if (!env.PUBLIC_POSTHOG_PROJECT_TOKEN) {
+		return {
+			capture: (payload: any) => console.log('[PostHog Mock Capture]', payload),
+			flush: async () => {},
+			shutdown: async () => {}
+		} as unknown as PostHog;
+	}
 	if (!posthogClient) {
 		posthogClient = new PostHog(env.PUBLIC_POSTHOG_PROJECT_TOKEN as string, {
 			host: env.PUBLIC_POSTHOG_HOST as string,

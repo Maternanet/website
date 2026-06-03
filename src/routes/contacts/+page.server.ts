@@ -9,8 +9,13 @@ export const actions: Actions = {
 		const data = Object.fromEntries(formData);
 		const partnershipType = String(data.partnership_type ?? '');
 
+		const contactEmail = env.CONTACT_EMAIL || 'info@maternanet.com';
+		const formsubmitUrl = env.FORMSUBMIT_URL || 'https://formsubmit.co/ajax/';
+		const submitterEmail = String(data.email ?? '');
+		const distinctId = submitterEmail || 'anonymous';
+
 		try {
-			const response = await fetch(`${env.FORMSUBMIT_URL}${env.CONTACT_EMAIL}`, {
+			const response = await fetch(`${formsubmitUrl}${contactEmail}`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({
@@ -24,9 +29,17 @@ export const actions: Actions = {
 
 			const posthog = getPostHogClient();
 			posthog.capture({
-				distinctId: 'anonymous',
+				distinctId,
 				event: 'contact_form_submitted',
-				properties: { partnership_type: partnershipType, outcome: 'success' }
+				properties: {
+					partnership_type: partnershipType,
+					outcome: 'success',
+					$set: {
+						name: data.name,
+						organization: data.organization,
+						partnership_type: partnershipType
+					}
+				}
 			});
 			await posthog.flush();
 
@@ -36,7 +49,7 @@ export const actions: Actions = {
 
 			const posthog = getPostHogClient();
 			posthog.capture({
-				distinctId: 'anonymous',
+				distinctId,
 				event: 'contact_form_submitted',
 				properties: { partnership_type: partnershipType, outcome: 'error' }
 			});
