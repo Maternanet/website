@@ -9,15 +9,26 @@ export const actions: Actions = {
 		const data = Object.fromEntries(formData);
 		const partnershipType = String(data.partnership_type ?? '');
 
-		const contactEmail = env.CONTACT_EMAIL || 'info@maternanet.com';
-		const formsubmitUrl = env.FORMSUBMIT_URL || 'https://formsubmit.co/ajax/';
+		const contactEmail = env.CONTACT_EMAIL || 'careconnect.afrika@gmail.com';
+		let formsubmitUrl = env.FORMSUBMIT_URL || 'https://formsubmit.co/ajax/';
+		if (!formsubmitUrl.endsWith('/')) formsubmitUrl += '/';
+
 		const submitterEmail = String(data.email ?? '');
 		const distinctId = submitterEmail || 'anonymous';
+
+		const reqOrigin = request.headers.get('origin') || 'https://maternanet.com';
+		const reqReferer = request.headers.get('referer') || 'https://maternanet.com/contacts';
 
 		try {
 			const response = await fetch(`${formsubmitUrl}${contactEmail}`, {
 				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
+				headers: { 
+					'Content-Type': 'application/json',
+					'Accept': 'application/json',
+					'Origin': reqOrigin,
+					'Referer': reqReferer,
+					'User-Agent': request.headers.get('user-agent') || 'SvelteKit-Server'
+				},
 				body: JSON.stringify({
 					...data,
 					_subject: 'New Partnership Contact from Maternanet Website',
@@ -25,7 +36,15 @@ export const actions: Actions = {
 				})
 			});
 
-			if (!response.ok) throw new Error('Submission Failed');
+			if (!response.ok) {
+				const errorText = await response.text();
+				throw new Error(`Submission Failed (HTTP ${response.status}): ${errorText}`);
+			}
+
+			const responseData = await response.json().catch(() => ({}));
+			if (responseData.success === "false" || responseData.success === false) {
+				throw new Error(`FormSubmit API Error: ${responseData.message || JSON.stringify(responseData)}`);
+			}
 
 			const posthog = getPostHogClient();
 			posthog.capture({
