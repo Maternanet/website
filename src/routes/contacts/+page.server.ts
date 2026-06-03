@@ -16,13 +16,19 @@ export const actions: Actions = {
 		const submitterEmail = String(data.email ?? '');
 		const distinctId = submitterEmail || 'anonymous';
 
-		const reqOrigin = request.headers.get('origin') || 'https://maternanet.com';
-		const reqReferer = request.headers.get('referer') || 'https://maternanet.com/contacts';
+		let reqOrigin = request.headers.get('origin') || 'https://maternanet.com';
+		let reqReferer = request.headers.get('referer') || 'https://maternanet.com/contacts';
+
+		// Normalize headers to the activated domain in production to avoid www / subdomain mismatches
+		if (!reqOrigin.includes('localhost') && !reqOrigin.includes('127.0.0.1')) {
+			reqOrigin = 'https://maternanet.com';
+			reqReferer = 'https://maternanet.com/contacts';
+		}
 
 		try {
 			const response = await fetch(`${formsubmitUrl}${contactEmail}`, {
 				method: 'POST',
-				headers: { 
+				headers: {
 					'Content-Type': 'application/json',
 					'Accept': 'application/json',
 					'Origin': reqOrigin,
@@ -74,10 +80,12 @@ export const actions: Actions = {
 			});
 			await posthog.flush();
 
+			const errorMsg = error instanceof Error ? error.message : 'Unable to send form. Please try again later.';
+
 			return fail(500, {
 				data: data as Record<string, string>,
 				error: true,
-				msg: 'Unable to send form. Please try again later.'
+				msg: errorMsg
 			});
 		}
 	}
