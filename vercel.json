@@ -2,6 +2,12 @@
     "redirects": [
         {
             "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "maternanet.vercel.app"
+                }
+            ],
             "destination": "https://maternanet.com/$1",
             "permanent": true
         }
