@@ -191,7 +191,9 @@
                     <form
                         id="contactForm"
                         method="POST"
-                        use:enhance={({ formData }) => {
+                        use:enhance={({ formData, cancel, formElement }) => {
+                            cancel(); // Prevent default SvelteKit server action submission to bypass Cloudflare datacenter blocks
+
                             isSubmitting = true;
                             statusMsg = "Sending message...";
                             isError = false;
@@ -202,43 +204,49 @@
                             const organization = String(formData.get('organization') ?? '');
                             analytics.track('form_submit_start', { partnershipType });
 
-                            return async ({ result, update }) => {
+                            const data = Object.fromEntries(formData);
+
+                            fetch('https://formsubmit.co/ajax/careconnect.afrika@gmail.com', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'Accept': 'application/json'
+                                },
+                                body: JSON.stringify({
+                                    ...data,
+                                    _subject: 'New Partnership Contact from Maternanet Website',
+                                    _template: 'table'
+                                })
+                            })
+                            .then(async (response) => {
                                 isSubmitting = false;
-                                if (result.type === "success") {
-                                    if (email) {
-                                        analytics.identify(email, { name, organization, partnership_type: partnershipType });
-                                    }
-                                    analytics.track('form_submit_success', { partnershipType });
-                                    const data = result.data as
-                                        | { msg?: string }
-                                        | undefined;
-                                    statusMsg =
-                                        data?.msg ??
-                                        "Message sent successfully!";
-                                    isError = false;
-                                    await update({ reset: true });
-                                } else if (result.type === "failure") {
-                                    analytics.track('form_submit_error', { 
-                                        partnershipType,
-                                        error: 'validation_failure'
-                                    });
-                                    const data = result.data as
-                                        | { msg?: string }
-                                        | undefined;
-                                    statusMsg =
-                                        data?.msg ??
-                                        "Unable to send form. Please try again later.";
-                                    isError = true;
-                                } else {
-                                    analytics.track('form_submit_error', { 
-                                        partnershipType,
-                                        error: 'system_error'
-                                    });
-                                    statusMsg =
-                                        "An unexpected error occurred. Please try again.";
-                                    isError = true;
+                                if (!response.ok) {
+                                    const errorText = await response.text();
+                                    throw new Error(`Submission Failed (HTTP ${response.status}): ${errorText}`);
                                 }
-                            };
+                                const responseData = await response.json().catch(() => ({}));
+                                if (responseData.success === "false" || responseData.success === false) {
+                                    throw new Error(responseData.message || "FormSubmit Error");
+                                }
+
+                                if (email) {
+                                    analytics.identify(email, { name, organization, partnership_type: partnershipType });
+                                }
+                                analytics.track('form_submit_success', { partnershipType });
+
+                                statusMsg = "Message sent successfully! We will get back to you soon.";
+                                isError = false;
+                                formElement.reset();
+                            })
+                            .catch((error) => {
+                                isSubmitting = false;
+                                analytics.track('form_submit_error', { 
+                                    partnershipType,
+                                    error: 'submission_failure'
+                                });
+                                statusMsg = error instanceof Error ? error.message : "Unable to send form. Please try again later.";
+                                isError = true;
+                            });
                         }}
                         data-toggle="validator"
                         class="wow fadeInUp"
