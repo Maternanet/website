@@ -7,7 +7,10 @@
   const fallbackProfileImage = '/images/404-error-img.png'
 
   function onProfileImageError(event: Event) {
-    ;(event.target as HTMLImageElement).src = fallbackProfileImage
+    const img = event.target as HTMLImageElement
+    if (!img.src.endsWith(fallbackProfileImage)) {
+      img.src = fallbackProfileImage
+    }
   }
 
   function trackCTA(label: string) {
@@ -782,8 +785,12 @@
 
     <div class="row" style="margin-top: 2rem;">
       <div class="col-lg-12" style="text-align: center;">
-        <a href="/about#impact" class="btn-default" style="display: inline-block;"
-          >Explore More Detailed Impact Metrics →</a
+        <a
+          href="https://drive.google.com/file/d/1nAjZUMkOZ1awOS4wHrpW87KcnozGUA_I/view?usp=sharing"
+          class="btn-default"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: inline-block;">Explore Our 2025 Report →</a
         >
       </div>
     </div>
