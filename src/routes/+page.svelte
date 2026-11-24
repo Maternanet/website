@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { analytics } from '$lib/utils/analytics'
-  import Testimonial from '$lib/components/facility/testimonials.svelte'
+  import { analytics } from '#lib/utils/analytics'
+  import Testimonial from '#lib/components/facility/testimonials.svelte'
 
-  let activeProfile = 'mothers'
+  let activeProfile = $state<string>('mothers')
 
   const fallbackProfileImage = '/images/404-error-img.png'
 
@@ -113,7 +113,7 @@
             <a
               href="/contacts#contactForm"
               class="btn-default btn-highlighted"
-              on:click={() => trackCTA('Journey Starts Here')}>Your Journey Starts Here</a
+              onclick={() => trackCTA('Journey Starts Here')}>Your Journey Starts Here</a
             >
           </div>
           <!-- Hero Content Body End -->
@@ -437,7 +437,7 @@
 
           <!-- About Content Btn Start -->
           <div class="about-content-btn wow fadeInUp" data-wow-delay="0.75s">
-            <a href="#our-service" class="btn-default" on:click={() => trackCTA('See how we help')}
+            <a href="#our-service" class="btn-default" onclick={() => trackCTA('See how we help')}
               >See how we help</a
             >
           </div>
@@ -464,11 +464,17 @@
 
     <div
       class="profile-tabs"
+      role="group"
+      aria-label="People Maternanet serves"
       style="display:flex; justify-content:center; gap:12px; margin-bottom:30px; flex-wrap:wrap;"
     >
       {#each profileCards as profile}
         <button
-          on:click={() => switchProfile(profile.id)}
+          type="button"
+          id="profile-tab-{profile.id}"
+          aria-pressed={activeProfile === profile.id}
+          aria-controls="profile-panel-{profile.id}"
+          onclick={() => switchProfile(profile.id)}
           class="profile-tab"
           style="padding:10px 20px; border-radius:30px; border:1px solid #e0e0e0; background:{activeProfile ===
           profile.id
@@ -488,10 +494,15 @@
     >
       {#each profileCards as profile}
         {#if activeProfile === profile.id}
-          <div class="profile-card">
+          <div
+            class="profile-card"
+            id="profile-panel-{profile.id}"
+            role="region"
+            aria-labelledby="profile-tab-{profile.id}"
+          >
             {#if profile.image}
               <div class="profile-card-image">
-                <img src={profile.image} alt={profile.title} on:error={onProfileImageError} />
+                <img src={profile.image} alt={profile.title} onerror={onProfileImageError} />
               </div>
             {/if}
             <div class="profile-card-content">
@@ -519,7 +530,7 @@
                   href={profile.ctaLink}
                   class="btn-default"
                   style="padding: 12px 78px 12px 23px; font-size: 0.95rem;"
-                  on:click={() => trackCTA(profile.ctaLabel)}>{profile.ctaLabel}</a
+                  onclick={() => trackCTA(profile.ctaLabel)}>{profile.ctaLabel}</a
                 >
               </div>
             </div>
@@ -661,7 +672,7 @@
             <a
               href="/contacts#contactForm"
               class="btn-default"
-              on:click={() => trackCTA('Join Now')}>Join Now — It's Free</a
+              onclick={() => trackCTA('Join Now')}>Join Now — It's Free</a
             >
           </div>
           <!-- Section Button End -->
@@ -697,7 +708,7 @@
               </figure>
             </div>
             <div class="process-item-content">
-              <h3>Step 2: Connect with Your Community Promoter</h3>
+              <h3>Step 2: Connect with Your Community Health Promoter (CHP)</h3>
               <p>
                 A trained Community Health Promoter (CHP) becomes your entry point. Start receiving
                 personalized pregnancy insights, risk monitoring, and health tips. Real guidance
@@ -717,7 +728,7 @@
             <div class="process-item-content">
               <h3>Step 3: Connect to Care</h3>
               <p>
-                When you need it, connect with trained Community Health Workers or clinics near you.
+                When you need it, connect with trained Community Health Promoters (CHPs) or clinics near you.
                 Watch how your worries turn into confidence.
               </p>
             </div>
@@ -792,137 +803,6 @@
           rel="noopener noreferrer"
           style="display: inline-block;">Explore Our 2025 Report →</a
         >
-      </div>
-    </div>
-
-    <!-- Projected Impact Trajectory -->
-    <div class="row mt-5 pt-3">
-      <div class="col-lg-12" style="text-align: center; margin-bottom: 2.5rem;">
-        <h3 style="color: #1c2348; font-weight: 800; font-size: 2rem;">Impact Trajectory</h3>
-      </div>
-    </div>
-
-    <div class="row position-relative" style="margin-bottom: 2rem; align-items: center;">
-      <!-- Horizontal Line (Desktop) -->
-      <div
-        class="d-none d-lg-block"
-        style="position: absolute; top: 50%; left: 5%; right: 5%; height: 2px; background-color: #53C4AB; z-index: 0; opacity: 0.8;"
-      ></div>
-
-      <!-- 2025 -->
-      <div class="col-lg-3 col-md-6 mb-4" style="z-index: 1;">
-        <div
-          style="background: #fff; border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); position: relative;"
-        >
-          <div
-            style="display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem;"
-          >
-            <h4 style="font-size:1.8rem; font-weight:800; color:#F67C4E; margin:0;">2025</h4>
-            <div
-              style="width:14px; height:14px; border-radius:50%; border:3px solid #53C4AB;"
-            ></div>
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Mothers Served</span>
-            <span style="font-weight:700; color:#1c2348;">11,000</span>
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Lives Saved</span>
-            <div style="display:flex; align-items:center; gap:8px;">
-              <div style="width:12px; height:12px; border-radius:50%; background:#F67C4E;"></div>
-              <span style="font-weight:700; color:#53C4AB;">8-12</span>
-            </div>
-          </div>
-          <div style="display:flex; justify-content:space-between;">
-            <span style="color:#6b7280; font-size:0.95rem;">Cost/Life Saved</span>
-            <span style="font-weight:700; color:#F67C4E;">$8,100</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2026 -->
-      <div class="col-lg-3 col-md-6 mb-4 mt-lg-5" style="z-index: 1;">
-        <div
-          style="background: #fff; border: 2px solid #ffe6de; border-radius: 16px; padding: 24px; box-shadow: 0 10px 30px rgba(246,124,78,0.1); position: relative;"
-        >
-          <div
-            style="display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem;"
-          >
-            <h4 style="font-size:1.8rem; font-weight:800; color:#1c2348; margin:0;">2026</h4>
-            <span
-              style="background:#fff0eb; color:#F67C4E; font-size:0.75rem; font-weight:800; padding:4px 10px; border-radius:20px;"
-              >NOW</span
-            >
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Mothers Served</span>
-            <span style="font-weight:700; color:#1c2348;">33,000</span>
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Lives Saved</span>
-            <span style="font-weight:700; color:#53C4AB;">25-30</span>
-          </div>
-          <div style="display:flex; justify-content:space-between;">
-            <span style="color:#6b7280; font-size:0.95rem;">Cost/Life Saved</span>
-            <span style="font-weight:700; color:#F67C4E;">$4,250</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2027 -->
-      <div class="col-lg-3 col-md-6 mb-4 mb-lg-5" style="z-index: 1;">
-        <div
-          style="background: #fff; border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); position: relative;"
-        >
-          <div style="display:flex; align-items:center; margin-bottom:2rem;">
-            <h4 style="font-size:1.8rem; font-weight:800; color:#1c2348; margin:0;">2027</h4>
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Mothers Served</span>
-            <span style="font-weight:700; color:#1c2348;">55,000</span>
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Lives Saved</span>
-            <div style="display:flex; align-items:center; gap:8px;">
-              <div
-                style="width:14px; height:14px; border-radius:50%; border:3px solid #53C4AB;"
-              ></div>
-              <span style="font-weight:700; color:#53C4AB;">45-60</span>
-            </div>
-          </div>
-          <div style="display:flex; justify-content:space-between;">
-            <span style="color:#6b7280; font-size:0.95rem;">Cost/Life Saved</span>
-            <span style="font-weight:700; color:#F67C4E;">$2,100</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2028 -->
-      <div class="col-lg-3 col-md-6 mb-4 mt-lg-5" style="z-index: 1;">
-        <div
-          style="background: #fff; border: 1px solid #f0f0f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); position: relative;"
-        >
-          <div
-            style="display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem;"
-          >
-            <h4 style="font-size:1.8rem; font-weight:800; color:#1c2348; margin:0;">2028</h4>
-            <div
-              style="width:14px; height:14px; border-radius:50%; border:3px solid #53C4AB;"
-            ></div>
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Mothers Served</span>
-            <span style="font-weight:700; color:#1c2348;">85,000</span>
-          </div>
-          <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
-            <span style="color:#6b7280; font-size:0.95rem;">Lives Saved</span>
-            <span style="font-weight:700; color:#53C4AB;">95-130</span>
-          </div>
-          <div style="display:flex; justify-content:space-between;">
-            <span style="color:#6b7280; font-size:0.95rem;">Cost/Life Saved</span>
-            <span style="font-weight:700; color:#F67C4E;">$975</span>
-          </div>
-        </div>
       </div>
     </div>
 

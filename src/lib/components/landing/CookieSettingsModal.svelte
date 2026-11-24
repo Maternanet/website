@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher, onMount } from 'svelte';
   import { fade, fly } from 'svelte/transition';
-  import { analytics } from '$lib/utils/analytics';
+  import { analytics } from '#lib/utils/analytics';
 
   const dispatch = createEventDispatcher();
 

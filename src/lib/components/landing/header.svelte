@@ -11,7 +11,7 @@
             <div class="container">
                 <!-- Logo Start -->
                 <a class="navbar-brand" href="/">
-                    <img src="images/logo3.png" alt="Logo" height="50px" />
+                    <img src="/images/maternanet_logo_horizontal_reversed.svg" alt="Logo" height="50px" />
                 </a>
                 <!-- Logo End -->
 

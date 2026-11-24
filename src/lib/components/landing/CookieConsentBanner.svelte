@@ -2,8 +2,8 @@
   import { onMount } from 'svelte';
   import { fade, fly } from 'svelte/transition';
   import CookieSettingsModal from './CookieSettingsModal.svelte';
-  import { consent } from '$lib/stores/consent';
-  import { analytics } from '$lib/utils/analytics';
+  import { consent } from '#lib/stores/consent';
+  import { analytics } from '#lib/utils/analytics';
 
   let showBanner = false;
   let showModal = false;

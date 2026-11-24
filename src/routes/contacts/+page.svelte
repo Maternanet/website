@@ -1,6 +1,6 @@
 <script lang="ts">
     import { enhance } from "$app/forms";
-    import { analytics } from "$lib/utils/analytics";
+    import { analytics } from "#lib/utils/analytics";
 
     let statusMsg = "";
     let isError = false;
@@ -79,7 +79,7 @@
                         <!-- Contact Info Content Start -->
                         <div class="contact-info-content">
                             <h3>address</h3>
-                            <p>00100 - 30197, University Way, Nairobi, Kenya</p>
+                            <p>Maternanet Ltd, Matigari Plaza, Outer Ring Road, Nairobi, Kenya</p>
                         </div>
                         <!-- Contact Info Content End -->
                     </div>
@@ -331,8 +331,8 @@
                                     <option value="Expectant Mother"
                                         >Expectant Mother</option
                                     >
-                                    <option value="Community Health Worker"
-                                        >Community Health Worker</option
+                                    <option value="Community Health Promoter (CHP)"
+                                        >Community Health Promoter (CHP)</option
                                     >
                                     <option value="Other">Other</option>
                                 </select>
@@ -406,7 +406,7 @@
                 <div class="google-map-iframe">
                     <iframe
                         title="Maternanet location on Google Maps"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.820919689199!2d36.813849273647136!3d-1.2811646356177835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d2e51e23e1%3A0x3540e8c20460e444!2s100%20University%20Wy%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1746031348525!5m2!1sen!2ske"
+                        src="https://www.google.com/maps?q=Outer%20Ring%20Road%2C%20Nairobi%2C%20Kenya&output=embed"
                         width="600"
                         height="450"
                         style="border:0;"

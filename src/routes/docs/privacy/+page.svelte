@@ -84,8 +84,8 @@
           <div class="legal-text text-muted">
             <p>
               Thanks for using our products and services ("Services"). The
-              Services are provided by Maternanet Ltd., located at 00100 -
-              30197, University Way, Nairobi, Kenya.
+              Services are provided by Maternanet Ltd., located at Matigari
+              Plaza, Outer Ring Road, Nairobi, Kenya.
             </p>
             <p>
               By using our Services, you are agreeing to these terms. Please

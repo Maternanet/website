@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { analytics } from '$lib/utils/analytics'
+  import { analytics } from '#lib/utils/analytics'
 
   function trackAboutCTA(label: string) {
     analytics.track('about_cta_click', { label, page: 'about' })
@@ -103,7 +103,7 @@
           hospital.
         </p>
         <p>
-          <strong>We asked a simple question:</strong> What if a Community Health Provider — the most
+          <strong>We asked a simple question:</strong> What if a Community Health Promoter (CHP) — the most
           trusted person in our community — had a tool that made her as medically informed as a clinician?
           What if she could walk into any home and know, with the precision required, which mother needed
           urgent attention and which was thriving?
@@ -225,7 +225,7 @@
           </div>
           <div class="pc-tag">Connect</div>
           <div class="pc-title">
-            Her community<br />health provider<br />becomes her guardian.
+            Her Community<br />Health Promoter (CHP)<br />becomes her guardian.
           </div>
         </div>
         <div class="pc-deck">
@@ -240,7 +240,7 @@
           </div>
           <div class="pc-item">
             <strong>Automatic referral and follow-up</strong> — when the predictive engine flags a risk,
-            the clinic is notified and risk profile sharedbefore the mother even arrives.
+            the clinic is notified and risk profile shared before the mother even arrives.
           </div>
           <div class="pc-item">
             <strong>Weekly check-ins by SMS, app, or voice</strong> — however the mother prefers to be
@@ -563,7 +563,7 @@
     </div>
 
     <div
-      style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px"
+      style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px"
       class="reveal"
     >
       <div
@@ -579,22 +579,6 @@
         </div>
         <div style="font-size:12px;color:var(--ink-4)">
           Across 4 counties, 33 integrated clinics, 410 Digital Doulas
-        </div>
-      </div>
-      <div
-        style="background:var(--white);border:1px solid var(--border-2);border-radius:var(--r-md);padding:22px 24px"
-      >
-        <div
-          style="font-family:'Fraunces',serif;font-size:36px;font-weight:600;color:var(--ink);line-height:1;margin-bottom:4px"
-        >
-          $8,100
-        </div>
-        <div style="font-size:14px;font-weight:500;color:var(--ink);margin-bottom:4px">
-          Cost per life saved today
-        </div>
-        <div style="font-size:12px;color:var(--ink-4)">
-          Falls to $650 by 2028 as scale compounds. For context: $2,000–5,000 is considered
-          excellent in African LMIC contexts.
         </div>
       </div>
       <div
@@ -730,7 +714,7 @@
           Find your nearest Digital Doula — or share Maternanet with someone who needs it.
         </div>
         <div class="seg-body">
-          A community health worker trained by Maternanet may already be working in your
+          A Community Health Promoter (CHP) trained by Maternanet may already be working in your
           neighbourhood. If you're pregnant, recently gave birth, or know someone who is — this
           matters.
         </div>
@@ -749,7 +733,7 @@
       </div>
 
       <div class="seg-card seg-chp">
-        <div class="seg-eyebrow">For community health workers</div>
+        <div class="seg-eyebrow">For Community Health Promoters (CHPs)</div>
         <div class="seg-h">
           You're already doing the work. Let us give you the tools you deserve.
         </div>
@@ -845,7 +829,7 @@
         <div class="tp-content">
           <h4 class="tp-title">Deep Integration</h4>
           <p class="tp-desc">
-            Signed MOUs with every county we enter. Auto-submits to Kenya’s national health health
+            Signed MOUs with every county we enter. Auto-submits to Kenya’s national health
             system (DHIS2).
           </p>
         </div>
@@ -854,15 +838,6 @@
 
     <!-- Technical & Partnerships Bar -->
     <div class="cred-bar reveal">
-      <div class="compliance-badges">
-        <div class="cb-label">Certifications</div>
-        <div class="cb-items">
-          <span class="cb-pill">Kenya DPA 2019</span>
-          <span class="cb-pill">GDPR Standards</span>
-          <span class="cb-pill">KMPDC Underway</span>
-          <span class="cb-pill">DHIS2 Integrated</span>
-        </div>
-      </div>
       <div class="partner-line">
         <div class="pl-label">Active Partnerships</div>
         <div class="pl-items">
@@ -876,7 +851,7 @@
     <div class="vision-card reveal">
       <div class="vc-tag">The Long View</div>
       <div class="vc-text">
-        "By 2035, majority of pharmaceutical companys, insurers, or government ministries should be
+        "By 2035, majority of pharmaceutical companies, insurers, or government ministries should be
         able to reach East African women at clinical precision with Maternanet's network. Not
         because we built a wall — but because we built something worth relying on."
       </div>
@@ -1473,13 +1448,11 @@
     flex-direction: column;
     gap: 24px;
   }
-  .compliance-badges,
   .partner-line {
     display: flex;
     align-items: center;
     gap: 32px;
   }
-  .cb-label,
   .pl-label {
     font-size: 11px;
     font-weight: 600;
@@ -1488,19 +1461,6 @@
     letter-spacing: 0.1em;
     width: 120px;
     flex-shrink: 0;
-  }
-  .cb-items {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .cb-pill {
-    padding: 6px 14px;
-    background: var(--sand-2);
-    color: var(--ink);
-    font-size: 12px;
-    font-weight: 500;
-    border-radius: 20px;
   }
   .pl-items {
     font-size: 15px;
@@ -1588,7 +1548,6 @@
     .cred-bar {
       padding: 24px;
     }
-    .compliance-badges,
     .partner-line {
       flex-direction: column;
       align-items: flex-start;

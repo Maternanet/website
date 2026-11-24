@@ -1,5 +1,5 @@
-import type { Handle, HandleServerError } from '@sveltejs/kit';
-import { getPostHogClient } from '$lib/server/posthog';
+import type { Handle, HandleServerError } from '@sveltejs/kit/hooks';
+import { getPostHogClient } from '#lib/server/posthog';
 
 export const handle: Handle = async ({ event, resolve }) => {
 	const { pathname } = event.url;
@@ -38,21 +38,28 @@ export const handle: Handle = async ({ event, resolve }) => {
 	return resolve(event);
 };
 
-export const handleError: HandleServerError = async ({ error, status, message }) => {
+export const handleError: HandleServerError = async (caughtError) => {
 	const posthog = getPostHogClient();
+	const details =
+		caughtError.kind === 'unknown'
+			? { status: 500, message: 'Internal Error' }
+			: caughtError.error;
+	const errorMessage =
+		caughtError.kind === 'unknown'
+			? caughtError.error instanceof Error
+				? caughtError.error.message
+				: String(caughtError.error)
+			: details.message;
 
 	posthog.capture({
 		distinctId: 'server',
 		event: 'server_error',
 		properties: {
-			error: error instanceof Error ? error.message : String(error),
-			status,
-			message
+			error: errorMessage,
+			status: details.status,
+			message: details.message
 		}
 	});
 
-	return {
-		message,
-		status
-	};
+	return details;
 };

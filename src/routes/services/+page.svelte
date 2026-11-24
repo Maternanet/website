@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { analytics } from "$lib/utils/analytics";
+    import { analytics } from "#lib/utils/analytics";
 
     function trackServicesCTA(label: string) {
         analytics.track('services_cta_click', { label, page: 'services' });
@@ -110,7 +110,7 @@
         style="background: var(--secondary-color); padding: 40px 0; border-bottom: 1px solid var(--divider-color);"
     >
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center justify-content-center">
                 <div class="col-md-2 col-6 mb-3 mb-md-0">
                     <div
                         class="stat-n"
@@ -179,20 +179,6 @@
                         style="font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-color); font-weight: 600;"
                     >
                         Lives saved / yr
-                    </div>
-                </div>
-                <div class="col-md-2 col-6">
-                    <div
-                        class="stat-n"
-                        style="color: #F67C4E; font-size: 1.8rem; font-weight: 700;"
-                    >
-                        $8.1K
-                    </div>
-                    <div
-                        class="stat-l"
-                        style="font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-color); font-weight: 600;"
-                    >
-                        Cost / life saved
                     </div>
                 </div>
             </div>

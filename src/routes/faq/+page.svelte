@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { categories, filters, type FaqCategory } from "$lib/content/faq";
-  import { analytics } from "$lib/utils/analytics";
+  import { categories, filters, type FaqCategory } from "#lib/content/faq";
+  import { analytics } from "#lib/utils/analytics";
 
   let searchQuery = "";
   let activeFilter = "all";
@@ -65,7 +65,7 @@
     <div class="eyebrow">Frequently asked questions</div>
     <h2 class="section-title">The questions we get <em>most</em></h2>
     <p class="section-sub">
-      From mothers, community health providers, clinicians, donors, NGO
+      From mothers, Community Health Promoters (CHPs), clinicians, donors, NGO
       partners, and government stakeholders.
     </p>
   </div>

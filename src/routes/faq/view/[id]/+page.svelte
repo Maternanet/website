@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import { categories } from '$lib/content/faq';
+  import { page } from '$app/state';
+  import { categories } from '#lib/content/faq';
 
-  // Find the exact FAQ item using the ID from the URL
-  $: faqId = $page.params.id;
-  $: faqItem = (() => {
+  const faqItem = $derived.by(() => {
+    const faqId = page.params.id;
     let item = null;
     let category = null;
     for (const cat of categories) {
@@ -16,13 +15,11 @@
       }
     }
     return { item, category };
-  })();
+  });
   
-  // Also get some related questions
-  $: relatedQuestions = (() => {
-    if (!faqItem.category) return [];
-    return faqItem.category.items.filter(i => i.id !== faqId).slice(0, 3);
-  })();
+  const relatedQuestions = $derived(
+    faqItem.category?.items.filter((i) => i.id !== page.params.id).slice(0, 3) ?? []
+  );
 </script>
 
 <!-- Page Header Start -->
@@ -97,13 +94,13 @@
               <div class="faq-share">
                 <h4>Share this FAQ</h4>
                 <div class="share-buttons">
-                  <button class="share-btn" on:click={() => navigator.share({title: 'Maternanet FAQ', text: faqItem.item?.q, url: window.location.href})}>
+                  <button class="share-btn" onclick={() => navigator.share({title: 'Maternanet FAQ', text: faqItem.item?.q, url: window.location.href})}>
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
                     </svg>
                     Share
                   </button>
-                  <button class="share-btn" on:click={() => navigator.clipboard.writeText(window.location.href)}>
+                  <button class="share-btn" onclick={() => navigator.clipboard.writeText(window.location.href)}>
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
                     </svg>

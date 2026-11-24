@@ -22,19 +22,19 @@ export const categories: FaqCategory[] = [
         id: 'platform-1',
         num: '1',
         q: 'What exactly does Maternanet do — in plain language?',
-        a: '<p>Maternanet helps the health system identify pregnant women who are at high risk of complications <strong>weeks before those complications occur</strong>. We do this by giving community health providers digital tools to screen mothers at home, running that data through a predictive risk model, and sending an automatic alert when a mother\'s risk profile crosses a threshold. The CHP then makes a priority visit or coordinates a timely clinic appointment before an emergency develops.</p><p>Think of it as a smoke detector for maternal health — except instead of detecting a fire already burning, it detects the conditions that make a fire likely. We also help remove the financial barrier to acting on that alert through our Care Now, Lipa Later microfinancing partnership.</p><div class="highlight-box">We are not a telemedicine app. We are not a symptom checker. We are the predictive intelligence layer that operates upstream of every other intervention.</div>'
+        a: '<p>Maternanet helps the health system identify pregnant women who are at high risk of complications <strong>weeks before those complications occur</strong>. We do this by giving Community Health Promoters (CHPs) digital tools to screen mothers at home, running that data through a predictive risk model, and sending an automatic alert when a mother\'s risk profile crosses a threshold. The CHP then makes a priority visit or coordinates a timely clinic appointment before an emergency develops.</p><p>Think of it as a smoke detector for maternal health — except instead of detecting a fire already burning, it detects the conditions that make a fire likely. We also help remove the financial barrier to acting on that alert through our Care Now, Lipa Later microfinancing partnership.</p><div class="highlight-box">We are not a telemedicine app. We are not a symptom checker. We are the predictive intelligence layer that operates upstream of every other intervention.</div>'
       },
       {
         id: 'platform-2',
         num: '2',
         q: 'How does the predictive risk model work? What variables does it use?',
-        a: '<p>Our Composite Women\'s Health Index™ synthesizes <strong>85 variables</strong> across three categories:</p><ul><li><strong>47 clinical variables</strong> — obstetric history, blood pressure, haemoglobin, gestational age, prior complications</li><li><strong>23 socio-economic variables</strong> — household income, insurance status, distance to facility, prior care-seeking behaviour</li><li><strong>15 environmental variables</strong> — county health infrastructure, seasonal road access, local clinic capacity</li></ul><p>Validated against clinical outcomes and WHO checklist-based scoring. Recall (sensitivity): <strong>79%</strong> — 21pp better than standard care. Precision: <strong>81%</strong> — providers are not overwhelmed by false alerts.</p><p>Critically, the model <strong>explains its reasoning</strong>. A provider sees which specific indicators are driving the score, enabling clinical confidence rather than blind algorithmic compliance.</p>'
+        a: '<p>Our Composite Women\'s Health Index synthesizes <strong>85 variables</strong> across three categories:</p><ul><li><strong>47 clinical variables</strong> — obstetric history, blood pressure, haemoglobin, gestational age, prior complications</li><li><strong>23 socio-economic variables</strong> — household income, insurance status, distance to facility, prior care-seeking behaviour</li><li><strong>15 environmental variables</strong> — county health infrastructure, seasonal road access, local clinic capacity</li></ul><p>Validated against clinical outcomes and WHO checklist-based scoring. Recall (sensitivity): <strong>79%</strong> — 21pp better than standard care. Precision: <strong>81%</strong> — providers are not overwhelmed by false alerts.</p><p>Critically, the model <strong>explains its reasoning</strong>. A provider sees which specific indicators are driving the score, enabling clinical confidence rather than blind algorithmic compliance.</p>'
       },
       {
         id: 'platform-3',
         num: '3',
         q: 'How does it work without internet? We operate in areas with no connectivity.',
-        a: '<p>This is by design, not an afterthought. <strong>60% of our users access via SMS or USSD</strong> on feature phones with no data connection.</p><ul><li><strong>Edge computing:</strong> Compressed ML algorithms run locally on rugged tablets and clinic PCs — risk scoring without cloud access</li><li><strong>Data caching & Syncing:</strong> Screenings logged locally with timestamps, syncing bidirectionally when any connection — even 2G — becomes available</li><li><strong>SMS/USSD interface:</strong> Mothers receive risk alerts, reminders, and health nudges via basic text — no smartphone or data plan required</li><li><strong>79% recall</strong> — validated in field conditions below 1kb/second connectivity</li></ul><p>Patent filed: "Distributed Healthcare ML with Progressive Sync" — Kenya Patent Office, Application #2024/789.</p>'
+        a: '<p>This is by design, not an afterthought. <strong>60% of our users access via SMS or USSD</strong> on feature phones with no data connection.</p><ul><li><strong>Edge computing:</strong> Compressed ML algorithms run locally on rugged tablets and clinic PCs — risk scoring without cloud access</li><li><strong>Data caching & Syncing:</strong> Screenings logged locally with timestamps, syncing bidirectionally when any connection — even 2G — becomes available</li><li><strong>SMS/USSD interface:</strong> Mothers receive risk alerts, reminders, and health nudges via basic text — no smartphone or data plan required</li><li><strong>79% recall</strong> — validated in field conditions below 1kb/second connectivity</li></ul><p>Patent filed: "Distributed Healthcare ML with Progressive Sync" — Kenya Patent Office.</p>'
       },
       {
         id: 'platform-4',
@@ -60,13 +60,13 @@ export const categories: FaqCategory[] = [
         id: 'impact-1',
         num: '6',
         q: 'What results have you achieved? Are they independently validated?',
-        a: '<p>Across 4 active Kenyan counties (Nairobi, Narok, Machakos, Kajiado) over 18 months of deployment:</p><div class="stat-row"><div class="stat-chip"><span>+21pp</span>ANC completion</div><div class="stat-chip"><span>−15%</span>Missed appointments</div><div class="stat-chip"><span>77%</span>6-month retention</div><div class="stat-chip"><span>12+</span>Lives saved/yr</div><div class="stat-chip"><span>$8,100</span>Cost per life saved</div></div><p><strong>Validation:</strong> ANC data cross-referenced against county DHIS2 records and independent clinic registers. Our quasi-experimental evaluation uses difference-in-differences methodology with matched comparison sites and continuous model improvement. A peer-reviewed paper is in preparation with a Kenyan university partner for Year 3–5 validation.</p>'
+        a: '<p>Across 4 active Kenyan counties (Nairobi, Narok, Machakos, Kajiado) over 18 months of deployment:</p><div class="stat-row"><div class="stat-chip"><span>+21pp</span>ANC completion</div><div class="stat-chip"><span>−15%</span>Missed appointments</div><div class="stat-chip"><span>77%</span>6-month retention</div><div class="stat-chip"><span>12+</span>Lives saved/yr</div></div><p><strong>Validation:</strong> ANC data cross-referenced against county DHIS2 records and independent clinic registers. Our quasi-experimental evaluation uses difference-in-differences methodology with matched comparison sites and continuous model improvement. A peer-reviewed paper is in preparation with a Kenyan university partner for Year 3–5 validation.</p>'
       },
       {
         id: 'impact-2',
         num: '7',
         q: 'How cost-effective is Maternanet compared to standard maternal health interventions?',
-        a: '<p>Currently <strong>$8,100 per life saved</strong>, projected to fall to <strong>$650–$1,300 by 2028</strong> as scale increases. The WHO estimates skilled birth attendance programmes cost $4,000–$12,000 per maternal death prevented — our model is competitive now and improves dramatically with volume.</p><p>Early intervention also reduces average care costs by up to <strong>70%</strong> by treating complications early rather than managing emergencies.</p><div class="highlight-box">Every $1 invested in Maternanet generates $7–$20 in long-term economic benefits — reduced emergency care costs, maternal outcomes, and household poverty prevention.</div>'
+        a: '<p>Early intervention reduces average care costs by up to <strong>70%</strong> by treating complications early rather than managing emergencies.</p><div class="highlight-box">Every $1 invested in Maternanet generates $7–$20 in long-term economic benefits — reduced emergency care costs, maternal outcomes, and household poverty prevention.</div>'
       },
       {
         id: 'impact-3',
@@ -86,7 +86,7 @@ export const categories: FaqCategory[] = [
         id: 'community-1',
         num: '9',
         q: 'What is a Digital Doula and how are they trained?',
-        a: '<p>A Digital Doula is an existing community health provider (CHP) equipped by Maternanet to conduct community-level screenings, follow up on flagged high-risk mothers, and bridge the household-to-clinic gap where most maternal deaths happen.</p><ul><li><strong>10-day intensive bootcamp:</strong> clinical basics, app usage, device handling, escalation protocols</li><li><strong>Continuous digital refreshers</strong> accessible offline on tablet or SMS</li><li><strong>Quarterly in-person workshops</strong> for peer learning and protocol updates</li><li><strong>Maximum 45-60 mothers per CHP</strong> with performance-based incentives</li></ul><p>Currently <strong>410 active Digital Doulas</strong> across 4 counties, with a <strong>96% retention rate</strong>.</p>'
+        a: '<p>A Digital Doula is an existing Community Health Promoter (CHP) equipped by Maternanet to conduct community-level screenings, follow up on flagged high-risk mothers, and bridge the household-to-clinic gap where most maternal deaths happen.</p><ul><li><strong>10-day intensive bootcamp:</strong> clinical basics, app usage, device handling, escalation protocols</li><li><strong>Continuous digital refreshers</strong> accessible offline on tablet or SMS</li><li><strong>Quarterly in-person workshops</strong> for peer learning and protocol updates</li><li><strong>Maximum 45-60 mothers per CHP</strong> with performance-based incentives</li></ul><p>Currently <strong>410 active Digital Doulas</strong> across 4 counties, with a <strong>96% retention rate</strong>.</p>'
       },
       {
         id: 'community-2',
@@ -119,18 +119,6 @@ export const categories: FaqCategory[] = [
         num: '13',
         q: 'How can NGOs, development organisations, and international partners work with Maternanet?',
         a: '<p>Three primary partnership models:</p><ul><li><strong>Programme co-deployment:</strong> Embed Maternanet within your existing maternal health programmes as the predictive intelligence layer</li><li><strong>Population health analytics:</strong> License our data dashboards for evidence generation and policy advocacy — from $25,000/project</li><li><strong>Academic research:</strong> Partner on impact studies including our upcoming peer review literature — academic licensing from $15,000/study</li></ul><p>Early-mover partners in Uganda, Tanzania, Rwanda, Nigeria, and Ghana receive preferential data access and co-authorship opportunities on evidence outputs. Contact info@maternanet.com.</p>'
-      },
-      {
-        id: 'partner-3',
-        num: '14',
-        q: 'What investment or funding opportunities exist? What are you currently raising?',
-        a: '<p>Currently deploying a <strong>$550,000 strategic capital round</strong> (through Q1 2027) to build the data foundation that unlocks high-margin DaaS revenue streams at scale by 2028–2029:</p><ul><li>Technology enhancement — model refinement, autonomous agent pilots (36.8%)</li><li>First-mile logistics — CHP training and rural deployment (26.3%)</li><li>Partnership integration — county and facility expansion (15.8%)</li><li>Equipment and hardware — rugged tablets, diagnostic kits (10.5%)</li><li>Working capital (10.5%)</li></ul><p><strong>Trajectory:</strong> $95,897 actual 2025 revenue → $536,303 projected 2029. EBITDA break-even Q4 2026. ROI visible 18–25 months post-deployment. Contact owinoaketch@maternanet.com for the full investor pack.</p>'
-      },
-      {
-        id: 'partner-4',
-        num: '15',
-        q: 'Is Maternanet grant-dependent? What does long-term sustainability look like?',
-        a: '<p>No. Three diversified, reinforcing revenue streams:</p><ul><li><strong>B2B facility licensing</strong> — current primary revenue</li><li><strong>Data-as-a-Service</strong> — activating 2026, government and NGO analytics contracts</li><li><strong>Consumer and financial services</strong> — activating 2027, premium subscriptions and Care Now, Lipa Later revenue share</li></ul><p>Grants and impact investment accelerate deployment — they do not sustain it. 20%+ net margins projected by 2028. Commercial success and social impact grow in the same direction: more enrolled mothers → better model → lower cost per outcome.</p>'
       }
     ]
   },
@@ -142,15 +130,15 @@ export const categories: FaqCategory[] = [
     items: [
       {
         id: 'data-1',
-        num: '16',
+        num: '14',
         q: 'How is mothers\' personal and health data protected?',
-        a: '<ul><li><strong>End-to-end encryption</strong> across all data pipelines with local data sovereignty — data collected in Kenya stays in Kenya</li><li><strong>Federated learning:</strong> models trained on-site at local clinics without raw personal data leaving the facility</li><li><strong>Kenya Data Protection Act (2019) compliance:</strong> Full alignment including data minimisation, purpose limitation, and subject access rights</li><li><strong>GDPR-equivalent standards</strong> applied for all international data partnerships</li><li><strong>Community consent frameworks:</strong> Every enrolled mother and CHP consents explicitly, with clear explanations in local languages</li></ul><p>ODPC registration and DPIA approval in progress. KMPDC telehealth certification expected Q3 2026.</p>'
+        a: '<ul><li><strong>End-to-end encryption</strong> across all data pipelines with local data sovereignty — data collected in Kenya stays in Kenya</li><li><strong>Federated learning:</strong> models trained on-site at local clinics without raw personal data leaving the facility</li><li><strong>Kenya Data Protection Act (2019) compliance:</strong> Full alignment including data minimisation, purpose limitation, and subject access rights</li><li><strong>GDPR-equivalent standards</strong> applied for all international data partnerships</li><li><strong>Community consent frameworks:</strong> Every enrolled mother and CHP consents explicitly, with clear explanations in local languages</li></ul><p>ODPC registration, DPIA approval and KMPDC telehealth certification in progress.</p>'
       },
       {
         id: 'data-2',
-        num: '17',
+        num: '15',
         q: 'Is Maternanet\'s predictive model classified as a medical device? Are you regulated?',
-        a: '<p>Whether our predictive tools qualify as Software as a Medical Device (SaMD) under Kenya PPB and WHO frameworks is a question we are actively working through — proactively, not reactively.</p><p>Current regulatory status:</p><ul><li>NACOSTI Research Permit — <strong>already obtained</strong></li><li>KMPDC digital health certification — <strong>in progress, expected Q3 2026</strong></li><li>ODPC Data Controller registration — <strong>in progress</strong></li><li>DHA Digital Health License — <strong>application underway</strong></li><li>Kenya Health Data Governance Framework (2024) — <strong>compliance in progress</strong></li></ul>'
+        a: '<p>Whether our predictive tools qualify as Software as a Medical Device (SaMD) under Kenya PPB and WHO frameworks is a question we are actively working through — proactively, not reactively.</p><p>Current regulatory status:</p><ul><li>NACOSTI Research Permit — <strong>already obtained</strong></li><li>KMPDC digital health certification — <strong>in progress</strong></li><li>ODPC Data Controller registration — <strong>in progress</strong></li><li>DHA Digital Health License — <strong>application underway</strong></li><li>Kenya Health Data Governance Framework (2024) — <strong>compliance in progress</strong></li></ul>'
       }
     ]
   },
@@ -162,19 +150,19 @@ export const categories: FaqCategory[] = [
     items: [
       {
         id: 'scale-1',
-        num: '18',
+        num: '16',
         q: 'What is your expansion roadmap across Africa?',
         a: '<ul><li><strong>Phase 1: 0 to 1 (2025–2028) — Kenya data foundation:</strong> 8+ counties, 80+ facilities, 500+ CHPs. Build national policy evidence base.</li><li><strong>Phase 2: 1 to 100 (2028–2030) — National scale:</strong> Hub &amp; Spoke expansion across Kenya, full DHIS2 and EHR integration, county cost-sharing.</li><li><strong>Phase 3: 100 to Scale (2031–2035) — Pan-African entry:</strong> Uganda, Tanzania, Rwanda, Nigeria, Ghana.</li></ul><p>Long-term vision: 1M+ women across 5 countries, Kenya achieving fewer than 150 maternal deaths per 100,000 live births by 2030.</p>'
       },
       {
         id: 'scale-2',
-        num: '19',
+        num: '17',
         q: 'Can Maternanet\'s model work in my country? What does deployment require?',
-        a: '<p>Our model is transferable wherever three conditions exist: a community health worker structure, 2G mobile coverage (minimum), and a maternal mortality challenge driven by detection delays and access barriers. That describes most of sub-Saharan Africa.</p><p>Deployment requirements:</p><ul><li>A local implementation partner with existing community health networks</li><li>A Ministry or county health department willing to sandbox with us</li><li>6–12 months for predictive model localisation, consent framework adaptation, and regulatory clearance</li><li>Minimum cohort of 50 CHPs and 2 facility partners to build data density for model accuracy</li></ul><p>We are actively seeking early-mover partners in Uganda, Tanzania, Rwanda, Nigeria, and Ghana. Contact info@maternanet.com with your context.</p>'
+        a: '<p>Our model is transferable wherever three conditions exist: a Community Health Promoter (CHP) structure, 2G mobile coverage (minimum), and a maternal mortality challenge driven by detection delays and access barriers. That describes most of sub-Saharan Africa.</p><p>Deployment requirements:</p><ul><li>A local implementation partner with existing community health networks</li><li>A Ministry or county health department willing to sandbox with us</li><li>6–12 months for predictive model localisation, consent framework adaptation, and regulatory clearance</li><li>Minimum cohort of 50 CHPs and 2 facility partners to build data density for model accuracy</li></ul><p>We are actively seeking early-mover partners in Uganda, Tanzania, Rwanda, Nigeria, and Ghana. Contact info@maternanet.com with your context.</p>'
       },
       {
         id: 'scale-3',
-        num: '20',
+        num: '18',
         q: 'How does Maternanet align with UN SDG 3 and global maternal health commitments?',
         a: '<p>Maternanet is built to <em>demonstrate</em> SDG 3 achievement through a replicable, cost-effective model — not just aspire to it.</p><p><strong>Primary alignment:</strong> SDG 3 (Good Health and Well-being), SDG 5 (Gender Equality), SDG 10 (Reduced Inequalities)</p><p><strong>Secondary alignment:</strong> SDG 1 (No Poverty — reduced catastrophic healthcare costs), SDG 8 (Decent Work — CHP jobs), SDG 9 (Innovation and Infrastructure), SDG 17 (Partnerships)</p><div class="highlight-box">We are not making incremental improvements to a broken system. We are demonstrating that technology-enabled, community-driven care can achieve SDG 3 targets cost-effectively — and creating a replicable model for the global South.</div>'
       }

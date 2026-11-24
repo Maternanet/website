@@ -7,10 +7,7 @@
                 <div class="col-lg-8">
                     <!-- Footer Booking Title Start -->
                     <div class="footer-booking-title">
-                        <h5>
-                            Connecting Care, One Intelligent Solution at a
-                            time..
-                        </h5>
+                        <h5>Care that arrives in time.</h5>
                     </div>
                     <!-- Footer Booking Title End -->
                 </div>
@@ -34,7 +31,7 @@
                 <div class="about-footer">
                     <!-- Footer Logo Start -->
                     <div class="footer-logo">
-                        <img src="images/logo3.png" alt="Logo" height="50px" />
+                        <img src="/images/maternanet_logo_horizontal_reversed.svg" alt="Logo" height="50px" />
                     </div>
                     <!-- Footer Logo End -->
 
@@ -43,7 +40,7 @@
                         <p>
                             At Maternanet, we build the intelligence layer for
                             maternal health at the last mile — turning Kenya's
-                            100,000 Community Health Providers into a predictive
+                            100,000 Community Health Promoters (CHPs) into a predictive
                             care network by empowering them with tools that
                             genuinely reduce their burden. Our goal is to turn
                             maternal care into the gateway for comprehensive
@@ -104,6 +101,7 @@
                         <li><a href="/">home</a></li>
                         <li><a href="/about">about us</a></li>
                         <li><a href="/services">our services</a></li>
+                        <li><a href="/faq">FAQ</a></li>
                         <li><a href="/contacts">contact us</a></li>
                     </ul>
                 </div>
@@ -143,7 +141,7 @@
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <!-- Icon Box End -->
-                        <p>00100 - 30197, University Way, Nairobi, Kenya</p>
+                        <p>Maternanet Ltd, Matigari Plaza, Outer Ring Road, Nairobi, Kenya</p>
                     </div>
                     <!-- Info Box End -->
                 </div>
@@ -157,10 +155,7 @@
                 <div class="col-lg-12">
                     <!-- Footer Copyright Start -->
                     <div class="footer-copyright-text">
-                        <p>
-                            Copyright © {new Date().getFullYear()} Maternanet. All
-                            right reserved.
-                        </p>
+                        <p>© 2026 Maternanet Ltd. All rights reserved.</p>
                     </div>
                     <!-- Footer Copyright End -->
                 </div>

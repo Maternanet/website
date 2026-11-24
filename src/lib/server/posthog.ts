@@ -1,10 +1,10 @@
 import { PostHog } from 'posthog-node';
-import { env } from '$env/dynamic/public';
+import { PUBLIC_POSTHOG_HOST, PUBLIC_POSTHOG_PROJECT_TOKEN } from '$app/env/public';
 
 let posthogClient: PostHog | null = null;
 
 export function getPostHogClient() {
-	if (!env.PUBLIC_POSTHOG_PROJECT_TOKEN) {
+	if (!PUBLIC_POSTHOG_PROJECT_TOKEN) {
 		return {
 			capture: (payload: any) => console.log('[PostHog Mock Capture]', payload),
 			flush: async () => {},
@@ -12,8 +12,8 @@ export function getPostHogClient() {
 		} as unknown as PostHog;
 	}
 	if (!posthogClient) {
-		posthogClient = new PostHog(env.PUBLIC_POSTHOG_PROJECT_TOKEN as string, {
-			host: env.PUBLIC_POSTHOG_HOST as string,
+		posthogClient = new PostHog(PUBLIC_POSTHOG_PROJECT_TOKEN, {
+			host: PUBLIC_POSTHOG_HOST,
 			flushAt: 1,
 			flushInterval: 0
 		});

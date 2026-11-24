@@ -1,10 +1,9 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	let current = 0;
+	let current = $state(0);
 
 	const testimonials = [
 		{
-			text: `It takes about 2-3 hours to get to the neareast clinic from my home. I worried constantly about my baby. When Maternanet came on board, they helped flag a high-risk sign at about 6 and a half months — something I would have missed until it was too late. I got care immediately, and my baby is healthy.`,
+			text: `It takes about 2-3 hours to get to the nearest clinic from my home. I worried constantly about my baby. When Maternanet came on board, they helped flag a high-risk sign at about 6 and a half months — something I would have missed until it was too late. I got care immediately, and my baby is healthy.`,
 			name: "Lucy Mwangi",
 			role: "Market Trader",
 			location: "Kajiado",
@@ -20,7 +19,7 @@
 			image: "/images/testimonial2.jpg",
 		},
 		{
-			text: `I didn't know if what I was experiencing was normal. My mother gave me different advice than my close friend. Then I heard from the community about Maternanet. I reached out to our community health worker who connected me to Maternanet. After that I felt confident and supported throughout my pregnancy.`,
+			text: `I didn't know if what I was experiencing was normal. My mother gave me different advice than my close friend. Then I heard from the community about Maternanet. I reached out to our Community Health Promoter (CHP) who connected me to Maternanet. After that I felt confident and supported throughout my pregnancy.`,
 			name: "Beatrice Otieno",
 			role: "Student",
 			location: "Kajiado",
@@ -45,19 +44,6 @@
 		current = (current - 1 + testimonials.length) % testimonials.length;
 	}
 
-	let intervalId: ReturnType<typeof setInterval>;
-
-	onMount(() => {
-		intervalId = setInterval(() => {
-			next();
-		}, 3000); // Change testimonial every 3 seconds (3000 milliseconds)
-
-		return () => {
-			clearInterval(intervalId); // Clear interval when component is destroyed
-		};
-	});
-
-	// Optional: If you want to pause the slideshow on hover, you'd add more logic here.
 </script>
 
 <section class="section">
@@ -70,7 +56,7 @@
 		mothers are the heart of it all.
 	</p>
 
-	<div class="card">
+	<div class="card" aria-live="polite" aria-atomic="true">
 		<div class="quote-icon">❝</div>
 		<img
 			src={testimonials[current].image}
@@ -87,8 +73,21 @@
 	</div>
 
 	<div class="nav-buttons">
-		<button on:click={prev}>←</button>
-		<button on:click={next}>→</button>
+		<button type="button" aria-label="Previous testimonial" onclick={prev}>←</button>
+		<span class="position" aria-hidden="true">{current + 1} / {testimonials.length}</span>
+		<button type="button" aria-label="Next testimonial" onclick={next}>→</button>
+	</div>
+
+	<div class="testimonial-picker" aria-label="Choose a testimonial">
+		{#each testimonials as testimonial, index}
+			<button
+				type="button"
+				class:active={current === index}
+				aria-label="Show testimonial {index + 1}: {testimonial.name}"
+				aria-pressed={current === index}
+				onclick={() => (current = index)}
+			></button>
+		{/each}
 	</div>
 </section>
 
@@ -170,12 +169,13 @@
 
 	.nav-buttons {
 		display: flex;
+		align-items: center;
 		justify-content: center;
 		gap: 1rem;
 		margin-top: 2rem;
 	}
 
-	button {
+	.nav-buttons button {
 		background: #ffffff;
 		border: 2px solid #f76c6c;
 		border-radius: 50%;
@@ -190,6 +190,38 @@
 		transition:
 			background 0.2s ease-in-out,
 			color 0.2s ease-in-out;
+	}
+
+	.position {
+		color: #555;
+		font-variant-numeric: tabular-nums;
+		min-width: 3rem;
+	}
+
+	.testimonial-picker {
+		display: flex;
+		justify-content: center;
+		gap: 0.75rem;
+		margin-top: 1rem;
+	}
+
+	.testimonial-picker button {
+		width: 0.75rem;
+		height: 0.75rem;
+		padding: 0;
+		border: 0;
+		border-radius: 50%;
+		background: #d7d7d7;
+		cursor: pointer;
+	}
+
+	.testimonial-picker button.active {
+		background: #880ed4;
+	}
+
+	button:focus-visible {
+		outline: 3px solid #1f5e8e;
+		outline-offset: 3px;
 	}
 
 	.outcome-badge {

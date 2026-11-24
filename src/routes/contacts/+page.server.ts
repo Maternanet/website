@@ -1,7 +1,7 @@
-import { env } from '$env/dynamic/private';
+import { CONTACT_EMAIL, FORMSUBMIT_URL } from '$app/env/private';
 import { fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
-import { getPostHogClient } from '$lib/server/posthog';
+import { getPostHogClient } from '#lib/server/posthog';
 
 export const actions: Actions = {
 	default: async ({ request, fetch }) => {
@@ -9,8 +9,8 @@ export const actions: Actions = {
 		const data = Object.fromEntries(formData);
 		const partnershipType = String(data.partnership_type ?? '');
 
-		const contactEmail = env.CONTACT_EMAIL || 'careconnect.afrika@gmail.com';
-		let formsubmitUrl = env.FORMSUBMIT_URL || 'https://formsubmit.co/ajax/';
+		const contactEmail = CONTACT_EMAIL || 'careconnect.afrika@gmail.com';
+		let formsubmitUrl = FORMSUBMIT_URL || 'https://formsubmit.co/ajax/';
 		if (!formsubmitUrl.endsWith('/')) formsubmitUrl += '/';
 
 		const submitterEmail = String(data.email ?? '');
@@ -47,7 +47,7 @@ export const actions: Actions = {
 				throw new Error(`Submission Failed (HTTP ${response.status}): ${errorText}`);
 			}
 
-			const responseData = await response.json().catch(() => ({}));
+				const responseData = await response.json().catch(() => ({}));
 			if (responseData.success === "false" || responseData.success === false) {
 				throw new Error(`FormSubmit API Error: ${responseData.message || JSON.stringify(responseData)}`);
 			}

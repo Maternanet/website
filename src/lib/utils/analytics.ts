@@ -1,4 +1,4 @@
-import { browser } from '$app/environment';
+import { browser } from '$app/env';
 
 // PostHog is initialized in src/hooks.client.ts with opt_out_capturing_by_default: true.
 // This module manages consent-based opt-in/opt-out.
@@ -68,4 +68,3 @@ export const analytics = {
     }
   }
 };
-
